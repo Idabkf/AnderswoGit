@@ -34,7 +34,6 @@
 		68A7CBE4179193E500248866 /* ScreenNineteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBB5179193E400248866 /* ScreenNineteenViewController.m */; };
 		68A7CBE5179193E500248866 /* ScreenNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBB7179193E400248866 /* ScreenNineViewController.m */; };
 		68A7CBE6179193E500248866 /* ScreenOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBB9179193E400248866 /* ScreenOneViewController.m */; };
-		68A7CBE7179193E500248866 /* ScreenPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBBB179193E400248866 /* ScreenPageViewController.m */; };
 		68A7CBE8179193E500248866 /* ScreenSevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBBD179193E400248866 /* ScreenSevenViewController.m */; };
 		68A7CBE9179193E500248866 /* ScreenSixteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBBF179193E400248866 /* ScreenSixteenViewController.m */; };
 		68A7CBEA179193E500248866 /* ScreenSixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBC1179193E500248866 /* ScreenSixViewController.m */; };
@@ -52,6 +51,146 @@
 		68A7CBF6179193E500248866 /* ScreenTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD9179193E500248866 /* ScreenTwoViewController.m */; };
 		68A7CBF7179193E500248866 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBDB179193E500248866 /* ScreenViewController.m */; };
 		68A7CBF8179193E500248866 /* StockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBDD179193E500248866 /* StockItemView.m */; };
+		68A7CC031791954E00248866 /* CorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBFA1791954800248866 /* CorkView.m */; };
+		68A7CC041791954E00248866 /* EraserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBFC1791954A00248866 /* EraserView.m */; };
+		68A7CC051791954E00248866 /* EyeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBFE1791954B00248866 /* EyeView.m */; };
+		68A7CC061791954E00248866 /* LabyrinthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CC001791954C00248866 /* LabyrinthView.m */; };
+		68A7CC071791954E00248866 /* MushroomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CC021791954D00248866 /* MushroomView.m */; };
+		68A7CC69179195D300248866 /* Screen01-Titelscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC09179195D200248866 /* Screen01-Titelscreen.png */; };
+		68A7CC6A179195D300248866 /* Screen02-Stadt-wischbar_HG.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC0A179195D200248866 /* Screen02-Stadt-wischbar_HG.png */; };
+		68A7CC6B179195D300248866 /* Screen02-Stadt-wischbar_stadt.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC0B179195D200248866 /* Screen02-Stadt-wischbar_stadt.png */; };
+		68A7CC6C179195D300248866 /* Screen02-Stadtwischbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC0C179195D200248866 /* Screen02-Stadtwischbar.png */; };
+		68A7CC6D179195D300248866 /* Screen03a-Kiste1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC0D179195D200248866 /* Screen03a-Kiste1.png */; };
+		68A7CC6E179195D300248866 /* Screen03a-Kiste2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC0E179195D200248866 /* Screen03a-Kiste2.png */; };
+		68A7CC6F179195D300248866 /* Screen03a-Kiste3.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC0F179195D200248866 /* Screen03a-Kiste3.png */; };
+		68A7CC70179195D300248866 /* Screen03a-Kiste4.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC10179195D200248866 /* Screen03a-Kiste4.png */; };
+		68A7CC71179195D300248866 /* Screen03a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC11179195D200248866 /* Screen03a.jpg */; };
+		68A7CC72179195D300248866 /* Screen03b-Kistenweg Kopie.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC12179195D200248866 /* Screen03b-Kistenweg Kopie.png */; };
+		68A7CC73179195D300248866 /* Screen03b-Kistenweg.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC13179195D200248866 /* Screen03b-Kistenweg.png */; };
+		68A7CC74179195D300248866 /* Screen03b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC14179195D200248866 /* Screen03b.jpg */; };
+		68A7CC75179195D300248866 /* Screen04a-Fressgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC15179195D200248866 /* Screen04a-Fressgroelm.png */; };
+		68A7CC76179195D300248866 /* Screen04a+b+c.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC16179195D200248866 /* Screen04a+b+c.png */; };
+		68A7CC77179195D300248866 /* Screen04aa-Groelmdrohend.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC17179195D200248866 /* Screen04aa-Groelmdrohend.png */; };
+		68A7CC78179195D300248866 /* Screen04aa-Kind.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC18179195D200248866 /* Screen04aa-Kind.png */; };
+		68A7CC79179195D300248866 /* Screen04b-Schluckgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC19179195D200248866 /* Screen04b-Schluckgroelm.png */; };
+		68A7CC7A179195D300248866 /* Screen04c-Kind.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC1A179195D200248866 /* Screen04c-Kind.png */; };
+		68A7CC7B179195D300248866 /* Screen04c-Spuckgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC1B179195D200248866 /* Screen04c-Spuckgroelm.png */; };
+		68A7CC7C179195D300248866 /* Screen06-Wald-Cheforf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC1C179195D200248866 /* Screen06-Wald-Cheforf.png */; };
+		68A7CC7D179195D300248866 /* Screen06-Wald-Groelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC1D179195D300248866 /* Screen06-Wald-Groelm.png */; };
+		68A7CC7E179195D300248866 /* Screen06-Wald-help.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC1E179195D300248866 /* Screen06-Wald-help.png */; };
+		68A7CC7F179195D300248866 /* Screen06-Wald-Kind.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC1F179195D300248866 /* Screen06-Wald-Kind.png */; };
+		68A7CC80179195D300248866 /* Screen06-Wald-orfwelt.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC20179195D300248866 /* Screen06-Wald-orfwelt.png */; };
+		68A7CC81179195D300248866 /* Screen07-RAETSEL-1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC21179195D300248866 /* Screen07-RAETSEL-1-1.png */; };
+		68A7CC82179195D300248866 /* Screen07-RAETSEL-1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC22179195D300248866 /* Screen07-RAETSEL-1-2.png */; };
+		68A7CC83179195D300248866 /* Screen07-RAETSEL-1-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC23179195D300248866 /* Screen07-RAETSEL-1-Button.png */; };
+		68A7CC84179195D300248866 /* Screen07-RAETSEL-1-ohnepilzkappen.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC24179195D300248866 /* Screen07-RAETSEL-1-ohnepilzkappen.png */; };
+		68A7CC85179195D300248866 /* Screen08-Wald-orfwelt.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC25179195D300248866 /* Screen08-Wald-orfwelt.png */; };
+		68A7CC86179195D300248866 /* Screen09-Belohnung.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC26179195D300248866 /* Screen09-Belohnung.png */; };
+		68A7CC87179195D300248866 /* Screen09-BelohnungPilz-pinki.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC27179195D300248866 /* Screen09-BelohnungPilz-pinki.png */; };
+		68A7CC88179195D300248866 /* Screen09-BelohnungPilz-scharlach.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC28179195D300248866 /* Screen09-BelohnungPilz-scharlach.png */; };
+		68A7CC89179195D300248866 /* Screen09-BelohnungPilz-zinnober.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC29179195D300248866 /* Screen09-BelohnungPilz-zinnober.png */; };
+		68A7CC8A179195D300248866 /* Screen09-BelohnungPilz.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC2A179195D300248866 /* Screen09-BelohnungPilz.png */; };
+		68A7CC8B179195D300248866 /* Screen11-groelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC2B179195D300248866 /* Screen11-groelm.png */; };
+		68A7CC8C179195D300248866 /* Screen11-weitergehts.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC2C179195D300248866 /* Screen11-weitergehts.png */; };
+		68A7CC8D179195D300248866 /* Screen12-drohgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC2D179195D300248866 /* Screen12-drohgroelm.png */; };
+		68A7CC8E179195D300248866 /* Screen12-Kind.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC2E179195D300248866 /* Screen12-Kind.png */; };
+		68A7CC8F179195D300248866 /* Screen12b-schluckgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC2F179195D300248866 /* Screen12b-schluckgroelm.png */; };
+		68A7CC90179195D300248866 /* Screen12c-klettergroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC30179195D300248866 /* Screen12c-klettergroelm.png */; };
+		68A7CC91179195D300248866 /* Screen12c-spuckgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC31179195D300248866 /* Screen12c-spuckgroelm.png */; };
+		68A7CC92179195D300248866 /* Screen13-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC32179195D300248866 /* Screen13-BG.png */; };
+		68A7CC93179195D300248866 /* Screen13-Chefwasserorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC33179195D300248866 /* Screen13-Chefwasserorf.png */; };
+		68A7CC94179195D300248866 /* Screen13-Kind-vIda.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC34179195D300248866 /* Screen13-Kind-vIda.png */; };
+		68A7CC95179195D300248866 /* Screen13-UBoot.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC35179195D300248866 /* Screen13-UBoot.png */; };
+		68A7CC96179195D300248866 /* Screen13-vorderesWasser.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC36179195D300248866 /* Screen13-vorderesWasser.png */; };
+		68A7CC97179195D300248866 /* Screen14-Labyrinth-BW.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC37179195D300248866 /* Screen14-Labyrinth-BW.png */; };
+		68A7CC98179195D300248866 /* Screen14-Labyrinth.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC38179195D300248866 /* Screen14-Labyrinth.png */; };
+		68A7CC99179195D300248866 /* Screen14-Labyrinth+Wasser.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC39179195D300248866 /* Screen14-Labyrinth+Wasser.png */; };
+		68A7CC9A179195D300248866 /* Screen14-Neunauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC3A179195D300248866 /* Screen14-Neunauge.png */; };
+		68A7CC9B179195D300248866 /* Screen14-RAETSEL-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC3B179195D300248866 /* Screen14-RAETSEL-2-1.png */; };
+		68A7CC9C179195D300248866 /* Screen14-RAETSEL-2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC3C179195D300248866 /* Screen14-RAETSEL-2-2.png */; };
+		68A7CC9D179195D300248866 /* Screen14-UBoot.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC3D179195D300248866 /* Screen14-UBoot.png */; };
+		68A7CC9E179195D300248866 /* Screen14-Wasserorfkleines.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC3E179195D300248866 /* Screen14-Wasserorfkleines.png */; };
+		68A7CC9F179195D300248866 /* Screen15-angelorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC3F179195D300248866 /* Screen15-angelorf.png */; };
+		68A7CCA0179195D300248866 /* Screen15-fischdieb.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC40179195D300248866 /* Screen15-fischdieb.png */; };
+		68A7CCA1179195D300248866 /* Screen15-gerettetesKleines.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC41179195D300248866 /* Screen15-gerettetesKleines.png */; };
+		68A7CCA2179195D300248866 /* Screen15-groelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC42179195D300248866 /* Screen15-groelm.png */; };
+		68A7CCA3179195D300248866 /* Screen15-haengeorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC43179195D300248866 /* Screen15-haengeorf.png */; };
+		68A7CCA4179195D300248866 /* Screen15-kind.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC44179195D300248866 /* Screen15-kind.png */; };
+		68A7CCA5179195D300248866 /* Screen15-koenigorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC45179195D300248866 /* Screen15-koenigorf.png */; };
+		68A7CCA6179195D300248866 /* Screen15-netzorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC46179195D300248866 /* Screen15-netzorf.png */; };
+		68A7CCA7179195D300248866 /* Screen15-schwimmorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC47179195D300248866 /* Screen15-schwimmorf.png */; };
+		68A7CCA8179195D300248866 /* Screen15-spaehorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC48179195D300248866 /* Screen15-spaehorf.png */; };
+		68A7CCA9179195D300248866 /* Screen15-tauchorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC49179195D300248866 /* Screen15-tauchorf.png */; };
+		68A7CCAA179195D300248866 /* Screen15-ubotreitorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC4A179195D300248866 /* Screen15-ubotreitorf.png */; };
+		68A7CCAB179195D300248866 /* Screen15-Wasserorfwelt-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC4B179195D300248866 /* Screen15-Wasserorfwelt-bg.png */; };
+		68A7CCAC179195D300248866 /* Screen15-Wasserorfwelt.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC4C179195D300248866 /* Screen15-Wasserorfwelt.png */; };
+		68A7CCAD179195D300248866 /* Screen16-Belohnung-punkteauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC4D179195D300248866 /* Screen16-Belohnung-punkteauge.png */; };
+		68A7CCAE179195D300248866 /* Screen16-Belohnung-spiralauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC4E179195D300248866 /* Screen16-Belohnung-spiralauge.png */; };
+		68A7CCAF179195D300248866 /* Screen16-Belohnung-tuerkischauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC4F179195D300248866 /* Screen16-Belohnung-tuerkischauge.png */; };
+		68A7CCB0179195D300248866 /* Screen16-BelohnungAUGE.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC50179195D300248866 /* Screen16-BelohnungAUGE.png */; };
+		68A7CCB1179195D300248866 /* Screen17b-Groelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC51179195D300248866 /* Screen17b-Groelm.png */; };
+		68A7CCB2179195D300248866 /* Screen17b-letztesAbenteuer.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC52179195D300248866 /* Screen17b-letztesAbenteuer.png */; };
+		68A7CCB3179195D300248866 /* Screen18-Groelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC53179195D300248866 /* Screen18-Groelm.png */; };
+		68A7CCB4179195D300248866 /* Screen18-Kind.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC54179195D300248866 /* Screen18-Kind.png */; };
+		68A7CCB5179195D300248866 /* Screen18a-Klettergroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC55179195D300248866 /* Screen18a-Klettergroelm.png */; };
+		68A7CCB6179195D300248866 /* Screen18b-Groelmgeschluckt.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC56179195D300248866 /* Screen18b-Groelmgeschluckt.png */; };
+		68A7CCB7179195D300248866 /* Screen18c-Groelmausspuck.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC57179195D300248866 /* Screen18c-Groelmausspuck.png */; };
+		68A7CCB8179195D300248866 /* Screen19-Sandgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC58179195D300248866 /* Screen19-Sandgroelm.png */; };
+		68A7CCB9179195D300248866 /* Screen19-Sandkind.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC59179195D300248866 /* Screen19-Sandkind.png */; };
+		68A7CCBA179195D300248866 /* Screen19-Sandsturm-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC5A179195D300248866 /* Screen19-Sandsturm-BG.png */; };
+		68A7CCBB179195D300248866 /* Screen19-Sandsturm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC5B179195D300248866 /* Screen19-Sandsturm.png */; };
+		68A7CCBC179195D300248866 /* Screen20-SandsturmA-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC5C179195D300248866 /* Screen20-SandsturmA-BG.png */; };
+		68A7CCBE179195D300248866 /* Screen21-Eraser2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC5E179195D300248866 /* Screen21-Eraser2.png */; };
+		68A7CCBF179195D300248866 /* Screen21-RAETSEL-3-vIda_mitKorken.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC5F179195D300248866 /* Screen21-RAETSEL-3-vIda_mitKorken.png */; };
+		68A7CCC0179195D300248866 /* Screen21-RAETSEL-3-vIda_ohneKorken.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC60179195D300248866 /* Screen21-RAETSEL-3-vIda_ohneKorken.png */; };
+		68A7CCC1179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_k.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC61179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_k.png */; };
+		68A7CCC2179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_kk.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC62179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_kk.png */; };
+		68A7CCC3179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC63179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand.png */; };
+		68A7CCC4179195D300248866 /* Screen22-Wuenschelorfdorf.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC64179195D300248866 /* Screen22-Wuenschelorfdorf.png */; };
+		68A7CCC5179195D300248866 /* Screen23-BelohnungFLASCHE.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC65179195D300248866 /* Screen23-BelohnungFLASCHE.png */; };
+		68A7CCC6179195D300248866 /* Screen23-FLASCHE.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC66179195D300248866 /* Screen23-FLASCHE.png */; };
+		68A7CCC7179195D300248866 /* Screen26-Groelmverblasst.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CC67179195D300248866 /* Screen26-Groelmverblasst.png */; };
+		68A7CCD61791965200248866 /* Eselsohr2_959k5_708k5.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCCA1791965200248866 /* Eselsohr2_959k5_708k5.png */; };
+		68A7CCD71791965200248866 /* Inventar-Aug1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCCB1791965200248866 /* Inventar-Aug1.png */; };
+		68A7CCD81791965200248866 /* Inventar-Aug2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCCC1791965200248866 /* Inventar-Aug2.png */; };
+		68A7CCD91791965200248866 /* Inventar-Aug3.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCCD1791965200248866 /* Inventar-Aug3.png */; };
+		68A7CCDA1791965200248866 /* Inventar-Flasche1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCCE1791965200248866 /* Inventar-Flasche1.png */; };
+		68A7CCDB1791965200248866 /* Inventar-Flasche2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCCF1791965200248866 /* Inventar-Flasche2.png */; };
+		68A7CCDC1791965200248866 /* Inventar-Flasche3.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCD01791965200248866 /* Inventar-Flasche3.png */; };
+		68A7CCDD1791965200248866 /* Inventar-Muell.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCD11791965200248866 /* Inventar-Muell.png */; };
+		68A7CCDE1791965200248866 /* Inventar-Pilz1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCD21791965200248866 /* Inventar-Pilz1.png */; };
+		68A7CCDF1791965200248866 /* Inventar-Pilz2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCD31791965200248866 /* Inventar-Pilz2.png */; };
+		68A7CCE01791965200248866 /* Inventar-Pilz3.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCD41791965200248866 /* Inventar-Pilz3.png */; };
+		68A7CCE11791965200248866 /* Inventarleiste.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCD51791965200248866 /* Inventarleiste.png */; };
+		68A7CCED1791968D00248866 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCE31791968D00248866 /* 0.png */; };
+		68A7CCEE1791968D00248866 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCE41791968D00248866 /* 1.png */; };
+		68A7CCEF1791968D00248866 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCE51791968D00248866 /* 2.png */; };
+		68A7CCF01791968D00248866 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCE61791968D00248866 /* 3.png */; };
+		68A7CCF11791968D00248866 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCE71791968D00248866 /* 4.png */; };
+		68A7CCF21791968D00248866 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCE81791968D00248866 /* 5.png */; };
+		68A7CCF31791968D00248866 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCE91791968D00248866 /* 6.png */; };
+		68A7CCF41791968D00248866 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCEA1791968D00248866 /* 7.png */; };
+		68A7CCF51791968D00248866 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCEB1791968D00248866 /* 8.png */; };
+		68A7CCF61791968D00248866 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCEC1791968D00248866 /* 9.png */; };
+		68A7CD01179196A700248866 /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCF8179196A700248866 /* 20.png */; };
+		68A7CD02179196A700248866 /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCF9179196A700248866 /* 21.png */; };
+		68A7CD03179196A700248866 /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCFA179196A700248866 /* 22.png */; };
+		68A7CD04179196A700248866 /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCFB179196A700248866 /* 23.png */; };
+		68A7CD05179196A700248866 /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCFC179196A700248866 /* 24.png */; };
+		68A7CD06179196A700248866 /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCFD179196A700248866 /* 25.png */; };
+		68A7CD07179196A700248866 /* 26.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCFE179196A700248866 /* 26.png */; };
+		68A7CD08179196A700248866 /* 27.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CCFF179196A700248866 /* 27.png */; };
+		68A7CD09179196A700248866 /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD00179196A700248866 /* 28.png */; };
+		68A7CD15179196B400248866 /* 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD0B179196B400248866 /* 30.png */; };
+		68A7CD16179196B400248866 /* 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD0C179196B400248866 /* 31.png */; };
+		68A7CD17179196B400248866 /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD0D179196B400248866 /* 32.png */; };
+		68A7CD18179196B400248866 /* 33.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD0E179196B400248866 /* 33.png */; };
+		68A7CD19179196B400248866 /* 34.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD0F179196B400248866 /* 34.png */; };
+		68A7CD1A179196B400248866 /* 35.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD10179196B400248866 /* 35.png */; };
+		68A7CD1B179196B400248866 /* 36.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD11179196B400248866 /* 36.png */; };
+		68A7CD1C179196B400248866 /* 37.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD12179196B400248866 /* 37.png */; };
+		68A7CD1D179196B400248866 /* 38.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD13179196B400248866 /* 38.png */; };
+		68A7CD1E179196B400248866 /* 39.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD14179196B400248866 /* 39.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,8 +237,6 @@
 		68A7CBB7179193E400248866 /* ScreenNineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenNineViewController.m; sourceTree = "<group>"; };
 		68A7CBB8179193E400248866 /* ScreenOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenOneViewController.h; sourceTree = "<group>"; };
 		68A7CBB9179193E400248866 /* ScreenOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenOneViewController.m; sourceTree = "<group>"; };
-		68A7CBBA179193E400248866 /* ScreenPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenPageViewController.h; sourceTree = "<group>"; };
-		68A7CBBB179193E400248866 /* ScreenPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenPageViewController.m; sourceTree = "<group>"; };
 		68A7CBBC179193E400248866 /* ScreenSevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSevenViewController.h; sourceTree = "<group>"; };
 		68A7CBBD179193E400248866 /* ScreenSevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSevenViewController.m; sourceTree = "<group>"; };
 		68A7CBBE179193E400248866 /* ScreenSixteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSixteenViewController.h; sourceTree = "<group>"; };
@@ -134,6 +271,151 @@
 		68A7CBDB179193E500248866 /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
 		68A7CBDC179193E500248866 /* StockItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockItemView.h; sourceTree = "<group>"; };
 		68A7CBDD179193E500248866 /* StockItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockItemView.m; sourceTree = "<group>"; };
+		68A7CBF91791954800248866 /* CorkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorkView.h; sourceTree = "<group>"; };
+		68A7CBFA1791954800248866 /* CorkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorkView.m; sourceTree = "<group>"; };
+		68A7CBFB1791954900248866 /* EraserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraserView.h; sourceTree = "<group>"; };
+		68A7CBFC1791954A00248866 /* EraserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraserView.m; sourceTree = "<group>"; };
+		68A7CBFD1791954A00248866 /* EyeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeView.h; sourceTree = "<group>"; };
+		68A7CBFE1791954B00248866 /* EyeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeView.m; sourceTree = "<group>"; };
+		68A7CBFF1791954B00248866 /* LabyrinthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabyrinthView.h; sourceTree = "<group>"; };
+		68A7CC001791954C00248866 /* LabyrinthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabyrinthView.m; sourceTree = "<group>"; };
+		68A7CC011791954D00248866 /* MushroomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MushroomView.h; sourceTree = "<group>"; };
+		68A7CC021791954D00248866 /* MushroomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MushroomView.m; sourceTree = "<group>"; };
+		68A7CC09179195D200248866 /* Screen01-Titelscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen01-Titelscreen.png"; sourceTree = "<group>"; };
+		68A7CC0A179195D200248866 /* Screen02-Stadt-wischbar_HG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen02-Stadt-wischbar_HG.png"; sourceTree = "<group>"; };
+		68A7CC0B179195D200248866 /* Screen02-Stadt-wischbar_stadt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen02-Stadt-wischbar_stadt.png"; sourceTree = "<group>"; };
+		68A7CC0C179195D200248866 /* Screen02-Stadtwischbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen02-Stadtwischbar.png"; sourceTree = "<group>"; };
+		68A7CC0D179195D200248866 /* Screen03a-Kiste1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen03a-Kiste1.png"; sourceTree = "<group>"; };
+		68A7CC0E179195D200248866 /* Screen03a-Kiste2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen03a-Kiste2.png"; sourceTree = "<group>"; };
+		68A7CC0F179195D200248866 /* Screen03a-Kiste3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen03a-Kiste3.png"; sourceTree = "<group>"; };
+		68A7CC10179195D200248866 /* Screen03a-Kiste4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen03a-Kiste4.png"; sourceTree = "<group>"; };
+		68A7CC11179195D200248866 /* Screen03a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screen03a.jpg; sourceTree = "<group>"; };
+		68A7CC12179195D200248866 /* Screen03b-Kistenweg Kopie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen03b-Kistenweg Kopie.png"; sourceTree = "<group>"; };
+		68A7CC13179195D200248866 /* Screen03b-Kistenweg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen03b-Kistenweg.png"; sourceTree = "<group>"; };
+		68A7CC14179195D200248866 /* Screen03b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screen03b.jpg; sourceTree = "<group>"; };
+		68A7CC15179195D200248866 /* Screen04a-Fressgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04a-Fressgroelm.png"; sourceTree = "<group>"; };
+		68A7CC16179195D200248866 /* Screen04a+b+c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04a+b+c.png"; sourceTree = "<group>"; };
+		68A7CC17179195D200248866 /* Screen04aa-Groelmdrohend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04aa-Groelmdrohend.png"; sourceTree = "<group>"; };
+		68A7CC18179195D200248866 /* Screen04aa-Kind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04aa-Kind.png"; sourceTree = "<group>"; };
+		68A7CC19179195D200248866 /* Screen04b-Schluckgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04b-Schluckgroelm.png"; sourceTree = "<group>"; };
+		68A7CC1A179195D200248866 /* Screen04c-Kind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04c-Kind.png"; sourceTree = "<group>"; };
+		68A7CC1B179195D200248866 /* Screen04c-Spuckgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04c-Spuckgroelm.png"; sourceTree = "<group>"; };
+		68A7CC1C179195D200248866 /* Screen06-Wald-Cheforf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen06-Wald-Cheforf.png"; sourceTree = "<group>"; };
+		68A7CC1D179195D300248866 /* Screen06-Wald-Groelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen06-Wald-Groelm.png"; sourceTree = "<group>"; };
+		68A7CC1E179195D300248866 /* Screen06-Wald-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen06-Wald-help.png"; sourceTree = "<group>"; };
+		68A7CC1F179195D300248866 /* Screen06-Wald-Kind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen06-Wald-Kind.png"; sourceTree = "<group>"; };
+		68A7CC20179195D300248866 /* Screen06-Wald-orfwelt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen06-Wald-orfwelt.png"; sourceTree = "<group>"; };
+		68A7CC21179195D300248866 /* Screen07-RAETSEL-1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen07-RAETSEL-1-1.png"; sourceTree = "<group>"; };
+		68A7CC22179195D300248866 /* Screen07-RAETSEL-1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen07-RAETSEL-1-2.png"; sourceTree = "<group>"; };
+		68A7CC23179195D300248866 /* Screen07-RAETSEL-1-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen07-RAETSEL-1-Button.png"; sourceTree = "<group>"; };
+		68A7CC24179195D300248866 /* Screen07-RAETSEL-1-ohnepilzkappen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen07-RAETSEL-1-ohnepilzkappen.png"; sourceTree = "<group>"; };
+		68A7CC25179195D300248866 /* Screen08-Wald-orfwelt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen08-Wald-orfwelt.png"; sourceTree = "<group>"; };
+		68A7CC26179195D300248866 /* Screen09-Belohnung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen09-Belohnung.png"; sourceTree = "<group>"; };
+		68A7CC27179195D300248866 /* Screen09-BelohnungPilz-pinki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen09-BelohnungPilz-pinki.png"; sourceTree = "<group>"; };
+		68A7CC28179195D300248866 /* Screen09-BelohnungPilz-scharlach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen09-BelohnungPilz-scharlach.png"; sourceTree = "<group>"; };
+		68A7CC29179195D300248866 /* Screen09-BelohnungPilz-zinnober.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen09-BelohnungPilz-zinnober.png"; sourceTree = "<group>"; };
+		68A7CC2A179195D300248866 /* Screen09-BelohnungPilz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen09-BelohnungPilz.png"; sourceTree = "<group>"; };
+		68A7CC2B179195D300248866 /* Screen11-groelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen11-groelm.png"; sourceTree = "<group>"; };
+		68A7CC2C179195D300248866 /* Screen11-weitergehts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen11-weitergehts.png"; sourceTree = "<group>"; };
+		68A7CC2D179195D300248866 /* Screen12-drohgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen12-drohgroelm.png"; sourceTree = "<group>"; };
+		68A7CC2E179195D300248866 /* Screen12-Kind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen12-Kind.png"; sourceTree = "<group>"; };
+		68A7CC2F179195D300248866 /* Screen12b-schluckgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen12b-schluckgroelm.png"; sourceTree = "<group>"; };
+		68A7CC30179195D300248866 /* Screen12c-klettergroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen12c-klettergroelm.png"; sourceTree = "<group>"; };
+		68A7CC31179195D300248866 /* Screen12c-spuckgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen12c-spuckgroelm.png"; sourceTree = "<group>"; };
+		68A7CC32179195D300248866 /* Screen13-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen13-BG.png"; sourceTree = "<group>"; };
+		68A7CC33179195D300248866 /* Screen13-Chefwasserorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen13-Chefwasserorf.png"; sourceTree = "<group>"; };
+		68A7CC34179195D300248866 /* Screen13-Kind-vIda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen13-Kind-vIda.png"; sourceTree = "<group>"; };
+		68A7CC35179195D300248866 /* Screen13-UBoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen13-UBoot.png"; sourceTree = "<group>"; };
+		68A7CC36179195D300248866 /* Screen13-vorderesWasser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen13-vorderesWasser.png"; sourceTree = "<group>"; };
+		68A7CC37179195D300248866 /* Screen14-Labyrinth-BW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Labyrinth-BW.png"; sourceTree = "<group>"; };
+		68A7CC38179195D300248866 /* Screen14-Labyrinth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Labyrinth.png"; sourceTree = "<group>"; };
+		68A7CC39179195D300248866 /* Screen14-Labyrinth+Wasser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Labyrinth+Wasser.png"; sourceTree = "<group>"; };
+		68A7CC3A179195D300248866 /* Screen14-Neunauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Neunauge.png"; sourceTree = "<group>"; };
+		68A7CC3B179195D300248866 /* Screen14-RAETSEL-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-RAETSEL-2-1.png"; sourceTree = "<group>"; };
+		68A7CC3C179195D300248866 /* Screen14-RAETSEL-2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-RAETSEL-2-2.png"; sourceTree = "<group>"; };
+		68A7CC3D179195D300248866 /* Screen14-UBoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-UBoot.png"; sourceTree = "<group>"; };
+		68A7CC3E179195D300248866 /* Screen14-Wasserorfkleines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Wasserorfkleines.png"; sourceTree = "<group>"; };
+		68A7CC3F179195D300248866 /* Screen15-angelorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-angelorf.png"; sourceTree = "<group>"; };
+		68A7CC40179195D300248866 /* Screen15-fischdieb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-fischdieb.png"; sourceTree = "<group>"; };
+		68A7CC41179195D300248866 /* Screen15-gerettetesKleines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-gerettetesKleines.png"; sourceTree = "<group>"; };
+		68A7CC42179195D300248866 /* Screen15-groelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-groelm.png"; sourceTree = "<group>"; };
+		68A7CC43179195D300248866 /* Screen15-haengeorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-haengeorf.png"; sourceTree = "<group>"; };
+		68A7CC44179195D300248866 /* Screen15-kind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-kind.png"; sourceTree = "<group>"; };
+		68A7CC45179195D300248866 /* Screen15-koenigorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-koenigorf.png"; sourceTree = "<group>"; };
+		68A7CC46179195D300248866 /* Screen15-netzorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-netzorf.png"; sourceTree = "<group>"; };
+		68A7CC47179195D300248866 /* Screen15-schwimmorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-schwimmorf.png"; sourceTree = "<group>"; };
+		68A7CC48179195D300248866 /* Screen15-spaehorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-spaehorf.png"; sourceTree = "<group>"; };
+		68A7CC49179195D300248866 /* Screen15-tauchorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-tauchorf.png"; sourceTree = "<group>"; };
+		68A7CC4A179195D300248866 /* Screen15-ubotreitorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-ubotreitorf.png"; sourceTree = "<group>"; };
+		68A7CC4B179195D300248866 /* Screen15-Wasserorfwelt-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-Wasserorfwelt-bg.png"; sourceTree = "<group>"; };
+		68A7CC4C179195D300248866 /* Screen15-Wasserorfwelt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen15-Wasserorfwelt.png"; sourceTree = "<group>"; };
+		68A7CC4D179195D300248866 /* Screen16-Belohnung-punkteauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen16-Belohnung-punkteauge.png"; sourceTree = "<group>"; };
+		68A7CC4E179195D300248866 /* Screen16-Belohnung-spiralauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen16-Belohnung-spiralauge.png"; sourceTree = "<group>"; };
+		68A7CC4F179195D300248866 /* Screen16-Belohnung-tuerkischauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen16-Belohnung-tuerkischauge.png"; sourceTree = "<group>"; };
+		68A7CC50179195D300248866 /* Screen16-BelohnungAUGE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen16-BelohnungAUGE.png"; sourceTree = "<group>"; };
+		68A7CC51179195D300248866 /* Screen17b-Groelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen17b-Groelm.png"; sourceTree = "<group>"; };
+		68A7CC52179195D300248866 /* Screen17b-letztesAbenteuer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen17b-letztesAbenteuer.png"; sourceTree = "<group>"; };
+		68A7CC53179195D300248866 /* Screen18-Groelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen18-Groelm.png"; sourceTree = "<group>"; };
+		68A7CC54179195D300248866 /* Screen18-Kind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen18-Kind.png"; sourceTree = "<group>"; };
+		68A7CC55179195D300248866 /* Screen18a-Klettergroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen18a-Klettergroelm.png"; sourceTree = "<group>"; };
+		68A7CC56179195D300248866 /* Screen18b-Groelmgeschluckt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen18b-Groelmgeschluckt.png"; sourceTree = "<group>"; };
+		68A7CC57179195D300248866 /* Screen18c-Groelmausspuck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen18c-Groelmausspuck.png"; sourceTree = "<group>"; };
+		68A7CC58179195D300248866 /* Screen19-Sandgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandgroelm.png"; sourceTree = "<group>"; };
+		68A7CC59179195D300248866 /* Screen19-Sandkind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandkind.png"; sourceTree = "<group>"; };
+		68A7CC5A179195D300248866 /* Screen19-Sandsturm-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandsturm-BG.png"; sourceTree = "<group>"; };
+		68A7CC5B179195D300248866 /* Screen19-Sandsturm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandsturm.png"; sourceTree = "<group>"; };
+		68A7CC5C179195D300248866 /* Screen20-SandsturmA-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen20-SandsturmA-BG.png"; sourceTree = "<group>"; };
+		68A7CC5E179195D300248866 /* Screen21-Eraser2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Eraser2.png"; sourceTree = "<group>"; };
+		68A7CC5F179195D300248866 /* Screen21-RAETSEL-3-vIda_mitKorken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_mitKorken.png"; sourceTree = "<group>"; };
+		68A7CC60179195D300248866 /* Screen21-RAETSEL-3-vIda_ohneKorken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_ohneKorken.png"; sourceTree = "<group>"; };
+		68A7CC61179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_Sand_k.png"; sourceTree = "<group>"; };
+		68A7CC62179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_kk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_Sand_kk.png"; sourceTree = "<group>"; };
+		68A7CC63179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_Sand.png"; sourceTree = "<group>"; };
+		68A7CC64179195D300248866 /* Screen22-Wuenschelorfdorf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen22-Wuenschelorfdorf.png"; sourceTree = "<group>"; };
+		68A7CC65179195D300248866 /* Screen23-BelohnungFLASCHE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen23-BelohnungFLASCHE.png"; sourceTree = "<group>"; };
+		68A7CC66179195D300248866 /* Screen23-FLASCHE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen23-FLASCHE.png"; sourceTree = "<group>"; };
+		68A7CC67179195D300248866 /* Screen26-Groelmverblasst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen26-Groelmverblasst.png"; sourceTree = "<group>"; };
+		68A7CCCA1791965200248866 /* Eselsohr2_959k5_708k5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eselsohr2_959k5_708k5.png; sourceTree = "<group>"; };
+		68A7CCCB1791965200248866 /* Inventar-Aug1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Aug1.png"; sourceTree = "<group>"; };
+		68A7CCCC1791965200248866 /* Inventar-Aug2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Aug2.png"; sourceTree = "<group>"; };
+		68A7CCCD1791965200248866 /* Inventar-Aug3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Aug3.png"; sourceTree = "<group>"; };
+		68A7CCCE1791965200248866 /* Inventar-Flasche1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Flasche1.png"; sourceTree = "<group>"; };
+		68A7CCCF1791965200248866 /* Inventar-Flasche2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Flasche2.png"; sourceTree = "<group>"; };
+		68A7CCD01791965200248866 /* Inventar-Flasche3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Flasche3.png"; sourceTree = "<group>"; };
+		68A7CCD11791965200248866 /* Inventar-Muell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Muell.png"; sourceTree = "<group>"; };
+		68A7CCD21791965200248866 /* Inventar-Pilz1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Pilz1.png"; sourceTree = "<group>"; };
+		68A7CCD31791965200248866 /* Inventar-Pilz2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Pilz2.png"; sourceTree = "<group>"; };
+		68A7CCD41791965200248866 /* Inventar-Pilz3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inventar-Pilz3.png"; sourceTree = "<group>"; };
+		68A7CCD51791965200248866 /* Inventarleiste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inventarleiste.png; sourceTree = "<group>"; };
+		68A7CCE31791968D00248866 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		68A7CCE41791968D00248866 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		68A7CCE51791968D00248866 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		68A7CCE61791968D00248866 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		68A7CCE71791968D00248866 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		68A7CCE81791968D00248866 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		68A7CCE91791968D00248866 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		68A7CCEA1791968D00248866 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		68A7CCEB1791968D00248866 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		68A7CCEC1791968D00248866 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		68A7CCF8179196A700248866 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		68A7CCF9179196A700248866 /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		68A7CCFA179196A700248866 /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		68A7CCFB179196A700248866 /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		68A7CCFC179196A700248866 /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		68A7CCFD179196A700248866 /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		68A7CCFE179196A700248866 /* 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26.png; sourceTree = "<group>"; };
+		68A7CCFF179196A700248866 /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 27.png; sourceTree = "<group>"; };
+		68A7CD00179196A700248866 /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28.png; sourceTree = "<group>"; };
+		68A7CD0B179196B400248866 /* 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30.png; sourceTree = "<group>"; };
+		68A7CD0C179196B400248866 /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 31.png; sourceTree = "<group>"; };
+		68A7CD0D179196B400248866 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		68A7CD0E179196B400248866 /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33.png; sourceTree = "<group>"; };
+		68A7CD0F179196B400248866 /* 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34.png; sourceTree = "<group>"; };
+		68A7CD10179196B400248866 /* 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 35.png; sourceTree = "<group>"; };
+		68A7CD11179196B400248866 /* 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36.png; sourceTree = "<group>"; };
+		68A7CD12179196B400248866 /* 37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 37.png; sourceTree = "<group>"; };
+		68A7CD13179196B400248866 /* 38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 38.png; sourceTree = "<group>"; };
+		68A7CD14179196B400248866 /* 39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 39.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,60 +475,68 @@
 				68A7CB90179190D900248866 /* ViewController.h */,
 				68A7CB91179190D900248866 /* ViewController.m */,
 				68A7CB79179190D800248866 /* Supporting Files */,
-				68A7CBA8179193E400248866 /* ScreenEighteenViewController.h */,
-				68A7CBA9179193E400248866 /* ScreenEighteenViewController.m */,
-				68A7CBAA179193E400248866 /* ScreenEightViewController.h */,
-				68A7CBAB179193E400248866 /* ScreenEightViewController.m */,
-				68A7CBAC179193E400248866 /* ScreenElevenViewController.h */,
-				68A7CBAD179193E400248866 /* ScreenElevenViewController.m */,
-				68A7CBAE179193E400248866 /* ScreenFifteenViewController.h */,
-				68A7CBAF179193E400248866 /* ScreenFifteenViewController.m */,
-				68A7CBB0179193E400248866 /* ScreenFourteenViewController.h */,
-				68A7CBB1179193E400248866 /* ScreenFourteenViewController.m */,
-				68A7CBB2179193E400248866 /* ScreenFourViewController.h */,
-				68A7CBB3179193E400248866 /* ScreenFourViewController.m */,
-				68A7CBB4179193E400248866 /* ScreenNineteenViewController.h */,
-				68A7CBB5179193E400248866 /* ScreenNineteenViewController.m */,
-				68A7CBB6179193E400248866 /* ScreenNineViewController.h */,
-				68A7CBB7179193E400248866 /* ScreenNineViewController.m */,
-				68A7CBB8179193E400248866 /* ScreenOneViewController.h */,
-				68A7CBB9179193E400248866 /* ScreenOneViewController.m */,
-				68A7CBBA179193E400248866 /* ScreenPageViewController.h */,
-				68A7CBBB179193E400248866 /* ScreenPageViewController.m */,
-				68A7CBBC179193E400248866 /* ScreenSevenViewController.h */,
-				68A7CBBD179193E400248866 /* ScreenSevenViewController.m */,
-				68A7CBBE179193E400248866 /* ScreenSixteenViewController.h */,
-				68A7CBBF179193E400248866 /* ScreenSixteenViewController.m */,
-				68A7CBC0179193E400248866 /* ScreenSixViewController.h */,
-				68A7CBC1179193E500248866 /* ScreenSixViewController.m */,
-				68A7CBC2179193E500248866 /* ScreenTenViewController.h */,
-				68A7CBC3179193E500248866 /* ScreenTenViewController.m */,
-				68A7CBC4179193E500248866 /* ScreenThirteenViewController.h */,
-				68A7CBC5179193E500248866 /* ScreenThirteenViewController.m */,
-				68A7CBC6179193E500248866 /* ScreenThreeViewController.h */,
-				68A7CBC7179193E500248866 /* ScreenThreeViewController.m */,
-				68A7CBC8179193E500248866 /* ScreenTwelveViewController.h */,
-				68A7CBC9179193E500248866 /* ScreenTwelveViewController.m */,
-				68A7CBCA179193E500248866 /* ScreenTwentyfiveViewController.h */,
-				68A7CBCB179193E500248866 /* ScreenTwentyfiveViewController.m */,
-				68A7CBCC179193E500248866 /* ScreenTwentyoneViewController.h */,
-				68A7CBCD179193E500248866 /* ScreenTwentyoneViewController.m */,
-				68A7CBCE179193E500248866 /* ScreenTwentySevenViewController.h */,
-				68A7CBCF179193E500248866 /* ScreenTwentySevenViewController.m */,
-				68A7CBD0179193E500248866 /* ScreenTwentysixViewController.h */,
-				68A7CBD1179193E500248866 /* ScreenTwentysixViewController.m */,
-				68A7CBD2179193E500248866 /* ScreenTwentythreeViewController.h */,
-				68A7CBD3179193E500248866 /* ScreenTwentythreeViewController.m */,
-				68A7CBD4179193E500248866 /* ScreenTwentytwoViewController.h */,
-				68A7CBD5179193E500248866 /* ScreenTwentytwoViewController.m */,
-				68A7CBD6179193E500248866 /* ScreenTwentyViewController.h */,
-				68A7CBD7179193E500248866 /* ScreenTwentyViewController.m */,
-				68A7CBD8179193E500248866 /* ScreenTwoViewController.h */,
-				68A7CBD9179193E500248866 /* ScreenTwoViewController.m */,
 				68A7CBDA179193E500248866 /* ScreenViewController.h */,
 				68A7CBDB179193E500248866 /* ScreenViewController.m */,
+				68A7CBB8179193E400248866 /* ScreenOneViewController.h */,
+				68A7CBB9179193E400248866 /* ScreenOneViewController.m */,
+				68A7CBD8179193E500248866 /* ScreenTwoViewController.h */,
+				68A7CBD9179193E500248866 /* ScreenTwoViewController.m */,
+				68A7CBC6179193E500248866 /* ScreenThreeViewController.h */,
+				68A7CBC7179193E500248866 /* ScreenThreeViewController.m */,
+				68A7CBB2179193E400248866 /* ScreenFourViewController.h */,
+				68A7CBB3179193E400248866 /* ScreenFourViewController.m */,
+				68A7CBC0179193E400248866 /* ScreenSixViewController.h */,
+				68A7CBC1179193E500248866 /* ScreenSixViewController.m */,
+				68A7CBBC179193E400248866 /* ScreenSevenViewController.h */,
+				68A7CBBD179193E400248866 /* ScreenSevenViewController.m */,
+				68A7CC011791954D00248866 /* MushroomView.h */,
+				68A7CC021791954D00248866 /* MushroomView.m */,
+				68A7CBAA179193E400248866 /* ScreenEightViewController.h */,
+				68A7CBAB179193E400248866 /* ScreenEightViewController.m */,
+				68A7CBB6179193E400248866 /* ScreenNineViewController.h */,
+				68A7CBB7179193E400248866 /* ScreenNineViewController.m */,
+				68A7CBC2179193E500248866 /* ScreenTenViewController.h */,
+				68A7CBC3179193E500248866 /* ScreenTenViewController.m */,
 				68A7CBDC179193E500248866 /* StockItemView.h */,
 				68A7CBDD179193E500248866 /* StockItemView.m */,
+				68A7CBAC179193E400248866 /* ScreenElevenViewController.h */,
+				68A7CBAD179193E400248866 /* ScreenElevenViewController.m */,
+				68A7CBC8179193E500248866 /* ScreenTwelveViewController.h */,
+				68A7CBC9179193E500248866 /* ScreenTwelveViewController.m */,
+				68A7CBC4179193E500248866 /* ScreenThirteenViewController.h */,
+				68A7CBC5179193E500248866 /* ScreenThirteenViewController.m */,
+				68A7CBB0179193E400248866 /* ScreenFourteenViewController.h */,
+				68A7CBB1179193E400248866 /* ScreenFourteenViewController.m */,
+				68A7CBFD1791954A00248866 /* EyeView.h */,
+				68A7CBFE1791954B00248866 /* EyeView.m */,
+				68A7CBFF1791954B00248866 /* LabyrinthView.h */,
+				68A7CC001791954C00248866 /* LabyrinthView.m */,
+				68A7CBAE179193E400248866 /* ScreenFifteenViewController.h */,
+				68A7CBAF179193E400248866 /* ScreenFifteenViewController.m */,
+				68A7CBBE179193E400248866 /* ScreenSixteenViewController.h */,
+				68A7CBBF179193E400248866 /* ScreenSixteenViewController.m */,
+				68A7CBA8179193E400248866 /* ScreenEighteenViewController.h */,
+				68A7CBA9179193E400248866 /* ScreenEighteenViewController.m */,
+				68A7CBB4179193E400248866 /* ScreenNineteenViewController.h */,
+				68A7CBB5179193E400248866 /* ScreenNineteenViewController.m */,
+				68A7CBD6179193E500248866 /* ScreenTwentyViewController.h */,
+				68A7CBD7179193E500248866 /* ScreenTwentyViewController.m */,
+				68A7CBCC179193E500248866 /* ScreenTwentyoneViewController.h */,
+				68A7CBCD179193E500248866 /* ScreenTwentyoneViewController.m */,
+				68A7CBF91791954800248866 /* CorkView.h */,
+				68A7CBFA1791954800248866 /* CorkView.m */,
+				68A7CBFB1791954900248866 /* EraserView.h */,
+				68A7CBFC1791954A00248866 /* EraserView.m */,
+				68A7CBD4179193E500248866 /* ScreenTwentytwoViewController.h */,
+				68A7CBD5179193E500248866 /* ScreenTwentytwoViewController.m */,
+				68A7CBD2179193E500248866 /* ScreenTwentythreeViewController.h */,
+				68A7CBD3179193E500248866 /* ScreenTwentythreeViewController.m */,
+				68A7CBCA179193E500248866 /* ScreenTwentyfiveViewController.h */,
+				68A7CBCB179193E500248866 /* ScreenTwentyfiveViewController.m */,
+				68A7CBD0179193E500248866 /* ScreenTwentysixViewController.h */,
+				68A7CBD1179193E500248866 /* ScreenTwentysixViewController.m */,
+				68A7CBCE179193E500248866 /* ScreenTwentySevenViewController.h */,
+				68A7CBCF179193E500248866 /* ScreenTwentySevenViewController.m */,
 			);
 			path = Anderswo;
 			sourceTree = "<group>";
@@ -254,6 +544,8 @@
 		68A7CB79179190D800248866 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68A7CCC91791961D00248866 /* Sound */,
+				68A7CC081791958B00248866 /* Images */,
 				68A7CB7A179190D800248866 /* Anderswo-Info.plist */,
 				68A7CB7B179190D800248866 /* InfoPlist.strings */,
 				68A7CB7E179190D800248866 /* main.m */,
@@ -276,6 +568,179 @@
 			);
 			name = TestFlightSDK1.2.6;
 			path = ../../../../../Downloads/TestFlightSDK1.2.6;
+			sourceTree = "<group>";
+		};
+		68A7CC081791958B00248866 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				68A7CD0A179196A900248866 /* 3 */,
+				68A7CCF71791969800248866 /* 2 */,
+				68A7CCE21791967C00248866 /* 1 */,
+				68A7CCCA1791965200248866 /* Eselsohr2_959k5_708k5.png */,
+				68A7CCCB1791965200248866 /* Inventar-Aug1.png */,
+				68A7CCCC1791965200248866 /* Inventar-Aug2.png */,
+				68A7CCCD1791965200248866 /* Inventar-Aug3.png */,
+				68A7CCCE1791965200248866 /* Inventar-Flasche1.png */,
+				68A7CCCF1791965200248866 /* Inventar-Flasche2.png */,
+				68A7CCD01791965200248866 /* Inventar-Flasche3.png */,
+				68A7CCD11791965200248866 /* Inventar-Muell.png */,
+				68A7CCD21791965200248866 /* Inventar-Pilz1.png */,
+				68A7CCD31791965200248866 /* Inventar-Pilz2.png */,
+				68A7CCD41791965200248866 /* Inventar-Pilz3.png */,
+				68A7CCD51791965200248866 /* Inventarleiste.png */,
+				68A7CC09179195D200248866 /* Screen01-Titelscreen.png */,
+				68A7CC0A179195D200248866 /* Screen02-Stadt-wischbar_HG.png */,
+				68A7CC0B179195D200248866 /* Screen02-Stadt-wischbar_stadt.png */,
+				68A7CC0C179195D200248866 /* Screen02-Stadtwischbar.png */,
+				68A7CC0D179195D200248866 /* Screen03a-Kiste1.png */,
+				68A7CC0E179195D200248866 /* Screen03a-Kiste2.png */,
+				68A7CC0F179195D200248866 /* Screen03a-Kiste3.png */,
+				68A7CC10179195D200248866 /* Screen03a-Kiste4.png */,
+				68A7CC11179195D200248866 /* Screen03a.jpg */,
+				68A7CC12179195D200248866 /* Screen03b-Kistenweg Kopie.png */,
+				68A7CC13179195D200248866 /* Screen03b-Kistenweg.png */,
+				68A7CC14179195D200248866 /* Screen03b.jpg */,
+				68A7CC15179195D200248866 /* Screen04a-Fressgroelm.png */,
+				68A7CC16179195D200248866 /* Screen04a+b+c.png */,
+				68A7CC17179195D200248866 /* Screen04aa-Groelmdrohend.png */,
+				68A7CC18179195D200248866 /* Screen04aa-Kind.png */,
+				68A7CC19179195D200248866 /* Screen04b-Schluckgroelm.png */,
+				68A7CC1A179195D200248866 /* Screen04c-Kind.png */,
+				68A7CC1B179195D200248866 /* Screen04c-Spuckgroelm.png */,
+				68A7CC1C179195D200248866 /* Screen06-Wald-Cheforf.png */,
+				68A7CC1D179195D300248866 /* Screen06-Wald-Groelm.png */,
+				68A7CC1E179195D300248866 /* Screen06-Wald-help.png */,
+				68A7CC1F179195D300248866 /* Screen06-Wald-Kind.png */,
+				68A7CC20179195D300248866 /* Screen06-Wald-orfwelt.png */,
+				68A7CC21179195D300248866 /* Screen07-RAETSEL-1-1.png */,
+				68A7CC22179195D300248866 /* Screen07-RAETSEL-1-2.png */,
+				68A7CC23179195D300248866 /* Screen07-RAETSEL-1-Button.png */,
+				68A7CC24179195D300248866 /* Screen07-RAETSEL-1-ohnepilzkappen.png */,
+				68A7CC25179195D300248866 /* Screen08-Wald-orfwelt.png */,
+				68A7CC26179195D300248866 /* Screen09-Belohnung.png */,
+				68A7CC27179195D300248866 /* Screen09-BelohnungPilz-pinki.png */,
+				68A7CC28179195D300248866 /* Screen09-BelohnungPilz-scharlach.png */,
+				68A7CC29179195D300248866 /* Screen09-BelohnungPilz-zinnober.png */,
+				68A7CC2A179195D300248866 /* Screen09-BelohnungPilz.png */,
+				68A7CC2B179195D300248866 /* Screen11-groelm.png */,
+				68A7CC2C179195D300248866 /* Screen11-weitergehts.png */,
+				68A7CC2D179195D300248866 /* Screen12-drohgroelm.png */,
+				68A7CC2E179195D300248866 /* Screen12-Kind.png */,
+				68A7CC2F179195D300248866 /* Screen12b-schluckgroelm.png */,
+				68A7CC30179195D300248866 /* Screen12c-klettergroelm.png */,
+				68A7CC31179195D300248866 /* Screen12c-spuckgroelm.png */,
+				68A7CC32179195D300248866 /* Screen13-BG.png */,
+				68A7CC33179195D300248866 /* Screen13-Chefwasserorf.png */,
+				68A7CC34179195D300248866 /* Screen13-Kind-vIda.png */,
+				68A7CC35179195D300248866 /* Screen13-UBoot.png */,
+				68A7CC36179195D300248866 /* Screen13-vorderesWasser.png */,
+				68A7CC37179195D300248866 /* Screen14-Labyrinth-BW.png */,
+				68A7CC38179195D300248866 /* Screen14-Labyrinth.png */,
+				68A7CC39179195D300248866 /* Screen14-Labyrinth+Wasser.png */,
+				68A7CC3A179195D300248866 /* Screen14-Neunauge.png */,
+				68A7CC3B179195D300248866 /* Screen14-RAETSEL-2-1.png */,
+				68A7CC3C179195D300248866 /* Screen14-RAETSEL-2-2.png */,
+				68A7CC3D179195D300248866 /* Screen14-UBoot.png */,
+				68A7CC3E179195D300248866 /* Screen14-Wasserorfkleines.png */,
+				68A7CC3F179195D300248866 /* Screen15-angelorf.png */,
+				68A7CC40179195D300248866 /* Screen15-fischdieb.png */,
+				68A7CC41179195D300248866 /* Screen15-gerettetesKleines.png */,
+				68A7CC42179195D300248866 /* Screen15-groelm.png */,
+				68A7CC43179195D300248866 /* Screen15-haengeorf.png */,
+				68A7CC44179195D300248866 /* Screen15-kind.png */,
+				68A7CC45179195D300248866 /* Screen15-koenigorf.png */,
+				68A7CC46179195D300248866 /* Screen15-netzorf.png */,
+				68A7CC47179195D300248866 /* Screen15-schwimmorf.png */,
+				68A7CC48179195D300248866 /* Screen15-spaehorf.png */,
+				68A7CC49179195D300248866 /* Screen15-tauchorf.png */,
+				68A7CC4A179195D300248866 /* Screen15-ubotreitorf.png */,
+				68A7CC4B179195D300248866 /* Screen15-Wasserorfwelt-bg.png */,
+				68A7CC4C179195D300248866 /* Screen15-Wasserorfwelt.png */,
+				68A7CC4D179195D300248866 /* Screen16-Belohnung-punkteauge.png */,
+				68A7CC4E179195D300248866 /* Screen16-Belohnung-spiralauge.png */,
+				68A7CC4F179195D300248866 /* Screen16-Belohnung-tuerkischauge.png */,
+				68A7CC50179195D300248866 /* Screen16-BelohnungAUGE.png */,
+				68A7CC51179195D300248866 /* Screen17b-Groelm.png */,
+				68A7CC52179195D300248866 /* Screen17b-letztesAbenteuer.png */,
+				68A7CC53179195D300248866 /* Screen18-Groelm.png */,
+				68A7CC54179195D300248866 /* Screen18-Kind.png */,
+				68A7CC55179195D300248866 /* Screen18a-Klettergroelm.png */,
+				68A7CC56179195D300248866 /* Screen18b-Groelmgeschluckt.png */,
+				68A7CC57179195D300248866 /* Screen18c-Groelmausspuck.png */,
+				68A7CC58179195D300248866 /* Screen19-Sandgroelm.png */,
+				68A7CC59179195D300248866 /* Screen19-Sandkind.png */,
+				68A7CC5A179195D300248866 /* Screen19-Sandsturm-BG.png */,
+				68A7CC5B179195D300248866 /* Screen19-Sandsturm.png */,
+				68A7CC5C179195D300248866 /* Screen20-SandsturmA-BG.png */,
+				68A7CC5E179195D300248866 /* Screen21-Eraser2.png */,
+				68A7CC5F179195D300248866 /* Screen21-RAETSEL-3-vIda_mitKorken.png */,
+				68A7CC60179195D300248866 /* Screen21-RAETSEL-3-vIda_ohneKorken.png */,
+				68A7CC61179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_k.png */,
+				68A7CC62179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_kk.png */,
+				68A7CC63179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand.png */,
+				68A7CC64179195D300248866 /* Screen22-Wuenschelorfdorf.png */,
+				68A7CC65179195D300248866 /* Screen23-BelohnungFLASCHE.png */,
+				68A7CC66179195D300248866 /* Screen23-FLASCHE.png */,
+				68A7CC67179195D300248866 /* Screen26-Groelmverblasst.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		68A7CCC91791961D00248866 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		68A7CCE21791967C00248866 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				68A7CCE31791968D00248866 /* 0.png */,
+				68A7CCE41791968D00248866 /* 1.png */,
+				68A7CCE51791968D00248866 /* 2.png */,
+				68A7CCE61791968D00248866 /* 3.png */,
+				68A7CCE71791968D00248866 /* 4.png */,
+				68A7CCE81791968D00248866 /* 5.png */,
+				68A7CCE91791968D00248866 /* 6.png */,
+				68A7CCEA1791968D00248866 /* 7.png */,
+				68A7CCEB1791968D00248866 /* 8.png */,
+				68A7CCEC1791968D00248866 /* 9.png */,
+			);
+			name = 1;
+			sourceTree = "<group>";
+		};
+		68A7CCF71791969800248866 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				68A7CCF8179196A700248866 /* 20.png */,
+				68A7CCF9179196A700248866 /* 21.png */,
+				68A7CCFA179196A700248866 /* 22.png */,
+				68A7CCFB179196A700248866 /* 23.png */,
+				68A7CCFC179196A700248866 /* 24.png */,
+				68A7CCFD179196A700248866 /* 25.png */,
+				68A7CCFE179196A700248866 /* 26.png */,
+				68A7CCFF179196A700248866 /* 27.png */,
+				68A7CD00179196A700248866 /* 28.png */,
+			);
+			name = 2;
+			sourceTree = "<group>";
+		};
+		68A7CD0A179196A900248866 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				68A7CD0B179196B400248866 /* 30.png */,
+				68A7CD0C179196B400248866 /* 31.png */,
+				68A7CD0D179196B400248866 /* 32.png */,
+				68A7CD0E179196B400248866 /* 33.png */,
+				68A7CD0F179196B400248866 /* 34.png */,
+				68A7CD10179196B400248866 /* 35.png */,
+				68A7CD11179196B400248866 /* 36.png */,
+				68A7CD12179196B400248866 /* 37.png */,
+				68A7CD13179196B400248866 /* 38.png */,
+				68A7CD14179196B400248866 /* 39.png */,
+			);
+			name = 3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +804,141 @@
 				68A7CB9B179190FD00248866 /* AppIcon_Ipad_Retina.png in Resources */,
 				68A7CBA41791914900248866 /* README.md in Resources */,
 				68A7CBA51791914900248866 /* release_notes.md in Resources */,
+				68A7CC69179195D300248866 /* Screen01-Titelscreen.png in Resources */,
+				68A7CC6A179195D300248866 /* Screen02-Stadt-wischbar_HG.png in Resources */,
+				68A7CC6B179195D300248866 /* Screen02-Stadt-wischbar_stadt.png in Resources */,
+				68A7CC6C179195D300248866 /* Screen02-Stadtwischbar.png in Resources */,
+				68A7CC6D179195D300248866 /* Screen03a-Kiste1.png in Resources */,
+				68A7CC6E179195D300248866 /* Screen03a-Kiste2.png in Resources */,
+				68A7CC6F179195D300248866 /* Screen03a-Kiste3.png in Resources */,
+				68A7CC70179195D300248866 /* Screen03a-Kiste4.png in Resources */,
+				68A7CC71179195D300248866 /* Screen03a.jpg in Resources */,
+				68A7CC72179195D300248866 /* Screen03b-Kistenweg Kopie.png in Resources */,
+				68A7CC73179195D300248866 /* Screen03b-Kistenweg.png in Resources */,
+				68A7CC74179195D300248866 /* Screen03b.jpg in Resources */,
+				68A7CC75179195D300248866 /* Screen04a-Fressgroelm.png in Resources */,
+				68A7CC76179195D300248866 /* Screen04a+b+c.png in Resources */,
+				68A7CC77179195D300248866 /* Screen04aa-Groelmdrohend.png in Resources */,
+				68A7CC78179195D300248866 /* Screen04aa-Kind.png in Resources */,
+				68A7CC79179195D300248866 /* Screen04b-Schluckgroelm.png in Resources */,
+				68A7CC7A179195D300248866 /* Screen04c-Kind.png in Resources */,
+				68A7CC7B179195D300248866 /* Screen04c-Spuckgroelm.png in Resources */,
+				68A7CC7C179195D300248866 /* Screen06-Wald-Cheforf.png in Resources */,
+				68A7CC7D179195D300248866 /* Screen06-Wald-Groelm.png in Resources */,
+				68A7CC7E179195D300248866 /* Screen06-Wald-help.png in Resources */,
+				68A7CC7F179195D300248866 /* Screen06-Wald-Kind.png in Resources */,
+				68A7CC80179195D300248866 /* Screen06-Wald-orfwelt.png in Resources */,
+				68A7CC81179195D300248866 /* Screen07-RAETSEL-1-1.png in Resources */,
+				68A7CC82179195D300248866 /* Screen07-RAETSEL-1-2.png in Resources */,
+				68A7CC83179195D300248866 /* Screen07-RAETSEL-1-Button.png in Resources */,
+				68A7CC84179195D300248866 /* Screen07-RAETSEL-1-ohnepilzkappen.png in Resources */,
+				68A7CC85179195D300248866 /* Screen08-Wald-orfwelt.png in Resources */,
+				68A7CC86179195D300248866 /* Screen09-Belohnung.png in Resources */,
+				68A7CC87179195D300248866 /* Screen09-BelohnungPilz-pinki.png in Resources */,
+				68A7CC88179195D300248866 /* Screen09-BelohnungPilz-scharlach.png in Resources */,
+				68A7CC89179195D300248866 /* Screen09-BelohnungPilz-zinnober.png in Resources */,
+				68A7CC8A179195D300248866 /* Screen09-BelohnungPilz.png in Resources */,
+				68A7CC8B179195D300248866 /* Screen11-groelm.png in Resources */,
+				68A7CC8C179195D300248866 /* Screen11-weitergehts.png in Resources */,
+				68A7CC8D179195D300248866 /* Screen12-drohgroelm.png in Resources */,
+				68A7CC8E179195D300248866 /* Screen12-Kind.png in Resources */,
+				68A7CC8F179195D300248866 /* Screen12b-schluckgroelm.png in Resources */,
+				68A7CC90179195D300248866 /* Screen12c-klettergroelm.png in Resources */,
+				68A7CC91179195D300248866 /* Screen12c-spuckgroelm.png in Resources */,
+				68A7CC92179195D300248866 /* Screen13-BG.png in Resources */,
+				68A7CC93179195D300248866 /* Screen13-Chefwasserorf.png in Resources */,
+				68A7CC94179195D300248866 /* Screen13-Kind-vIda.png in Resources */,
+				68A7CC95179195D300248866 /* Screen13-UBoot.png in Resources */,
+				68A7CC96179195D300248866 /* Screen13-vorderesWasser.png in Resources */,
+				68A7CC97179195D300248866 /* Screen14-Labyrinth-BW.png in Resources */,
+				68A7CC98179195D300248866 /* Screen14-Labyrinth.png in Resources */,
+				68A7CC99179195D300248866 /* Screen14-Labyrinth+Wasser.png in Resources */,
+				68A7CC9A179195D300248866 /* Screen14-Neunauge.png in Resources */,
+				68A7CC9B179195D300248866 /* Screen14-RAETSEL-2-1.png in Resources */,
+				68A7CC9C179195D300248866 /* Screen14-RAETSEL-2-2.png in Resources */,
+				68A7CC9D179195D300248866 /* Screen14-UBoot.png in Resources */,
+				68A7CC9E179195D300248866 /* Screen14-Wasserorfkleines.png in Resources */,
+				68A7CC9F179195D300248866 /* Screen15-angelorf.png in Resources */,
+				68A7CCA0179195D300248866 /* Screen15-fischdieb.png in Resources */,
+				68A7CCA1179195D300248866 /* Screen15-gerettetesKleines.png in Resources */,
+				68A7CCA2179195D300248866 /* Screen15-groelm.png in Resources */,
+				68A7CCA3179195D300248866 /* Screen15-haengeorf.png in Resources */,
+				68A7CCA4179195D300248866 /* Screen15-kind.png in Resources */,
+				68A7CCA5179195D300248866 /* Screen15-koenigorf.png in Resources */,
+				68A7CCA6179195D300248866 /* Screen15-netzorf.png in Resources */,
+				68A7CCA7179195D300248866 /* Screen15-schwimmorf.png in Resources */,
+				68A7CCA8179195D300248866 /* Screen15-spaehorf.png in Resources */,
+				68A7CCA9179195D300248866 /* Screen15-tauchorf.png in Resources */,
+				68A7CCAA179195D300248866 /* Screen15-ubotreitorf.png in Resources */,
+				68A7CCAB179195D300248866 /* Screen15-Wasserorfwelt-bg.png in Resources */,
+				68A7CCAC179195D300248866 /* Screen15-Wasserorfwelt.png in Resources */,
+				68A7CCAD179195D300248866 /* Screen16-Belohnung-punkteauge.png in Resources */,
+				68A7CCAE179195D300248866 /* Screen16-Belohnung-spiralauge.png in Resources */,
+				68A7CCAF179195D300248866 /* Screen16-Belohnung-tuerkischauge.png in Resources */,
+				68A7CCB0179195D300248866 /* Screen16-BelohnungAUGE.png in Resources */,
+				68A7CCB1179195D300248866 /* Screen17b-Groelm.png in Resources */,
+				68A7CCB2179195D300248866 /* Screen17b-letztesAbenteuer.png in Resources */,
+				68A7CCB3179195D300248866 /* Screen18-Groelm.png in Resources */,
+				68A7CCB4179195D300248866 /* Screen18-Kind.png in Resources */,
+				68A7CCB5179195D300248866 /* Screen18a-Klettergroelm.png in Resources */,
+				68A7CCB6179195D300248866 /* Screen18b-Groelmgeschluckt.png in Resources */,
+				68A7CCB7179195D300248866 /* Screen18c-Groelmausspuck.png in Resources */,
+				68A7CCB8179195D300248866 /* Screen19-Sandgroelm.png in Resources */,
+				68A7CCB9179195D300248866 /* Screen19-Sandkind.png in Resources */,
+				68A7CCBA179195D300248866 /* Screen19-Sandsturm-BG.png in Resources */,
+				68A7CCBB179195D300248866 /* Screen19-Sandsturm.png in Resources */,
+				68A7CCBC179195D300248866 /* Screen20-SandsturmA-BG.png in Resources */,
+				68A7CCBE179195D300248866 /* Screen21-Eraser2.png in Resources */,
+				68A7CCBF179195D300248866 /* Screen21-RAETSEL-3-vIda_mitKorken.png in Resources */,
+				68A7CCC0179195D300248866 /* Screen21-RAETSEL-3-vIda_ohneKorken.png in Resources */,
+				68A7CCC1179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_k.png in Resources */,
+				68A7CCC2179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand_kk.png in Resources */,
+				68A7CCC3179195D300248866 /* Screen21-RAETSEL-3-vIda_Sand.png in Resources */,
+				68A7CCC4179195D300248866 /* Screen22-Wuenschelorfdorf.png in Resources */,
+				68A7CCC5179195D300248866 /* Screen23-BelohnungFLASCHE.png in Resources */,
+				68A7CCC6179195D300248866 /* Screen23-FLASCHE.png in Resources */,
+				68A7CCC7179195D300248866 /* Screen26-Groelmverblasst.png in Resources */,
+				68A7CCD61791965200248866 /* Eselsohr2_959k5_708k5.png in Resources */,
+				68A7CCD71791965200248866 /* Inventar-Aug1.png in Resources */,
+				68A7CCD81791965200248866 /* Inventar-Aug2.png in Resources */,
+				68A7CCD91791965200248866 /* Inventar-Aug3.png in Resources */,
+				68A7CCDA1791965200248866 /* Inventar-Flasche1.png in Resources */,
+				68A7CCDB1791965200248866 /* Inventar-Flasche2.png in Resources */,
+				68A7CCDC1791965200248866 /* Inventar-Flasche3.png in Resources */,
+				68A7CCDD1791965200248866 /* Inventar-Muell.png in Resources */,
+				68A7CCDE1791965200248866 /* Inventar-Pilz1.png in Resources */,
+				68A7CCDF1791965200248866 /* Inventar-Pilz2.png in Resources */,
+				68A7CCE01791965200248866 /* Inventar-Pilz3.png in Resources */,
+				68A7CCE11791965200248866 /* Inventarleiste.png in Resources */,
+				68A7CCED1791968D00248866 /* 0.png in Resources */,
+				68A7CCEE1791968D00248866 /* 1.png in Resources */,
+				68A7CCEF1791968D00248866 /* 2.png in Resources */,
+				68A7CCF01791968D00248866 /* 3.png in Resources */,
+				68A7CCF11791968D00248866 /* 4.png in Resources */,
+				68A7CCF21791968D00248866 /* 5.png in Resources */,
+				68A7CCF31791968D00248866 /* 6.png in Resources */,
+				68A7CCF41791968D00248866 /* 7.png in Resources */,
+				68A7CCF51791968D00248866 /* 8.png in Resources */,
+				68A7CCF61791968D00248866 /* 9.png in Resources */,
+				68A7CD01179196A700248866 /* 20.png in Resources */,
+				68A7CD02179196A700248866 /* 21.png in Resources */,
+				68A7CD03179196A700248866 /* 22.png in Resources */,
+				68A7CD04179196A700248866 /* 23.png in Resources */,
+				68A7CD05179196A700248866 /* 24.png in Resources */,
+				68A7CD06179196A700248866 /* 25.png in Resources */,
+				68A7CD07179196A700248866 /* 26.png in Resources */,
+				68A7CD08179196A700248866 /* 27.png in Resources */,
+				68A7CD09179196A700248866 /* 28.png in Resources */,
+				68A7CD15179196B400248866 /* 30.png in Resources */,
+				68A7CD16179196B400248866 /* 31.png in Resources */,
+				68A7CD17179196B400248866 /* 32.png in Resources */,
+				68A7CD18179196B400248866 /* 33.png in Resources */,
+				68A7CD19179196B400248866 /* 34.png in Resources */,
+				68A7CD1A179196B400248866 /* 35.png in Resources */,
+				68A7CD1B179196B400248866 /* 36.png in Resources */,
+				68A7CD1C179196B400248866 /* 37.png in Resources */,
+				68A7CD1D179196B400248866 /* 38.png in Resources */,
+				68A7CD1E179196B400248866 /* 39.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +961,6 @@
 				68A7CBE4179193E500248866 /* ScreenNineteenViewController.m in Sources */,
 				68A7CBE5179193E500248866 /* ScreenNineViewController.m in Sources */,
 				68A7CBE6179193E500248866 /* ScreenOneViewController.m in Sources */,
-				68A7CBE7179193E500248866 /* ScreenPageViewController.m in Sources */,
 				68A7CBE8179193E500248866 /* ScreenSevenViewController.m in Sources */,
 				68A7CBE9179193E500248866 /* ScreenSixteenViewController.m in Sources */,
 				68A7CBEA179193E500248866 /* ScreenSixViewController.m in Sources */,
@@ -379,6 +978,11 @@
 				68A7CBF6179193E500248866 /* ScreenTwoViewController.m in Sources */,
 				68A7CBF7179193E500248866 /* ScreenViewController.m in Sources */,
 				68A7CBF8179193E500248866 /* StockItemView.m in Sources */,
+				68A7CC031791954E00248866 /* CorkView.m in Sources */,
+				68A7CC041791954E00248866 /* EraserView.m in Sources */,
+				68A7CC051791954E00248866 /* EyeView.m in Sources */,
+				68A7CC061791954E00248866 /* LabyrinthView.m in Sources */,
+				68A7CC071791954E00248866 /* MushroomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
