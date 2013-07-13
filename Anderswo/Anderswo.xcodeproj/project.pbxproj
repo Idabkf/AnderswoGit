@@ -232,6 +232,17 @@
 		68A7CD6E17919D7700248866 /* Wünschel Orfe 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD6117919D7700248866 /* Wünschel Orfe 4.m4a */; };
 		68A7CD6F17919D7700248866 /* Wünschel Orfe 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD6217919D7700248866 /* Wünschel Orfe 5.m4a */; };
 		68A7CD7017919D7700248866 /* Wünschel Orfe 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD6317919D7700248866 /* Wünschel Orfe 6.m4a */; };
+		68A7CD7D17919DB300248866 /* Text-Screen01-Titelscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7217919DB300248866 /* Text-Screen01-Titelscreen.png */; };
+		68A7CD7E17919DB300248866 /* Text-Screen02.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7317919DB300248866 /* Text-Screen02.png */; };
+		68A7CD7F17919DB300248866 /* Text-Screen03a.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7417919DB300248866 /* Text-Screen03a.png */; };
+		68A7CD8017919DB300248866 /* Text-Screen03b.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7517919DB300248866 /* Text-Screen03b.png */; };
+		68A7CD8117919DB300248866 /* Text-Screen04b.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7617919DB300248866 /* Text-Screen04b.png */; };
+		68A7CD8217919DB300248866 /* Text-Screen04c.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7717919DB300248866 /* Text-Screen04c.png */; };
+		68A7CD8317919DB300248866 /* Text-Screen06.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7817919DB300248866 /* Text-Screen06.png */; };
+		68A7CD8417919DB300248866 /* Text-Screen07-OPT Kopie.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7917919DB300248866 /* Text-Screen07-OPT Kopie.png */; };
+		68A7CD8517919DB300248866 /* Text-Screen08.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7A17919DB300248866 /* Text-Screen08.png */; };
+		68A7CD8617919DB300248866 /* Text-Screen09.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7B17919DB300248866 /* Text-Screen09.png */; };
+		68A7CD8717919DB300248866 /* Text-Screen10-OPT Kopie.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD7C17919DB300248866 /* Text-Screen10-OPT Kopie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -498,6 +509,17 @@
 		68A7CD6117919D7700248866 /* Wünschel Orfe 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wünschel Orfe 4.m4a"; sourceTree = "<group>"; };
 		68A7CD6217919D7700248866 /* Wünschel Orfe 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wünschel Orfe 5.m4a"; sourceTree = "<group>"; };
 		68A7CD6317919D7700248866 /* Wünschel Orfe 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wünschel Orfe 6.m4a"; sourceTree = "<group>"; };
+		68A7CD7217919DB300248866 /* Text-Screen01-Titelscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen01-Titelscreen.png"; sourceTree = "<group>"; };
+		68A7CD7317919DB300248866 /* Text-Screen02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen02.png"; sourceTree = "<group>"; };
+		68A7CD7417919DB300248866 /* Text-Screen03a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen03a.png"; sourceTree = "<group>"; };
+		68A7CD7517919DB300248866 /* Text-Screen03b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen03b.png"; sourceTree = "<group>"; };
+		68A7CD7617919DB300248866 /* Text-Screen04b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen04b.png"; sourceTree = "<group>"; };
+		68A7CD7717919DB300248866 /* Text-Screen04c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen04c.png"; sourceTree = "<group>"; };
+		68A7CD7817919DB300248866 /* Text-Screen06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen06.png"; sourceTree = "<group>"; };
+		68A7CD7917919DB300248866 /* Text-Screen07-OPT Kopie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen07-OPT Kopie.png"; sourceTree = "<group>"; };
+		68A7CD7A17919DB300248866 /* Text-Screen08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen08.png"; sourceTree = "<group>"; };
+		68A7CD7B17919DB300248866 /* Text-Screen09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen09.png"; sourceTree = "<group>"; };
+		68A7CD7C17919DB300248866 /* Text-Screen10-OPT Kopie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen10-OPT Kopie.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -626,6 +648,7 @@
 		68A7CB79179190D800248866 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68A7CD7117919DA600248866 /* Text */,
 				68A7CCC91791961D00248866 /* Sound */,
 				68A7CC081791958B00248866 /* Images */,
 				68A7CB7A179190D800248866 /* Anderswo-Info.plist */,
@@ -866,6 +889,24 @@
 			name = 3;
 			sourceTree = "<group>";
 		};
+		68A7CD7117919DA600248866 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				68A7CD7217919DB300248866 /* Text-Screen01-Titelscreen.png */,
+				68A7CD7317919DB300248866 /* Text-Screen02.png */,
+				68A7CD7417919DB300248866 /* Text-Screen03a.png */,
+				68A7CD7517919DB300248866 /* Text-Screen03b.png */,
+				68A7CD7617919DB300248866 /* Text-Screen04b.png */,
+				68A7CD7717919DB300248866 /* Text-Screen04c.png */,
+				68A7CD7817919DB300248866 /* Text-Screen06.png */,
+				68A7CD7917919DB300248866 /* Text-Screen07-OPT Kopie.png */,
+				68A7CD7A17919DB300248866 /* Text-Screen08.png */,
+				68A7CD7B17919DB300248866 /* Text-Screen09.png */,
+				68A7CD7C17919DB300248866 /* Text-Screen10-OPT Kopie.png */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1103,6 +1144,17 @@
 				68A7CD6E17919D7700248866 /* Wünschel Orfe 4.m4a in Resources */,
 				68A7CD6F17919D7700248866 /* Wünschel Orfe 5.m4a in Resources */,
 				68A7CD7017919D7700248866 /* Wünschel Orfe 6.m4a in Resources */,
+				68A7CD7D17919DB300248866 /* Text-Screen01-Titelscreen.png in Resources */,
+				68A7CD7E17919DB300248866 /* Text-Screen02.png in Resources */,
+				68A7CD7F17919DB300248866 /* Text-Screen03a.png in Resources */,
+				68A7CD8017919DB300248866 /* Text-Screen03b.png in Resources */,
+				68A7CD8117919DB300248866 /* Text-Screen04b.png in Resources */,
+				68A7CD8217919DB300248866 /* Text-Screen04c.png in Resources */,
+				68A7CD8317919DB300248866 /* Text-Screen06.png in Resources */,
+				68A7CD8417919DB300248866 /* Text-Screen07-OPT Kopie.png in Resources */,
+				68A7CD8517919DB300248866 /* Text-Screen08.png in Resources */,
+				68A7CD8617919DB300248866 /* Text-Screen09.png in Resources */,
+				68A7CD8717919DB300248866 /* Text-Screen10-OPT Kopie.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
