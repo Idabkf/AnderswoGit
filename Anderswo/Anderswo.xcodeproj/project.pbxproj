@@ -25,6 +25,33 @@
 		68A7CBA41791914900248866 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CB9F1791914900248866 /* README.md */; };
 		68A7CBA51791914900248866 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CBA01791914900248866 /* release_notes.md */; };
 		68A7CBA71791918300248866 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A7CBA61791918300248866 /* libz.dylib */; };
+		68A7CBDE179193E500248866 /* ScreenEighteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBA9179193E400248866 /* ScreenEighteenViewController.m */; };
+		68A7CBDF179193E500248866 /* ScreenEightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBAB179193E400248866 /* ScreenEightViewController.m */; };
+		68A7CBE0179193E500248866 /* ScreenElevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBAD179193E400248866 /* ScreenElevenViewController.m */; };
+		68A7CBE1179193E500248866 /* ScreenFifteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBAF179193E400248866 /* ScreenFifteenViewController.m */; };
+		68A7CBE2179193E500248866 /* ScreenFourteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBB1179193E400248866 /* ScreenFourteenViewController.m */; };
+		68A7CBE3179193E500248866 /* ScreenFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBB3179193E400248866 /* ScreenFourViewController.m */; };
+		68A7CBE4179193E500248866 /* ScreenNineteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBB5179193E400248866 /* ScreenNineteenViewController.m */; };
+		68A7CBE5179193E500248866 /* ScreenNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBB7179193E400248866 /* ScreenNineViewController.m */; };
+		68A7CBE6179193E500248866 /* ScreenOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBB9179193E400248866 /* ScreenOneViewController.m */; };
+		68A7CBE7179193E500248866 /* ScreenPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBBB179193E400248866 /* ScreenPageViewController.m */; };
+		68A7CBE8179193E500248866 /* ScreenSevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBBD179193E400248866 /* ScreenSevenViewController.m */; };
+		68A7CBE9179193E500248866 /* ScreenSixteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBBF179193E400248866 /* ScreenSixteenViewController.m */; };
+		68A7CBEA179193E500248866 /* ScreenSixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBC1179193E500248866 /* ScreenSixViewController.m */; };
+		68A7CBEB179193E500248866 /* ScreenTenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBC3179193E500248866 /* ScreenTenViewController.m */; };
+		68A7CBEC179193E500248866 /* ScreenThirteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBC5179193E500248866 /* ScreenThirteenViewController.m */; };
+		68A7CBED179193E500248866 /* ScreenThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBC7179193E500248866 /* ScreenThreeViewController.m */; };
+		68A7CBEE179193E500248866 /* ScreenTwelveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBC9179193E500248866 /* ScreenTwelveViewController.m */; };
+		68A7CBEF179193E500248866 /* ScreenTwentyfiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBCB179193E500248866 /* ScreenTwentyfiveViewController.m */; };
+		68A7CBF0179193E500248866 /* ScreenTwentyoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBCD179193E500248866 /* ScreenTwentyoneViewController.m */; };
+		68A7CBF1179193E500248866 /* ScreenTwentySevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBCF179193E500248866 /* ScreenTwentySevenViewController.m */; };
+		68A7CBF2179193E500248866 /* ScreenTwentysixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD1179193E500248866 /* ScreenTwentysixViewController.m */; };
+		68A7CBF3179193E500248866 /* ScreenTwentythreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD3179193E500248866 /* ScreenTwentythreeViewController.m */; };
+		68A7CBF4179193E500248866 /* ScreenTwentytwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD5179193E500248866 /* ScreenTwentytwoViewController.m */; };
+		68A7CBF5179193E500248866 /* ScreenTwentyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD7179193E500248866 /* ScreenTwentyViewController.m */; };
+		68A7CBF6179193E500248866 /* ScreenTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD9179193E500248866 /* ScreenTwoViewController.m */; };
+		68A7CBF7179193E500248866 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBDB179193E500248866 /* ScreenViewController.m */; };
+		68A7CBF8179193E500248866 /* StockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBDD179193E500248866 /* StockItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +80,60 @@
 		68A7CBA01791914900248866 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		68A7CBA11791914900248866 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		68A7CBA61791918300248866 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		68A7CBA8179193E400248866 /* ScreenEighteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenEighteenViewController.h; sourceTree = "<group>"; };
+		68A7CBA9179193E400248866 /* ScreenEighteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenEighteenViewController.m; sourceTree = "<group>"; };
+		68A7CBAA179193E400248866 /* ScreenEightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenEightViewController.h; sourceTree = "<group>"; };
+		68A7CBAB179193E400248866 /* ScreenEightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenEightViewController.m; sourceTree = "<group>"; };
+		68A7CBAC179193E400248866 /* ScreenElevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenElevenViewController.h; sourceTree = "<group>"; };
+		68A7CBAD179193E400248866 /* ScreenElevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenElevenViewController.m; sourceTree = "<group>"; };
+		68A7CBAE179193E400248866 /* ScreenFifteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenFifteenViewController.h; sourceTree = "<group>"; };
+		68A7CBAF179193E400248866 /* ScreenFifteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenFifteenViewController.m; sourceTree = "<group>"; };
+		68A7CBB0179193E400248866 /* ScreenFourteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenFourteenViewController.h; sourceTree = "<group>"; };
+		68A7CBB1179193E400248866 /* ScreenFourteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenFourteenViewController.m; sourceTree = "<group>"; };
+		68A7CBB2179193E400248866 /* ScreenFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenFourViewController.h; sourceTree = "<group>"; };
+		68A7CBB3179193E400248866 /* ScreenFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenFourViewController.m; sourceTree = "<group>"; };
+		68A7CBB4179193E400248866 /* ScreenNineteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenNineteenViewController.h; sourceTree = "<group>"; };
+		68A7CBB5179193E400248866 /* ScreenNineteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenNineteenViewController.m; sourceTree = "<group>"; };
+		68A7CBB6179193E400248866 /* ScreenNineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenNineViewController.h; sourceTree = "<group>"; };
+		68A7CBB7179193E400248866 /* ScreenNineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenNineViewController.m; sourceTree = "<group>"; };
+		68A7CBB8179193E400248866 /* ScreenOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenOneViewController.h; sourceTree = "<group>"; };
+		68A7CBB9179193E400248866 /* ScreenOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenOneViewController.m; sourceTree = "<group>"; };
+		68A7CBBA179193E400248866 /* ScreenPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenPageViewController.h; sourceTree = "<group>"; };
+		68A7CBBB179193E400248866 /* ScreenPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenPageViewController.m; sourceTree = "<group>"; };
+		68A7CBBC179193E400248866 /* ScreenSevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSevenViewController.h; sourceTree = "<group>"; };
+		68A7CBBD179193E400248866 /* ScreenSevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSevenViewController.m; sourceTree = "<group>"; };
+		68A7CBBE179193E400248866 /* ScreenSixteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSixteenViewController.h; sourceTree = "<group>"; };
+		68A7CBBF179193E400248866 /* ScreenSixteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSixteenViewController.m; sourceTree = "<group>"; };
+		68A7CBC0179193E400248866 /* ScreenSixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSixViewController.h; sourceTree = "<group>"; };
+		68A7CBC1179193E500248866 /* ScreenSixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSixViewController.m; sourceTree = "<group>"; };
+		68A7CBC2179193E500248866 /* ScreenTenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTenViewController.h; sourceTree = "<group>"; };
+		68A7CBC3179193E500248866 /* ScreenTenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTenViewController.m; sourceTree = "<group>"; };
+		68A7CBC4179193E500248866 /* ScreenThirteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenThirteenViewController.h; sourceTree = "<group>"; };
+		68A7CBC5179193E500248866 /* ScreenThirteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenThirteenViewController.m; sourceTree = "<group>"; };
+		68A7CBC6179193E500248866 /* ScreenThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenThreeViewController.h; sourceTree = "<group>"; };
+		68A7CBC7179193E500248866 /* ScreenThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenThreeViewController.m; sourceTree = "<group>"; };
+		68A7CBC8179193E500248866 /* ScreenTwelveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwelveViewController.h; sourceTree = "<group>"; };
+		68A7CBC9179193E500248866 /* ScreenTwelveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwelveViewController.m; sourceTree = "<group>"; };
+		68A7CBCA179193E500248866 /* ScreenTwentyfiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentyfiveViewController.h; sourceTree = "<group>"; };
+		68A7CBCB179193E500248866 /* ScreenTwentyfiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentyfiveViewController.m; sourceTree = "<group>"; };
+		68A7CBCC179193E500248866 /* ScreenTwentyoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentyoneViewController.h; sourceTree = "<group>"; };
+		68A7CBCD179193E500248866 /* ScreenTwentyoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentyoneViewController.m; sourceTree = "<group>"; };
+		68A7CBCE179193E500248866 /* ScreenTwentySevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentySevenViewController.h; sourceTree = "<group>"; };
+		68A7CBCF179193E500248866 /* ScreenTwentySevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentySevenViewController.m; sourceTree = "<group>"; };
+		68A7CBD0179193E500248866 /* ScreenTwentysixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentysixViewController.h; sourceTree = "<group>"; };
+		68A7CBD1179193E500248866 /* ScreenTwentysixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentysixViewController.m; sourceTree = "<group>"; };
+		68A7CBD2179193E500248866 /* ScreenTwentythreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentythreeViewController.h; sourceTree = "<group>"; };
+		68A7CBD3179193E500248866 /* ScreenTwentythreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentythreeViewController.m; sourceTree = "<group>"; };
+		68A7CBD4179193E500248866 /* ScreenTwentytwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentytwoViewController.h; sourceTree = "<group>"; };
+		68A7CBD5179193E500248866 /* ScreenTwentytwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentytwoViewController.m; sourceTree = "<group>"; };
+		68A7CBD6179193E500248866 /* ScreenTwentyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentyViewController.h; sourceTree = "<group>"; };
+		68A7CBD7179193E500248866 /* ScreenTwentyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentyViewController.m; sourceTree = "<group>"; };
+		68A7CBD8179193E500248866 /* ScreenTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwoViewController.h; sourceTree = "<group>"; };
+		68A7CBD9179193E500248866 /* ScreenTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwoViewController.m; sourceTree = "<group>"; };
+		68A7CBDA179193E500248866 /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
+		68A7CBDB179193E500248866 /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
+		68A7CBDC179193E500248866 /* StockItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockItemView.h; sourceTree = "<group>"; };
+		68A7CBDD179193E500248866 /* StockItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +193,60 @@
 				68A7CB90179190D900248866 /* ViewController.h */,
 				68A7CB91179190D900248866 /* ViewController.m */,
 				68A7CB79179190D800248866 /* Supporting Files */,
+				68A7CBA8179193E400248866 /* ScreenEighteenViewController.h */,
+				68A7CBA9179193E400248866 /* ScreenEighteenViewController.m */,
+				68A7CBAA179193E400248866 /* ScreenEightViewController.h */,
+				68A7CBAB179193E400248866 /* ScreenEightViewController.m */,
+				68A7CBAC179193E400248866 /* ScreenElevenViewController.h */,
+				68A7CBAD179193E400248866 /* ScreenElevenViewController.m */,
+				68A7CBAE179193E400248866 /* ScreenFifteenViewController.h */,
+				68A7CBAF179193E400248866 /* ScreenFifteenViewController.m */,
+				68A7CBB0179193E400248866 /* ScreenFourteenViewController.h */,
+				68A7CBB1179193E400248866 /* ScreenFourteenViewController.m */,
+				68A7CBB2179193E400248866 /* ScreenFourViewController.h */,
+				68A7CBB3179193E400248866 /* ScreenFourViewController.m */,
+				68A7CBB4179193E400248866 /* ScreenNineteenViewController.h */,
+				68A7CBB5179193E400248866 /* ScreenNineteenViewController.m */,
+				68A7CBB6179193E400248866 /* ScreenNineViewController.h */,
+				68A7CBB7179193E400248866 /* ScreenNineViewController.m */,
+				68A7CBB8179193E400248866 /* ScreenOneViewController.h */,
+				68A7CBB9179193E400248866 /* ScreenOneViewController.m */,
+				68A7CBBA179193E400248866 /* ScreenPageViewController.h */,
+				68A7CBBB179193E400248866 /* ScreenPageViewController.m */,
+				68A7CBBC179193E400248866 /* ScreenSevenViewController.h */,
+				68A7CBBD179193E400248866 /* ScreenSevenViewController.m */,
+				68A7CBBE179193E400248866 /* ScreenSixteenViewController.h */,
+				68A7CBBF179193E400248866 /* ScreenSixteenViewController.m */,
+				68A7CBC0179193E400248866 /* ScreenSixViewController.h */,
+				68A7CBC1179193E500248866 /* ScreenSixViewController.m */,
+				68A7CBC2179193E500248866 /* ScreenTenViewController.h */,
+				68A7CBC3179193E500248866 /* ScreenTenViewController.m */,
+				68A7CBC4179193E500248866 /* ScreenThirteenViewController.h */,
+				68A7CBC5179193E500248866 /* ScreenThirteenViewController.m */,
+				68A7CBC6179193E500248866 /* ScreenThreeViewController.h */,
+				68A7CBC7179193E500248866 /* ScreenThreeViewController.m */,
+				68A7CBC8179193E500248866 /* ScreenTwelveViewController.h */,
+				68A7CBC9179193E500248866 /* ScreenTwelveViewController.m */,
+				68A7CBCA179193E500248866 /* ScreenTwentyfiveViewController.h */,
+				68A7CBCB179193E500248866 /* ScreenTwentyfiveViewController.m */,
+				68A7CBCC179193E500248866 /* ScreenTwentyoneViewController.h */,
+				68A7CBCD179193E500248866 /* ScreenTwentyoneViewController.m */,
+				68A7CBCE179193E500248866 /* ScreenTwentySevenViewController.h */,
+				68A7CBCF179193E500248866 /* ScreenTwentySevenViewController.m */,
+				68A7CBD0179193E500248866 /* ScreenTwentysixViewController.h */,
+				68A7CBD1179193E500248866 /* ScreenTwentysixViewController.m */,
+				68A7CBD2179193E500248866 /* ScreenTwentythreeViewController.h */,
+				68A7CBD3179193E500248866 /* ScreenTwentythreeViewController.m */,
+				68A7CBD4179193E500248866 /* ScreenTwentytwoViewController.h */,
+				68A7CBD5179193E500248866 /* ScreenTwentytwoViewController.m */,
+				68A7CBD6179193E500248866 /* ScreenTwentyViewController.h */,
+				68A7CBD7179193E500248866 /* ScreenTwentyViewController.m */,
+				68A7CBD8179193E500248866 /* ScreenTwoViewController.h */,
+				68A7CBD9179193E500248866 /* ScreenTwoViewController.m */,
+				68A7CBDA179193E500248866 /* ScreenViewController.h */,
+				68A7CBDB179193E500248866 /* ScreenViewController.m */,
+				68A7CBDC179193E500248866 /* StockItemView.h */,
+				68A7CBDD179193E500248866 /* StockItemView.m */,
 			);
 			path = Anderswo;
 			sourceTree = "<group>";
@@ -217,6 +352,33 @@
 				68A7CB7F179190D800248866 /* main.m in Sources */,
 				68A7CB83179190D900248866 /* AppDelegate.m in Sources */,
 				68A7CB92179190D900248866 /* ViewController.m in Sources */,
+				68A7CBDE179193E500248866 /* ScreenEighteenViewController.m in Sources */,
+				68A7CBDF179193E500248866 /* ScreenEightViewController.m in Sources */,
+				68A7CBE0179193E500248866 /* ScreenElevenViewController.m in Sources */,
+				68A7CBE1179193E500248866 /* ScreenFifteenViewController.m in Sources */,
+				68A7CBE2179193E500248866 /* ScreenFourteenViewController.m in Sources */,
+				68A7CBE3179193E500248866 /* ScreenFourViewController.m in Sources */,
+				68A7CBE4179193E500248866 /* ScreenNineteenViewController.m in Sources */,
+				68A7CBE5179193E500248866 /* ScreenNineViewController.m in Sources */,
+				68A7CBE6179193E500248866 /* ScreenOneViewController.m in Sources */,
+				68A7CBE7179193E500248866 /* ScreenPageViewController.m in Sources */,
+				68A7CBE8179193E500248866 /* ScreenSevenViewController.m in Sources */,
+				68A7CBE9179193E500248866 /* ScreenSixteenViewController.m in Sources */,
+				68A7CBEA179193E500248866 /* ScreenSixViewController.m in Sources */,
+				68A7CBEB179193E500248866 /* ScreenTenViewController.m in Sources */,
+				68A7CBEC179193E500248866 /* ScreenThirteenViewController.m in Sources */,
+				68A7CBED179193E500248866 /* ScreenThreeViewController.m in Sources */,
+				68A7CBEE179193E500248866 /* ScreenTwelveViewController.m in Sources */,
+				68A7CBEF179193E500248866 /* ScreenTwentyfiveViewController.m in Sources */,
+				68A7CBF0179193E500248866 /* ScreenTwentyoneViewController.m in Sources */,
+				68A7CBF1179193E500248866 /* ScreenTwentySevenViewController.m in Sources */,
+				68A7CBF2179193E500248866 /* ScreenTwentysixViewController.m in Sources */,
+				68A7CBF3179193E500248866 /* ScreenTwentythreeViewController.m in Sources */,
+				68A7CBF4179193E500248866 /* ScreenTwentytwoViewController.m in Sources */,
+				68A7CBF5179193E500248866 /* ScreenTwentyViewController.m in Sources */,
+				68A7CBF6179193E500248866 /* ScreenTwoViewController.m in Sources */,
+				68A7CBF7179193E500248866 /* ScreenViewController.m in Sources */,
+				68A7CBF8179193E500248866 /* StockItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +519,7 @@
 				68A7CB97179190D900248866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
