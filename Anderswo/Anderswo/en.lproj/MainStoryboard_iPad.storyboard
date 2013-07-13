@@ -124,36 +124,6 @@
             </objects>
             <point key="canvasLocation" x="-596" y="900"/>
         </scene>
-        <!--Screen Three View Controller-->
-        <scene sceneID="CnY-so-fZk">
-            <objects>
-                <viewController storyboardIdentifier="2" id="tSd-6N-nfk" customClass="ScreenThreeViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="scaleAspectFit" image="Screen03b-Kistenweg.png" id="NHi-Ec-TJS">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </imageView>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UwI-at-eG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="654" y="900"/>
-        </scene>
-        <!--Screen Seven View Controller-->
-        <scene sceneID="udH-MZ-HZN">
-            <objects>
-                <viewController storyboardIdentifier="5" id="N1C-uS-zif" customClass="ScreenSevenViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="TopLeft" image="Screen07-RAETSEL-1-ohnepilzkappen.png" id="Azh-Qe-h1l">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </imageView>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jDS-aL-V9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="654" y="1964"/>
-        </scene>
         <!--Screen Ten View Controller-->
         <scene sceneID="xDR-3J-8Wz">
             <objects>
@@ -244,95 +214,126 @@
             </objects>
             <point key="canvasLocation" x="2064" y="2966"/>
         </scene>
-        <!--Screen One View Controller-->
-        <scene sceneID="QUk-9A-UED">
+        <!--Screen Eighteen View Controller-->
+        <scene sceneID="0dd-4P-fyd">
             <objects>
-                <viewController storyboardIdentifier="0" id="r2e-qw-D9e" customClass="ScreenOneViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="scaleToFill" image="Text-Screen01-Titelscreen.png" id="Owh-AU-HPz">
+                <viewController storyboardIdentifier="15" id="FXU-9n-TTA" customClass="ScreenEighteenViewController" sceneMemberID="viewController">
+                    <imageView key="view" contentMode="scaleAspectFit" image="Screen17b-letztesAbenteuer.png" id="Csv-qP-gb2">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </imageView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X6e-XA-yAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hae-XM-7o1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1940" y="916"/>
+            <point key="canvasLocation" x="-560" y="5318"/>
         </scene>
-        <!--Screen Four View Controller-->
-        <scene sceneID="12J-Og-bmd">
+        <!--Screen Twentyone View Controller-->
+        <scene sceneID="nMy-iE-Q1R">
             <objects>
-                <viewController storyboardIdentifier="3" id="mdq-bw-kFS" customClass="ScreenFourViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="scaleAspectFit" image="Screen04a+b+c.png" id="Cj1-cK-lcY">
+                <viewController storyboardIdentifier="17" id="WUu-Pf-AIA" customClass="ScreenTwentyoneViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zgm-6F-kkc">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </imageView>
+                    </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mKe-fr-pze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5u-ZT-boL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044" y="900"/>
+            <point key="canvasLocation" x="-1766" y="6430"/>
         </scene>
-        <!--Screen Eight View Controller-->
-        <scene sceneID="2oD-Jl-zwx">
+        <!--Screen Nineteen View Controller-->
+        <scene sceneID="y7s-mW-wKD">
             <objects>
-                <viewController storyboardIdentifier="6" id="5bv-o1-rVD" customClass="ScreenEightViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="scaleAspectFit" image="Screen08-Wald-orfwelt.png" id="oEe-pt-bsU">
+                <viewController storyboardIdentifier="16" id="DhG-R8-qqO" customClass="ScreenNineteenViewController" sceneMemberID="viewController">
+                    <imageView key="view" contentMode="scaleAspectFit" image="Screen19-Sandsturm-BG.png" id="E8n-Ot-sx9">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </imageView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AmL-6Z-bVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHB-pb-SLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044" y="1917"/>
+            <point key="canvasLocation" x="682" y="5270"/>
         </scene>
-        <!--Screen Six View Controller-->
-        <scene sceneID="4ov-K2-8GD">
+        <!--Screen Twentytwo View Controller-->
+        <scene sceneID="c5Z-YW-2OR">
             <objects>
-                <viewController storyboardIdentifier="4" id="UA0-5c-AcI" customClass="ScreenSixViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="scaleAspectFit" image="Screen06-Wald-orfwelt.png" id="hH0-NZ-6kG">
+                <viewController storyboardIdentifier="18" id="1Cd-rJ-USx" customClass="ScreenTwentytwoViewController" sceneMemberID="viewController">
+                    <imageView key="view" contentMode="scaleAspectFit" image="Screen22-Wuenschelorfdorf.png" id="0RT-L0-AT5">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </imageView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpe-lI-i3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Wp-Th-mch" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-608" y="1981"/>
+            <point key="canvasLocation" x="-580" y="6412"/>
         </scene>
-        <!--Screen Nine View Controller-->
-        <scene sceneID="CXN-0V-yPr">
+        <!--Screen Twentythree View Controller-->
+        <scene sceneID="MBh-1F-Sg4">
             <objects>
-                <viewController storyboardIdentifier="7" id="huc-oL-v5Z" customClass="ScreenNineViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="scaleAspectFit" image="Screen09-Belohnung.png" id="p8h-hJ-7fQ">
+                <viewController storyboardIdentifier="19" id="8XZ-xz-f9s" customClass="ScreenTwentythreeViewController" sceneMemberID="viewController">
+                    <imageView key="view" contentMode="scaleAspectFit" image="Screen23-BelohnungFLASCHE.png" id="Z29-yb-h4s">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </imageView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cds-Wl-2y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdj-jq-d4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1860" y="3012"/>
+            <point key="canvasLocation" x="710" y="6396"/>
         </scene>
-        <!--Screen Two View Controller-->
-        <scene sceneID="V9T-bA-zxO">
+        <!--Screen Twentyfive View Controller-->
+        <scene sceneID="SyB-Xz-34i">
             <objects>
-                <viewController storyboardIdentifier="1" id="oLM-yL-5r4" customClass="ScreenTwoViewController" sceneMemberID="viewController">
-                    <imageView key="view" contentMode="scaleAspectFit" image="Screen02-Stadt-wischbar_HG.png" id="Sl0-mv-s6F">
+                <viewController storyboardIdentifier="21" id="6M2-zO-n5W" customClass="ScreenTwentyfiveViewController" sceneMemberID="viewController">
+                    <imageView key="view" contentMode="scaleAspectFit" image="Screen02-Stadt-wischbar_HG.png" id="P6S-XT-ZQE">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </imageView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5cS-9d-jea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEv-ab-mYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-596" y="900"/>
+            <point key="canvasLocation" x="-1788" y="7564"/>
+        </scene>
+        <!--Screen Twentysix View Controller-->
+        <scene sceneID="Tzl-92-keI">
+            <objects>
+                <viewController storyboardIdentifier="22" id="ETd-1M-Ltg" customClass="ScreenTwentysixViewController" sceneMemberID="viewController">
+                    <imageView key="view" contentMode="scaleAspectFit" image="Screen26-Groelmverblasst.png" id="7s7-gK-g7q">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </imageView>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NW6-RS-LAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-566" y="7556"/>
+        </scene>
+        <!--Screen Twenty Seven View Controller-->
+        <scene sceneID="w0N-Js-mNB">
+            <objects>
+                <viewController storyboardIdentifier="23" id="NKY-ae-uY2" customClass="ScreenTwentySevenViewController" sceneMemberID="viewController">
+                    <imageView key="view" contentMode="scaleAspectFit" image="Text-Screen27-Ende.png" id="OHr-4o-f2k">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </imageView>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APK-Hs-GID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="7532"/>
         </scene>
     </scenes>
     <resources>
@@ -348,11 +349,20 @@
         <image name="Screen14-RAETSEL-2-1.png" width="2048" height="1536"/>
         <image name="Screen15-Wasserorfwelt.png" width="2048" height="1536"/>
         <image name="Screen16-BelohnungAUGE.png" width="2048" height="1536"/>
+        <image name="Screen17b-letztesAbenteuer.png" width="2048" height="1536"/>
+        <image name="Screen19-Sandsturm-BG.png" width="2048" height="1536"/>
+        <image name="Screen22-Wuenschelorfdorf.png" width="2048" height="1536"/>
+        <image name="Screen23-BelohnungFLASCHE.png" width="2048" height="1536"/>
+        <image name="Screen26-Groelmverblasst.png" width="2048" height="1536"/>
         <image name="Text-Screen01-Titelscreen.png" width="2048" height="1536"/>
+        <image name="Text-Screen27-Ende.png" width="2048" height="1536"/>
     </resources>
     <classes>
         <class className="ScreenEightViewController" superclassName="ScreenViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenEightViewController.h"/>
+        </class>
+        <class className="ScreenEighteenViewController" superclassName="ScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenEighteenViewController.h"/>
         </class>
         <class className="ScreenFifteenViewController" superclassName="ScreenViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenFifteenViewController.h"/>
@@ -365,6 +375,9 @@
         </class>
         <class className="ScreenNineViewController" superclassName="ScreenViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenNineViewController.h"/>
+        </class>
+        <class className="ScreenNineteenViewController" superclassName="ScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenNineteenViewController.h"/>
         </class>
         <class className="ScreenOneViewController" superclassName="ScreenViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenOneViewController.h"/>
@@ -389,6 +402,24 @@
         </class>
         <class className="ScreenTwelveViewController" superclassName="ScreenViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenTwelveViewController.h"/>
+        </class>
+        <class className="ScreenTwentySevenViewController" superclassName="ScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenTwentySevenViewController.h"/>
+        </class>
+        <class className="ScreenTwentyfiveViewController" superclassName="ScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenTwentyfiveViewController.h"/>
+        </class>
+        <class className="ScreenTwentyoneViewController" superclassName="ScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenTwentyoneViewController.h"/>
+        </class>
+        <class className="ScreenTwentysixViewController" superclassName="ScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenTwentysixViewController.h"/>
+        </class>
+        <class className="ScreenTwentythreeViewController" superclassName="ScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenTwentythreeViewController.h"/>
+        </class>
+        <class className="ScreenTwentytwoViewController" superclassName="ScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenTwentytwoViewController.h"/>
         </class>
         <class className="ScreenTwoViewController" superclassName="ScreenViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScreenTwoViewController.h"/>
