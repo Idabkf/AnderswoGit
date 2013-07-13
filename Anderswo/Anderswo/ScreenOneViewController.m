@@ -27,11 +27,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view.
+    
+    self.dataObject = [NSNumber numberWithInt:0];
+    
    // NSLog(@"SCREEN SIZE : x:%@ y:%@", self.view.frame.size.width, self.view.frame.size.height);
     //enable pageViews recognizer
     //[self.rootViewController enablePan];
     self.panEnabled = YES;
+    [self loadLambsEar];
 }
 
 - (void)didReceiveMemoryWarning

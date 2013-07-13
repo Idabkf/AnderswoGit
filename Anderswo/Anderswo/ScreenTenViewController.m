@@ -88,6 +88,7 @@
          self.panEnabled = YES;
      }
      */
+     [self loadLambsEar];
      
      //EYES
      NSNumber *data = self.dataObject;

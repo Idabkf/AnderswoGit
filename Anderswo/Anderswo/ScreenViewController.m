@@ -8,6 +8,8 @@
 
 #import "ScreenViewController.h"
 //#import "RootViewController.h"
+#import "AppDelegate.h"
+#import "ScreenSegue.h"
 
 @interface ScreenViewController ()
 
@@ -56,6 +58,31 @@
     self.panEnabled = YES;
 }
 
+-(void) loadLambsEar{
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Eselsohr2_959k5_708k5" ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+    self.lambsear = [[UIImageView alloc]initWithImage:image];
+    CGRect rect = CGRectMake(0.0f, 0.0f, image.size.width/2, image.size.height/2);
+    self.lambsear.frame = rect;
+    CGPoint point = CGPointMake(959.5f, 708.5f);
+    [self.lambsear setCenter:point];
+    [self.lambsear setUserInteractionEnabled:YES];
+    [self.view addSubview:self.lambsear];
+    
+    //GestureRecognizer Tap
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleNextTap:)];
+    tapRecognizer.delegate = self;
+    [self.lambsear addGestureRecognizer:tapRecognizer];
+}
 
+-(void)handleNextTap:(UITapGestureRecognizer *) recognizer{
+    [self.lambsear removeFromSuperview];
+    
+    AppDelegate *appDelegate = (AppDelegate*) [UIApplication sharedApplication].delegate;
+    ScreenViewController *destination = [appDelegate.mc viewControllerAfterViewController:self];
+    
+    ScreenSegue *segue = [[ScreenSegue alloc] initWithIdentifier:@"nextScreen" source:self destination:destination];
+    [segue perform];
+}
 
 @end

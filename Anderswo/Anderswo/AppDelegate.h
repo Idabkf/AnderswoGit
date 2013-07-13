@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "TestFlight.h"
+#import "ModelController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property ModelController *mc;
 
 @end

@@ -261,6 +261,7 @@
     if (self.corks.count == 0) {
         //enable pageViews recognizer
         //[self.rootViewController enablePan];
+        [self loadLambsEar];
         self.panEnabled = YES;
         [self.sandView removeFromSuperview];
         AudioServicesPlaySystemSound(_finished);

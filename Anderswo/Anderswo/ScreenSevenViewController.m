@@ -366,6 +366,7 @@
             if (self.countFinishedMushrooms == 10) {
                 //enable pageViews recognizer
                 //[self.rootViewController enablePan];
+                [self loadLambsEar];
                 self.panEnabled = YES;
                 AudioServicesPlaySystemSound(_finished);
             }

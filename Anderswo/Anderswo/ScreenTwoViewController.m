@@ -79,6 +79,8 @@
         self.panEnabled = NO;
     }*/
     
+    [self loadLambsEar];
+    
     //play music
     [_backgroundMusicPlayer prepareToPlay];
     [_backgroundMusicPlayer play];

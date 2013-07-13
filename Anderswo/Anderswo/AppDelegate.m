@@ -15,6 +15,8 @@
     [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
     [TestFlight takeOff:@"cd5e6501-f79f-4d49-9c48-b5ff93fb291c"];
     
+    self.mc = [[ModelController alloc] init];
+    
     return YES;
 }
 							

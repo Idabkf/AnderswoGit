@@ -28,11 +28,12 @@
 
 @property (strong, nonatomic) id dataObject;
 
-
+/*
 @property BOOL receiveTouch;
 
 - (BOOL) getReceiveTouch;
 
-
+*/
+-(void) loadLambsEar;
 
 @end

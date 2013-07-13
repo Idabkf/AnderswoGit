@@ -43,6 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </imageView>
+                    <navigationItem key="navigationItem" id="G1j-qH-1hF"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdi-l7-nDN" userLabel="First Responder" sceneMemberID="firstResponder"/>

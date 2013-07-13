@@ -49,6 +49,7 @@
     
     //enable pageViews recognizer
     //[self.rootViewController enablePan];
+    [self loadLambsEar];
     self.panEnabled = YES;
 }
 
