@@ -7,7 +7,7 @@
 //
 
 #import "ScreenViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenViewController ()
 
@@ -52,7 +52,7 @@
 }
 
 -(void) handleEmergencyTap:(UILongPressGestureRecognizer *) recognizer{
-    [self.rootViewController enablePan];
+    //[self.rootViewController enablePan];
     self.panEnabled = YES;
 }
 

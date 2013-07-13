@@ -7,7 +7,7 @@
 //
 
 #import "ScreenEighteenViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenEighteenViewController ()
 
@@ -62,7 +62,7 @@
     
     if (self.panEnabled) {
         //disable pageViews recognizer
-        [self.rootViewController disablePan];
+        //[self.rootViewController disablePan];
         self.panEnabled = NO;
     }
 }
@@ -167,7 +167,7 @@
         [self.textView setImage:image];
         
         //enable pageViews recognizer
-        [self.rootViewController enablePan];
+        //[self.rootViewController enablePan];
         self.panEnabled = YES;
         
         self.imageFlg = 4;

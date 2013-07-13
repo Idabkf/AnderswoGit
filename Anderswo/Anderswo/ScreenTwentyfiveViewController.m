@@ -7,7 +7,7 @@
 //
 
 #import "ScreenTwentyfiveViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenTwentyfiveViewController ()
 
@@ -38,7 +38,7 @@
     [self.view addSubview:self.textView];
     
     //enable pageViews recognizer
-    [self.rootViewController enablePan];
+    //[self.rootViewController enablePan];
     self.panEnabled = YES;
 }
 

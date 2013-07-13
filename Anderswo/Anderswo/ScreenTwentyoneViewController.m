@@ -7,7 +7,7 @@
 //
 
 #import "ScreenTwentyoneViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenTwentyoneViewController ()
 
@@ -80,7 +80,7 @@
     
     if (self.panEnabled) {
         //disable pageViews recognizer
-        [self.rootViewController disablePan];
+        //[self.rootViewController disablePan];
         self.panEnabled = NO;
     }
 }
@@ -260,7 +260,7 @@
     
     if (self.corks.count == 0) {
         //enable pageViews recognizer
-        [self.rootViewController enablePan];
+        //[self.rootViewController enablePan];
         self.panEnabled = YES;
         [self.sandView removeFromSuperview];
         AudioServicesPlaySystemSound(_finished);

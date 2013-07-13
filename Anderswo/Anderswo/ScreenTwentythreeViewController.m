@@ -7,7 +7,7 @@
 //
 
 #import "ScreenTwentythreeViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenTwentythreeViewController ()
 
@@ -69,7 +69,7 @@
      [super viewDidAppear:animated];
      
      //enable pageViews recognizer
-     [self.rootViewController enablePan];
+     //[self.rootViewController enablePan];
      self.panEnabled = YES;
      
      /*

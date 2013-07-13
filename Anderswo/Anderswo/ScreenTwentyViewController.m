@@ -7,7 +7,7 @@
 //
 
 #import "ScreenTwentyViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenTwentyViewController ()
 
@@ -48,7 +48,7 @@
     [self animateStorm];
     
     //enable pageViews recognizer
-    [self.rootViewController enablePan];
+    //[self.rootViewController enablePan];
     self.panEnabled = YES;
 }
 

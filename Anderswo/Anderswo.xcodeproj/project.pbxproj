@@ -18,7 +18,6 @@
 		68A7CB89179190D900248866 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CB88179190D900248866 /* Default-568h@2x.png */; };
 		68A7CB8C179190D900248866 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CB8A179190D900248866 /* MainStoryboard_iPhone.storyboard */; };
 		68A7CB8F179190D900248866 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CB8D179190D900248866 /* MainStoryboard_iPad.storyboard */; };
-		68A7CB92179190D900248866 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CB91179190D900248866 /* ViewController.m */; };
 		68A7CB99179190F500248866 /* AppIcon_Ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CB98179190F500248866 /* AppIcon_Ipad.png */; };
 		68A7CB9B179190FD00248866 /* AppIcon_Ipad_Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CB9A179190FD00248866 /* AppIcon_Ipad_Retina.png */; };
 		68A7CBA31791914900248866 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A7CB9E1791914900248866 /* libTestFlight.a */; };
@@ -283,8 +282,6 @@
 		68A7CB88179190D900248866 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		68A7CB8B179190D900248866 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		68A7CB8E179190D900248866 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		68A7CB90179190D900248866 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		68A7CB91179190D900248866 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		68A7CB98179190F500248866 /* AppIcon_Ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon_Ipad.png; sourceTree = "<group>"; };
 		68A7CB9A179190FD00248866 /* AppIcon_Ipad_Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon_Ipad_Retina.png; sourceTree = "<group>"; };
 		68A7CB9D1791914900248866 /* Farbwelten.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = Farbwelten.ipa; sourceTree = "<group>"; };
@@ -620,8 +617,6 @@
 				68A7CB82179190D900248866 /* AppDelegate.m */,
 				68A7CB8A179190D900248866 /* MainStoryboard_iPhone.storyboard */,
 				68A7CB8D179190D900248866 /* MainStoryboard_iPad.storyboard */,
-				68A7CB90179190D900248866 /* ViewController.h */,
-				68A7CB91179190D900248866 /* ViewController.m */,
 				68A7CB79179190D800248866 /* Supporting Files */,
 				68A7CBDA179193E500248866 /* ScreenViewController.h */,
 				68A7CBDB179193E500248866 /* ScreenViewController.m */,
@@ -692,16 +687,10 @@
 		68A7CB79179190D800248866 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68A7CDB41791A07700248866 /* Stuff */,
 				68A7CD7117919DA600248866 /* Text */,
 				68A7CCC91791961D00248866 /* Sound */,
 				68A7CC081791958B00248866 /* Images */,
-				68A7CB7A179190D800248866 /* Anderswo-Info.plist */,
-				68A7CB7B179190D800248866 /* InfoPlist.strings */,
-				68A7CB7E179190D800248866 /* main.m */,
-				68A7CB80179190D900248866 /* Anderswo-Prefix.pch */,
-				68A7CB84179190D900248866 /* Default.png */,
-				68A7CB86179190D900248866 /* Default@2x.png */,
-				68A7CB88179190D900248866 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -971,6 +960,20 @@
 				68A7CDA717919E2400248866 /* Text-Screen27-Ende.png */,
 			);
 			name = Text;
+			sourceTree = "<group>";
+		};
+		68A7CDB41791A07700248866 /* Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				68A7CB7A179190D800248866 /* Anderswo-Info.plist */,
+				68A7CB7B179190D800248866 /* InfoPlist.strings */,
+				68A7CB7E179190D800248866 /* main.m */,
+				68A7CB80179190D900248866 /* Anderswo-Prefix.pch */,
+				68A7CB84179190D900248866 /* Default.png */,
+				68A7CB86179190D900248866 /* Default@2x.png */,
+				68A7CB88179190D900248866 /* Default-568h@2x.png */,
+			);
+			name = Stuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1255,7 +1258,6 @@
 			files = (
 				68A7CB7F179190D800248866 /* main.m in Sources */,
 				68A7CB83179190D900248866 /* AppDelegate.m in Sources */,
-				68A7CB92179190D900248866 /* ViewController.m in Sources */,
 				68A7CBDE179193E500248866 /* ScreenEighteenViewController.m in Sources */,
 				68A7CBDF179193E500248866 /* ScreenEightViewController.m in Sources */,
 				68A7CBE0179193E500248866 /* ScreenElevenViewController.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "ScreenTwentySevenViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenTwentySevenViewController ()
 
@@ -37,7 +37,7 @@
  
  if (self.panEnabled) {
  //disable pageViews recognizer
- [self.rootViewController disablePan];
+ //[self.rootViewController disablePan];
  self.panEnabled = NO;
  }
  }

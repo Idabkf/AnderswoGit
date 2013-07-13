@@ -7,7 +7,7 @@
 //
 
 #import "ScreenSixteenViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenSixteenViewController ()
 
@@ -61,7 +61,7 @@
                           }];
     
     //enable pageViews recognizer
-    [self.rootViewController enablePan];
+    //[self.rootViewController enablePan];
     self.panEnabled = YES;
     
 }

@@ -7,7 +7,7 @@
 //
 
 #import "ScreenThreeViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenThreeViewController ()
 
@@ -52,7 +52,7 @@
     
     if (self.panEnabled) {
         //disable pageViews recognizer
-        [self.rootViewController disablePan];
+        //[self.rootViewController disablePan];
         self.panEnabled = NO;
     }
 }
@@ -178,7 +178,7 @@
     [self.textView setImage:image];
     
     //enable pageViews recognizer
-    [self.rootViewController enablePan];
+    //[self.rootViewController enablePan];
     self.panEnabled = YES;
 }
 

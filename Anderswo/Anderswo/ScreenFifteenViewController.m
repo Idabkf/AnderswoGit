@@ -7,7 +7,7 @@
 //
 
 #import "ScreenFifteenViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenFifteenViewController ()
 
@@ -52,7 +52,7 @@
  
  if (self.panEnabled) {
  //disable pageViews recognizer
- [self.rootViewController disablePan];
+ //[self.rootViewController disablePan];
  self.panEnabled = NO;
  }
 }
@@ -102,7 +102,7 @@
 - (void)handleTap:(UITapGestureRecognizer *)recognizer{
     if (self.panEnabled == NO) {
         //enable pageViews recognizer
-        [self.rootViewController enablePan];
+        //[self.rootViewController enablePan];
         self.panEnabled = YES;
     }
     

@@ -7,7 +7,7 @@
 //
 
 #import "ScreenNineteenViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenNineteenViewController ()
 
@@ -55,7 +55,7 @@
     
     if (self.panEnabled) {
         //disable pageViews recognizer
-        [self.rootViewController disablePan];
+        //[self.rootViewController disablePan];
         self.panEnabled = NO;
     }
 }
@@ -166,7 +166,7 @@
     
     [self.backgroundView setHidden:NO];
     //enable pageViews recognizer
-    [self.rootViewController enablePan];
+    //[self.rootViewController enablePan];
     self.panEnabled = YES;
 }
 

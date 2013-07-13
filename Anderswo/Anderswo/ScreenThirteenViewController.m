@@ -7,7 +7,7 @@
 //
 
 #import "ScreenThirteenViewController.h"
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
 @interface ScreenThirteenViewController ()
 
@@ -52,7 +52,7 @@
     [_backgroundMusicPlayer play];
     if (self.panEnabled) {
         //disable pageViews recognizer
-        [self.rootViewController disablePan];
+        //[self.rootViewController disablePan];
         self.panEnabled = NO;
     }
 }
@@ -142,7 +142,7 @@
                               UIImage *image = [UIImage imageWithContentsOfFile:pathString];
                               [self.textView setImage:image];
                               //enable pageViews recognizer
-                              [self.rootViewController enablePan];
+                              //[self.rootViewController enablePan];
                               self.panEnabled = YES;
                           }];
     
