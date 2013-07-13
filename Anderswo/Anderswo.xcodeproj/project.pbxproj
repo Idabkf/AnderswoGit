@@ -191,6 +191,20 @@
 		68A7CD1C179196B400248866 /* 37.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD12179196B400248866 /* 37.png */; };
 		68A7CD1D179196B400248866 /* 38.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD13179196B400248866 /* 38.png */; };
 		68A7CD1E179196B400248866 /* 39.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD14179196B400248866 /* 39.png */; };
+		68A7CD2D17919CF500248866 /* Auge.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD1F17919CF500248866 /* Auge.m4a */; };
+		68A7CD2E17919CF500248866 /* Belohnung.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2017919CF500248866 /* Belohnung.m4a */; };
+		68A7CD2F17919CF500248866 /* Buch aufklappen.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2117919CF500248866 /* Buch aufklappen.m4a */; };
+		68A7CD3017919CF500248866 /* Buch zuklappen.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2217919CF500248866 /* Buch zuklappen.m4a */; };
+		68A7CD3117919CF500248866 /* Flaschenkorken.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2317919CF500248866 /* Flaschenkorken.m4a */; };
+		68A7CD3217919CF500248866 /* Grölm Bauch.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2417919CF500248866 /* Grölm Bauch.m4a */; };
+		68A7CD3317919CF500248866 /* Grölm erscheint.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2517919CF500248866 /* Grölm erscheint.m4a */; };
+		68A7CD3417919CF500248866 /* Grölm knurrt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2617919CF500248866 /* Grölm knurrt.m4a */; };
+		68A7CD3517919CF500248866 /* Grölm schluckt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2717919CF500248866 /* Grölm schluckt.m4a */; };
+		68A7CD3617919CF500248866 /* Grölm spuckt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2817919CF500248866 /* Grölm spuckt.m4a */; };
+		68A7CD3717919CF500248866 /* Grölm verschwindet.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2917919CF500248866 /* Grölm verschwindet.m4a */; };
+		68A7CD3817919CF500248866 /* Kiste schieben.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2A17919CF500248866 /* Kiste schieben.m4a */; };
+		68A7CD3917919CF500248866 /* Neunauge.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2B17919CF500248866 /* Neunauge.m4a */; };
+		68A7CD3A17919CF500248866 /* Pilz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2C17919CF500248866 /* Pilz.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -416,6 +430,20 @@
 		68A7CD12179196B400248866 /* 37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 37.png; sourceTree = "<group>"; };
 		68A7CD13179196B400248866 /* 38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 38.png; sourceTree = "<group>"; };
 		68A7CD14179196B400248866 /* 39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 39.png; sourceTree = "<group>"; };
+		68A7CD1F17919CF500248866 /* Auge.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Auge.m4a; sourceTree = "<group>"; };
+		68A7CD2017919CF500248866 /* Belohnung.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Belohnung.m4a; sourceTree = "<group>"; };
+		68A7CD2117919CF500248866 /* Buch aufklappen.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Buch aufklappen.m4a"; sourceTree = "<group>"; };
+		68A7CD2217919CF500248866 /* Buch zuklappen.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Buch zuklappen.m4a"; sourceTree = "<group>"; };
+		68A7CD2317919CF500248866 /* Flaschenkorken.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flaschenkorken.m4a; sourceTree = "<group>"; };
+		68A7CD2417919CF500248866 /* Grölm Bauch.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Grölm Bauch.m4a"; sourceTree = "<group>"; };
+		68A7CD2517919CF500248866 /* Grölm erscheint.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Grölm erscheint.m4a"; sourceTree = "<group>"; };
+		68A7CD2617919CF500248866 /* Grölm knurrt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Grölm knurrt.m4a"; sourceTree = "<group>"; };
+		68A7CD2717919CF500248866 /* Grölm schluckt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Grölm schluckt.m4a"; sourceTree = "<group>"; };
+		68A7CD2817919CF500248866 /* Grölm spuckt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Grölm spuckt.m4a"; sourceTree = "<group>"; };
+		68A7CD2917919CF500248866 /* Grölm verschwindet.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Grölm verschwindet.m4a"; sourceTree = "<group>"; };
+		68A7CD2A17919CF500248866 /* Kiste schieben.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kiste schieben.m4a"; sourceTree = "<group>"; };
+		68A7CD2B17919CF500248866 /* Neunauge.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neunauge.m4a; sourceTree = "<group>"; };
+		68A7CD2C17919CF500248866 /* Pilz.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pilz.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -689,6 +717,20 @@
 		68A7CCC91791961D00248866 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				68A7CD1F17919CF500248866 /* Auge.m4a */,
+				68A7CD2017919CF500248866 /* Belohnung.m4a */,
+				68A7CD2117919CF500248866 /* Buch aufklappen.m4a */,
+				68A7CD2217919CF500248866 /* Buch zuklappen.m4a */,
+				68A7CD2317919CF500248866 /* Flaschenkorken.m4a */,
+				68A7CD2417919CF500248866 /* Grölm Bauch.m4a */,
+				68A7CD2517919CF500248866 /* Grölm erscheint.m4a */,
+				68A7CD2617919CF500248866 /* Grölm knurrt.m4a */,
+				68A7CD2717919CF500248866 /* Grölm schluckt.m4a */,
+				68A7CD2817919CF500248866 /* Grölm spuckt.m4a */,
+				68A7CD2917919CF500248866 /* Grölm verschwindet.m4a */,
+				68A7CD2A17919CF500248866 /* Kiste schieben.m4a */,
+				68A7CD2B17919CF500248866 /* Neunauge.m4a */,
+				68A7CD2C17919CF500248866 /* Pilz.m4a */,
 			);
 			name = Sound;
 			sourceTree = "<group>";
@@ -939,6 +981,20 @@
 				68A7CD1C179196B400248866 /* 37.png in Resources */,
 				68A7CD1D179196B400248866 /* 38.png in Resources */,
 				68A7CD1E179196B400248866 /* 39.png in Resources */,
+				68A7CD2D17919CF500248866 /* Auge.m4a in Resources */,
+				68A7CD2E17919CF500248866 /* Belohnung.m4a in Resources */,
+				68A7CD2F17919CF500248866 /* Buch aufklappen.m4a in Resources */,
+				68A7CD3017919CF500248866 /* Buch zuklappen.m4a in Resources */,
+				68A7CD3117919CF500248866 /* Flaschenkorken.m4a in Resources */,
+				68A7CD3217919CF500248866 /* Grölm Bauch.m4a in Resources */,
+				68A7CD3317919CF500248866 /* Grölm erscheint.m4a in Resources */,
+				68A7CD3417919CF500248866 /* Grölm knurrt.m4a in Resources */,
+				68A7CD3517919CF500248866 /* Grölm schluckt.m4a in Resources */,
+				68A7CD3617919CF500248866 /* Grölm spuckt.m4a in Resources */,
+				68A7CD3717919CF500248866 /* Grölm verschwindet.m4a in Resources */,
+				68A7CD3817919CF500248866 /* Kiste schieben.m4a in Resources */,
+				68A7CD3917919CF500248866 /* Neunauge.m4a in Resources */,
+				68A7CD3A17919CF500248866 /* Pilz.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
