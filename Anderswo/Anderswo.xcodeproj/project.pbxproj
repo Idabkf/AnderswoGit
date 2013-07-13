@@ -205,6 +205,20 @@
 		68A7CD3817919CF500248866 /* Kiste schieben.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2A17919CF500248866 /* Kiste schieben.m4a */; };
 		68A7CD3917919CF500248866 /* Neunauge.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2B17919CF500248866 /* Neunauge.m4a */; };
 		68A7CD3A17919CF500248866 /* Pilz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD2C17919CF500248866 /* Pilz.m4a */; };
+		68A7CD4917919D3000248866 /* Sand wegwischen.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD3B17919D3000248866 /* Sand wegwischen.m4a */; };
+		68A7CD4A17919D3000248866 /* Sandsturm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD3C17919D3000248866 /* Sandsturm.m4a */; };
+		68A7CD4B17919D3000248866 /* Seite umblättern.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD3D17919D3000248866 /* Seite umblättern.m4a */; };
+		68A7CD4C17919D3000248866 /* Stadt Ambient.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD3E17919D3000248866 /* Stadt Ambient.m4a */; };
+		68A7CD4D17919D3000248866 /* StadtAmbient-neu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD3F17919D3000248866 /* StadtAmbient-neu.m4a */; };
+		68A7CD4E17919D3000248866 /* Stein.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4017919D3000248866 /* Stein.m4a */; };
+		68A7CD4F17919D3000248866 /* U-Boot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4117919D3000248866 /* U-Boot.m4a */; };
+		68A7CD5017919D3000248866 /* Wald Ambient.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4217919D3000248866 /* Wald Ambient.m4a */; };
+		68A7CD5117919D3000248866 /* Wald Orfe 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4317919D3000248866 /* Wald Orfe 1.m4a */; };
+		68A7CD5217919D3000248866 /* Wald Orfe 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4417919D3000248866 /* Wald Orfe 2.m4a */; };
+		68A7CD5317919D3000248866 /* Wald Orfe 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4517919D3000248866 /* Wald Orfe 3.m4a */; };
+		68A7CD5417919D3000248866 /* Wald Orfe 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4617919D3000248866 /* Wald Orfe 4.m4a */; };
+		68A7CD5517919D3000248866 /* Wald Orfe 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4717919D3000248866 /* Wald Orfe 5.m4a */; };
+		68A7CD5617919D3000248866 /* Wald Orfe 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CD4817919D3000248866 /* Wald Orfe 6.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -444,6 +458,20 @@
 		68A7CD2A17919CF500248866 /* Kiste schieben.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kiste schieben.m4a"; sourceTree = "<group>"; };
 		68A7CD2B17919CF500248866 /* Neunauge.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neunauge.m4a; sourceTree = "<group>"; };
 		68A7CD2C17919CF500248866 /* Pilz.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pilz.m4a; sourceTree = "<group>"; };
+		68A7CD3B17919D3000248866 /* Sand wegwischen.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sand wegwischen.m4a"; sourceTree = "<group>"; };
+		68A7CD3C17919D3000248866 /* Sandsturm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sandsturm.m4a; sourceTree = "<group>"; };
+		68A7CD3D17919D3000248866 /* Seite umblättern.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seite umblättern.m4a"; sourceTree = "<group>"; };
+		68A7CD3E17919D3000248866 /* Stadt Ambient.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stadt Ambient.m4a"; sourceTree = "<group>"; };
+		68A7CD3F17919D3000248866 /* StadtAmbient-neu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "StadtAmbient-neu.m4a"; sourceTree = "<group>"; };
+		68A7CD4017919D3000248866 /* Stein.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stein.m4a; sourceTree = "<group>"; };
+		68A7CD4117919D3000248866 /* U-Boot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "U-Boot.m4a"; sourceTree = "<group>"; };
+		68A7CD4217919D3000248866 /* Wald Ambient.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wald Ambient.m4a"; sourceTree = "<group>"; };
+		68A7CD4317919D3000248866 /* Wald Orfe 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wald Orfe 1.m4a"; sourceTree = "<group>"; };
+		68A7CD4417919D3000248866 /* Wald Orfe 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wald Orfe 2.m4a"; sourceTree = "<group>"; };
+		68A7CD4517919D3000248866 /* Wald Orfe 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wald Orfe 3.m4a"; sourceTree = "<group>"; };
+		68A7CD4617919D3000248866 /* Wald Orfe 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wald Orfe 4.m4a"; sourceTree = "<group>"; };
+		68A7CD4717919D3000248866 /* Wald Orfe 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wald Orfe 5.m4a"; sourceTree = "<group>"; };
+		68A7CD4817919D3000248866 /* Wald Orfe 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wald Orfe 6.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -731,6 +759,20 @@
 				68A7CD2A17919CF500248866 /* Kiste schieben.m4a */,
 				68A7CD2B17919CF500248866 /* Neunauge.m4a */,
 				68A7CD2C17919CF500248866 /* Pilz.m4a */,
+				68A7CD3B17919D3000248866 /* Sand wegwischen.m4a */,
+				68A7CD3C17919D3000248866 /* Sandsturm.m4a */,
+				68A7CD3D17919D3000248866 /* Seite umblättern.m4a */,
+				68A7CD3E17919D3000248866 /* Stadt Ambient.m4a */,
+				68A7CD3F17919D3000248866 /* StadtAmbient-neu.m4a */,
+				68A7CD4017919D3000248866 /* Stein.m4a */,
+				68A7CD4117919D3000248866 /* U-Boot.m4a */,
+				68A7CD4217919D3000248866 /* Wald Ambient.m4a */,
+				68A7CD4317919D3000248866 /* Wald Orfe 1.m4a */,
+				68A7CD4417919D3000248866 /* Wald Orfe 2.m4a */,
+				68A7CD4517919D3000248866 /* Wald Orfe 3.m4a */,
+				68A7CD4617919D3000248866 /* Wald Orfe 4.m4a */,
+				68A7CD4717919D3000248866 /* Wald Orfe 5.m4a */,
+				68A7CD4817919D3000248866 /* Wald Orfe 6.m4a */,
 			);
 			name = Sound;
 			sourceTree = "<group>";
@@ -995,6 +1037,20 @@
 				68A7CD3817919CF500248866 /* Kiste schieben.m4a in Resources */,
 				68A7CD3917919CF500248866 /* Neunauge.m4a in Resources */,
 				68A7CD3A17919CF500248866 /* Pilz.m4a in Resources */,
+				68A7CD4917919D3000248866 /* Sand wegwischen.m4a in Resources */,
+				68A7CD4A17919D3000248866 /* Sandsturm.m4a in Resources */,
+				68A7CD4B17919D3000248866 /* Seite umblättern.m4a in Resources */,
+				68A7CD4C17919D3000248866 /* Stadt Ambient.m4a in Resources */,
+				68A7CD4D17919D3000248866 /* StadtAmbient-neu.m4a in Resources */,
+				68A7CD4E17919D3000248866 /* Stein.m4a in Resources */,
+				68A7CD4F17919D3000248866 /* U-Boot.m4a in Resources */,
+				68A7CD5017919D3000248866 /* Wald Ambient.m4a in Resources */,
+				68A7CD5117919D3000248866 /* Wald Orfe 1.m4a in Resources */,
+				68A7CD5217919D3000248866 /* Wald Orfe 2.m4a in Resources */,
+				68A7CD5317919D3000248866 /* Wald Orfe 3.m4a in Resources */,
+				68A7CD5417919D3000248866 /* Wald Orfe 4.m4a in Resources */,
+				68A7CD5517919D3000248866 /* Wald Orfe 5.m4a in Resources */,
+				68A7CD5617919D3000248866 /* Wald Orfe 6.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
