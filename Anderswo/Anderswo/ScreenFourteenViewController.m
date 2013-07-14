@@ -259,7 +259,7 @@
             }
             else {
                 //Show thanks-message
-                NSLog(@"COLLISION WITH LAMPREY - ALL EYES COLLECTED");
+                //NSLog(@"COLLISION WITH LAMPREY - ALL EYES COLLECTED");
                 AudioServicesPlaySystemSound(_lamprey);
                 [UIImageView animateWithDuration:12.0
                                            delay:0.0
@@ -277,7 +277,7 @@
         //Collision with orf
         else if (CGRectIntersectsRect(self.orfView.frame, recognizer.view.frame)) {
             [self.textView setHidden:YES];
-            NSLog(@"COLLISION WITH ORF");
+            //NSLog(@"COLLISION WITH ORF");
             AudioServicesPlaySystemSound(_finished);
             //no more moving
             [recognizer.view removeGestureRecognizer:recognizer];
@@ -301,7 +301,7 @@
                 EyeView *eyeView = [self.eyes objectAtIndex:i];
                 if (CGRectIntersectsRect(recognizer.view.frame, eyeView.frame )) {
                     AudioServicesPlaySystemSound(_eye);
-                    NSLog(@"EYE FOUND - STILL %i EYES LEFT", self.eyes.count);
+                   // NSLog(@"EYE FOUND - STILL %i EYES LEFT", self.eyes.count);
                     [UIImageView animateWithDuration:3.0
                                                delay:0.0
                                              options:nil

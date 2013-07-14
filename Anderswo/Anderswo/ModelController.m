@@ -72,6 +72,7 @@
     //-1 because screen 11 was removed
     if (index == 14) {
         //NSLog(@"SCREEN 17");
+        /*
         if ([self.screenViews objectForKey:@"14"]!=nil) {
             return [self.screenViews objectForKey:@"14"];
         }
@@ -85,11 +86,16 @@
         screenViewController.dataObject = self.pageData[index];
         [self.screenViews setValue:screenViewController forKey:@"14"];
         return screenViewController;
+         */
+        
+        identifier = @"8";
+        
     }
     
     //-1 because screen 11 was removed
     //-1 because screen 20 was removed
     if (index == 20) {
+        /*
         if ([self.screenViews objectForKey:@"20"]!=nil) {
             return [self.screenViews objectForKey:@"20"];
         }
@@ -97,6 +103,8 @@
         screenViewController.dataObject = self.pageData[index];
         [self.screenViews setValue:screenViewController forKey:@"20"];
         return screenViewController;
+         */
+        identifier = @"8";
     }
     
     ScreenViewController *screenViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
