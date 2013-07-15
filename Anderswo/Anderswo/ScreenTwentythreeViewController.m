@@ -53,6 +53,11 @@
     [self.bottleView setCenter:point];
     [self.view addSubview:self.bottleView];
     
+    //GestureRecognizer Tap
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    recognizer.delegate = self;
+    [self.view addGestureRecognizer:recognizer];
+    
     [UIImageView animateWithDuration:2.0
                                delay:0.0
                              options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat | UIViewAnimationOptionCurveEaseInOut
@@ -86,6 +91,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)handleTap:(UITapGestureRecognizer *)recognizer{
+    [self.rootViewController handleNextTap:recognizer];
 }
 
 @end

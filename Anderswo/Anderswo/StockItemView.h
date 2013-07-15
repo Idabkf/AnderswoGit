@@ -19,6 +19,9 @@
 @property CGRect oldRect;
 @property CGPoint oldCenter;
 
+@property BOOL max;
+@property BOOL min;
+
 @property CGRect bucketRect;
 
 @end

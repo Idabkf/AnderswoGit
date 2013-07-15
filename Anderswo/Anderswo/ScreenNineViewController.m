@@ -50,6 +50,11 @@
     CGPoint point = CGPointMake(518, 389.75);
     [self.mushroomView setCenter:point];
     [(UIImageView *)self.view addSubview:self.mushroomView];
+    
+    //GestureRecognizer Tap
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    recognizer.delegate = self;
+    [self.view addGestureRecognizer:recognizer];
 
     [UIImageView animateWithDuration:2.0
                                delay:0.0
@@ -82,6 +87,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)handleTap:(UITapGestureRecognizer *)recognizer{
+    [self.rootViewController handleNextTap:recognizer];
 }
 
 @end

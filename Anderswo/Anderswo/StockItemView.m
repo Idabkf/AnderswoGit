@@ -17,6 +17,8 @@
         // Initialization code
         [self setUserInteractionEnabled:YES];
         self.rotated = NO;
+        self.max = NO;
+        self.min = NO;
         
         UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
         panRecognizer.delegate = self;
@@ -64,7 +66,13 @@
         else{
             CGFloat scale = recognizer.scale;
             scale = MAX(scale, 0.7);
+            if (scale == 0.7) {
+                self.min = YES;
+            }
             scale = MIN(scale, 3.0);
+            if (scale == 3.0) {
+                self.max = YES;
+            }
             CGAffineTransform scaleTransform = CGAffineTransformMakeScale(scale, scale);
                         recognizer.view.frame = CGRectApplyAffineTransform(self.oldRect, scaleTransform);
             recognizer.view.center = self.oldCenter;

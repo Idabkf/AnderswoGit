@@ -10,4 +10,6 @@
 
 @interface ScreenTwentysixViewController : ScreenViewController
 
+@property UIImageView *groelmView;
+
 @end

@@ -37,7 +37,7 @@
     self.rectRight = CGRectMake(924.0f, 0.0f, 100.0f, 768.0f);
     
     // Adjust the image
-    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen14-Labyrinth+Wasser" ofType:@"png"];
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen14-Labyrinth+Wasser-NEU" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
     self.backgroundView = [[UIImageView alloc] initWithImage:image];
     [self.backgroundView setUserInteractionEnabled:YES];
