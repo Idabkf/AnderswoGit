@@ -37,11 +37,11 @@
     pinchRecognizer.delegate = self;
     [self.view addGestureRecognizer:pinchRecognizer];
      */
-    
+    /*
     if (!self.items) {
         self.items = [[NSMutableArray alloc] init];
     }
-    
+    */
     //CITY
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen02-Stadt-wischbar_stadt" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
@@ -333,6 +333,7 @@
         UIImage *image = imageView.image;
         [self.stockItemView setImage:image];
         [self.view addSubview:self.stockItemView];
+        self.stockItemView.bucketRect = self.bucketView.frame;
         
         if (recognizer.view == self.mushroom1View || recognizer.view == self.mushroom2View || recognizer.view == self.mushroom3View) {
             AudioServicesPlaySystemSound(_mushroom);
@@ -347,7 +348,7 @@
          AudioServicesPlaySystemSound(_bottle);
          }
         
-        [self.items addObject:self.stockItemView];
+        //[self.items addObject:self.stockItemView];
         
     }
     
@@ -357,11 +358,10 @@
         if (CGRectIntersectsRect(self.stockItemView.frame, self.stockView.frame)) {
             [self.stockItemView removeFromSuperview];
         }
-        /*
-        if (CGRectIntersectsRect(self.bucketView.frame, self.stockView.frame)) {
+        
+        if (CGRectIntersectsRect(self.bucketView.frame, self.stockItemView.frame)) {
             [self.stockItemView removeFromSuperview];
         }
-         */
         
     }
 }

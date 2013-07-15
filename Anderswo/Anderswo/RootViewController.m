@@ -49,6 +49,7 @@
     //[self presentViewController:self.currentScreen animated:NO completion:nil];
     
     [self loadLambsEar];
+    [self loadLeftLambsEar];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,6 +90,28 @@
     [self.lambsear addGestureRecognizer:tapRecognizer];
 }
 
+-(void) loadLeftLambsEar{
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Eselsohr_links" ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+    self.lambsearLeft = [[UIImageView alloc]initWithImage:image];
+    CGRect rect = CGRectMake(0.0f, 0.0f, image.size.width/2, image.size.height/2);
+    self.lambsearLeft.frame = rect;
+    CGPoint point = CGPointMake(21.25f, 725.0f);
+    [self.lambsearLeft setCenter:point];
+    [self.lambsearLeft setUserInteractionEnabled:YES];
+    
+}
+
+-(void)setLeftLambsear{
+    [self.view addSubview:self.lambsearLeft];
+    
+    //GestureRecognizer Tap
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleBackTap:)];
+    tapRecognizer.delegate = self;
+    [self.lambsearLeft addGestureRecognizer:tapRecognizer];
+}
+
+
 -(void) enablePan{
     [self setLambsear];
 }
@@ -107,19 +130,51 @@
     ScreenViewController *nextScreen = [_modelController viewControllerAfterViewController:self.currentScreen];
     
     [self addChildViewController:nextScreen];
+    //[nextScreen.view setHidden:YES];
+    [self.view addSubview:nextScreen.view];
     
-    /*
+    
+    
     [self transitionFromViewController:self.currentScreen
                       toViewController:nextScreen
                               duration:3.0
                                options:UIViewAnimationOptionTransitionCurlDown
                             animations:^{}
                             completion:nil];
-    */
+    
     [self.currentScreen removeFromParentViewController];
     [self.currentScreen.view removeFromSuperview];
     self.currentScreen = nextScreen;
-    [self.view addSubview:self.currentScreen.view];
+    
+    [self setLeftLambsear];
+    if (self.currentScreen.panEnabled) {
+        [self setLambsear];
+    }
+}
+
+-(void)handleBackTap:(UITapGestureRecognizer *) recognizer{
+    [self.lambsearLeft removeFromSuperview];
+    
+    ScreenViewController *backScreen = [_modelController viewControllerBeforeViewController:self.currentScreen];
+    
+    [self addChildViewController:backScreen];
+    //[nextScreen.view setHidden:YES];
+    [self.view addSubview:backScreen.view];
+    
+    
+    
+    [self transitionFromViewController:self.currentScreen
+                      toViewController:backScreen
+                              duration:3.0
+                               options:UIViewAnimationOptionTransitionCurlUp
+                            animations:^{}
+                            completion:nil];
+    
+    [self.currentScreen removeFromParentViewController];
+    [self.currentScreen.view removeFromSuperview];
+    self.currentScreen = backScreen;
+    
+    [self setLeftLambsear];
     if (self.currentScreen.panEnabled) {
         [self setLambsear];
     }

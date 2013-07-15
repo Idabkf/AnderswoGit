@@ -45,6 +45,7 @@
     self.backgroundView.frame = rect;
     [self.view addSubview:self.backgroundView];
     
+    
     //TEXT
     pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen14a" ofType:@"png"];
     image = [UIImage imageWithContentsOfFile:pathString];
@@ -255,16 +256,37 @@
                 //Show thanks-message
                 //NSLog(@"COLLISION WITH LAMPREY - ALL EYES COLLECTED");
                 AudioServicesPlaySystemSound(_lamprey);
+                
+                NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen14-Neunauge+Augen" ofType:@"png"];
+                UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+                [self.lampreyView setImage:image];
+                CGRect rect = CGRectMake(0, 0, image.size.width/4, image.size.height/4);
+                self.lampreyView.frame = rect;
+                self.lampreyVisible = NO;
+                
+                //TEXT
+                pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen14b" ofType:@"png"];
+                image = [UIImage imageWithContentsOfFile:pathString];
+                [self.textView setImage:image];
+                [self.textView setHidden:NO];
+                //rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
+                //self.textView.frame = rect;
+                
+                
+                
+                /*
                 [UIImageView animateWithDuration:12.0
                                            delay:0.0
                                          options:nil
                                       animations:^{
-                                          self.lampreyView.alpha = 0.0f;
-                                          self.lampreyView.transform = CGAffineTransformMakeScale(0.3f, 0.3f);
+                                          CGRect rect = CGRectMake(0, 1024-image.size.width/2, image.size.width/2, image.size.height/2);
                                       }completion:^(BOOL finished){
                                           [self.lampreyView removeFromSuperview];
                                           self.lampreyVisible = NO;
                                       }];
+                */
+            
+                
             }
         }
         

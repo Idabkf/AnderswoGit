@@ -19,4 +19,6 @@
 @property UIImageView *kindView;
 @property UIImageView *backgroundView;
 
+@property CGRect bottleRect;
+
 @end

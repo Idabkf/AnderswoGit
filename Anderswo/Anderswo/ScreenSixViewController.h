@@ -8,7 +8,9 @@
 
 #import "ScreenViewController.h"
 
-@interface ScreenSixViewController : ScreenViewController
+@interface ScreenSixViewController : ScreenViewController{
+    SystemSoundID _orf;
+}
 
 @property UIImageView *childView;
 @property UIImageView *groelmView;

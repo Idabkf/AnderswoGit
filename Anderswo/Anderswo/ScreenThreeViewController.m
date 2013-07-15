@@ -33,6 +33,7 @@
 
     self.boxViews = [[NSMutableArray alloc] initWithObjects:self.boxViewOne, self.boxViewTwo, self.boxViewThree, self.boxViewFour, self.boxViewFive,  nil];
     
+    //TEXT
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen03a" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
     self.textView = [[UIImageView alloc]initWithImage:image];
@@ -40,6 +41,8 @@
     self.textView.frame = rect;
     [self.view addSubview:self.textView];
     
+    //CHEKCRECT
+    self.checkRect = CGRectMake(981.75f-169/4, 682.75f-341/4, 169/2, 341/2);
     
     [self initSounds];
 
@@ -60,6 +63,10 @@
     soundPath = [[NSBundle mainBundle] pathForResource:@"Grölm erscheint" ofType:@"m4a"];
     soundUrl = [NSURL fileURLWithPath:soundPath];
     AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_groelm);
+    
+    soundPath = [[NSBundle mainBundle] pathForResource:@"Grölm knurrt" ofType:@"m4a"];
+    soundUrl = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_growl);
 }
 
 -(void) setBoxes
@@ -149,27 +156,47 @@
         [recognizer.view removeFromSuperview];
         [self.boxViews removeObject:recognizer.view];
         if (self.boxViews.count == 0) {
-            
+            [self.textView setHidden:YES];
+            AudioServicesPlaySystemSound(_groelm);
+            /*
             //GestureRecognizer Tap
             UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
             tapRecognizer.delegate = self;
             [self.view addGestureRecognizer:tapRecognizer];
+             */
+            
+            //TEXT
+            NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen03b" ofType:@"png"];
+            UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+            [self.textView setImage:image];
+            [self.textView setHidden:NO];
+            
+            //enable pageViews recognizer
+            [self.rootViewController enablePan];
+            //[self loadLambsEar];
+            self.panEnabled = YES;
         }
     }
 }
-
+/*
 -(void)handleTap:(UITapGestureRecognizer *) recognizer{
-    AudioServicesPlaySystemSound(_groelm);
     
-    //TEXT
-    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen03b" ofType:@"png"];
-    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
-    [self.textView setImage:image];
+    //CHECK whether the tap is on the lambsear
+    if (!CGRectContainsPoint(self.checkRect, [recognizer locationInView:self.view])) {
+        AudioServicesPlaySystemSound(_growl);
+        //TEXT
+        NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen03b" ofType:@"png"];
+        UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+        [self.textView setImage:image];
+        [self.textView setHidden:NO];
+        
+        //enable pageViews recognizer
+        [self.rootViewController enablePan];
+        //[self loadLambsEar];
+        self.panEnabled = YES;
+    }
     
-    //enable pageViews recognizer
-    [self.rootViewController enablePan];
-    //[self loadLambsEar];
-    self.panEnabled = YES;
+    
 }
-
+*/
 @end

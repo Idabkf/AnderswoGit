@@ -62,12 +62,13 @@
     recognizer.delegate = self;
     [self.view addGestureRecognizer:recognizer];
     
+    
+    AudioServicesPlaySystemSound(_growl);
 }
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    AudioServicesPlaySystemSound(_growl);
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,6 +99,8 @@
 - (void)handleTap:(UITapGestureRecognizer *)recognizer
 {
     if (self.imageFlg == 0) {
+        
+        AudioServicesPlaySystemSound(_growl);
         [self.textView setHidden:YES];
         NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen12-drohgroelm" ofType:@"png"];
         UIImage *image = [UIImage imageWithContentsOfFile:pathString];

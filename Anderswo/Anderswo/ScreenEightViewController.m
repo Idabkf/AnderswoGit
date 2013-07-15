@@ -119,10 +119,10 @@
         AudioServicesPlaySystemSound(_orf6);
     }
     else if (CGRectContainsPoint(self.rectOrf7, point)) {
-        AudioServicesPlaySystemSound(_orf5);
+        AudioServicesPlaySystemSound(_orf1);
     }
     else if (CGRectContainsPoint(self.rectOrf8, point)) {
-        AudioServicesPlaySystemSound(_orf6);
+        AudioServicesPlaySystemSound(_orf3);
     }
 }
 

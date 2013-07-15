@@ -92,16 +92,18 @@
     tapRecognizer.delegate = self;
     [self.groelmView addGestureRecognizer:tapRecognizer];
     
+    
     //WATER
     pathString = [[NSBundle mainBundle] pathForResource:@"Screen13-vorderesWasser" ofType:@"png"];
     image = [UIImage imageWithContentsOfFile:pathString];
     self.waterView = [[UIImageView alloc]initWithImage:image];
     rect = CGRectMake(0,0, image.size.width/2, image.size.height/2);
     self.waterView.frame = rect;
-    CGPoint point = CGPointMake(521.5f, 646.25f);
+    CGPoint point = CGPointMake(511.5f, 646.25f);
     [self.waterView setCenter:point];
     [self.waterView setUserInteractionEnabled:YES];
     [self.view addSubview:self.waterView];
+     
     
     //CHILD
     pathString = [[NSBundle mainBundle] pathForResource:@"Screen13-Kind-vIda" ofType:@"png"];
@@ -116,10 +118,20 @@
     pathString = [[NSBundle mainBundle] pathForResource:@"Screen13-Chefwasserorf" ofType:@"png"];
     image = [UIImage imageWithContentsOfFile:pathString];
     self.orfView = [[UIImageView alloc]initWithImage:image];
-    rect = CGRectMake(212.0f, 102.0f, image.size.width/2, image.size.height/2);
+    rect = CGRectMake(196.0f, -80.0f, image.size.width/2, image.size.height/2);
     self.orfView.frame = rect;
     [self.orfView setUserInteractionEnabled:YES];
     [self.groelmView addSubview:self.orfView];
+    
+    //TEXT 2
+    pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen13-2" ofType:@"png"];
+    image = [UIImage imageWithContentsOfFile:pathString];
+    self.textView2 = [[UIImageView alloc]initWithImage:image];
+    rect = CGRectMake(0,0, image.size.width/2, image.size.height/2);
+    self.textView2.frame = rect;
+    point = CGPointMake(679.75f, 691.0f);
+    [self.textView2 setCenter:point];
+    [self.view addSubview:self.textView2];
     
 }
 
@@ -127,14 +139,13 @@
     
     AudioServicesPlaySystemSound(_groelm);
     
-    
-    
     [self.childView removeFromSuperview];
+    [self.textView2 setHidden:YES];
     [UIImageView animateWithDuration:6.0
                                delay:0.0
                              options: UIViewAnimationOptionCurveEaseInOut
                           animations:^{
-                              CGRect rect = CGRectMake(768.0f, 1024.0f, self.groelmView.frame.size.width, self.groelmView.frame.size.height);
+                              CGRect rect = CGRectMake(738.0f, 800.0f, self.groelmView.frame.size.width, self.groelmView.frame.size.height);
                               self.groelmView.frame = rect;
                           }completion:^(BOOL finished){
                               [self.view removeGestureRecognizer:recognizer];

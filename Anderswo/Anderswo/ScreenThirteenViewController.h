@@ -12,6 +12,8 @@
     SystemSoundID _groelm;
 }
 
+@property UIImageView *textView2;
+
 @property UIImageView *childView;
 @property UIImageView *groelmView;
 @property UIImageView *orfView;

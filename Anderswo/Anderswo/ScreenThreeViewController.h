@@ -11,7 +11,10 @@
 @interface ScreenThreeViewController : ScreenViewController{
     SystemSoundID _box;
     SystemSoundID _groelm;
+    SystemSoundID _growl;
 }
+
+@property CGRect checkRect;
 
 @property(strong, nonatomic) UIImageView *boxViewOne;
 @property(strong, nonatomic) UIImageView *boxViewTwo;

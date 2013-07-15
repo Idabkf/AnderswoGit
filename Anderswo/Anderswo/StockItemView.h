@@ -19,4 +19,6 @@
 @property CGRect oldRect;
 @property CGPoint oldCenter;
 
+@property CGRect bucketRect;
+
 @end

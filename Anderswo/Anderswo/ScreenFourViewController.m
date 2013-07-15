@@ -31,7 +31,7 @@
     
     [self initSounds];
     
-    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen04b" ofType:@"png"];
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen04b-1" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
     self.textView = [[UIImageView alloc]initWithImage:image];
     CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
@@ -60,12 +60,13 @@
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     recognizer.delegate = self;
     [self.view addGestureRecognizer:recognizer];
+    AudioServicesPlaySystemSound(_growl);
 }
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    AudioServicesPlaySystemSound(_growl);
+   // AudioServicesPlaySystemSound(_growl);
 
 }
 
@@ -123,6 +124,13 @@
         self.imageFlg = 2;
     }
     else if (self.imageFlg == 2) {
+        //AudioServicesPlaySystemSound(_belly);
+        NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen04b-2" ofType:@"png"];
+        UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+        [self.textView setImage:image];
+        self.imageFlg = 3;
+    }
+    else if (self.imageFlg == 3) {
         AudioServicesPlaySystemSound(_spit);
         NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen04c-Spuckgroelm" ofType:@"png"];
         UIImage *image = [UIImage imageWithContentsOfFile:pathString];
@@ -147,7 +155,7 @@
         //[self loadLambsEar];
         self.panEnabled = YES;
         
-        self.imageFlg = 3;
+        self.imageFlg = 4;
     }
 
 }

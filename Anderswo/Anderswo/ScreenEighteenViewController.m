@@ -42,7 +42,7 @@
     pathString = [[NSBundle mainBundle] pathForResource:@"Screen17b-Groelm" ofType:@"png"];
     image = [UIImage imageWithContentsOfFile:pathString];
     self.groelmView = [[UIImageView alloc]initWithImage:image];
-    rect = CGRectMake(80.0f, 150.0f, image.size.width/2, image.size.height/2);
+    rect = CGRectMake(70.0f, 220.0f, image.size.width/2, image.size.height/2);
     self.groelmView.frame = rect;
     [self.groelmView setUserInteractionEnabled:YES];
     [self.view addSubview:self.groelmView];

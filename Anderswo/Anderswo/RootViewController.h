@@ -13,8 +13,12 @@
 
 @property ScreenViewController *currentScreen;
 
+@property UIViewController *curlController;
+
 @property UIImageView *lambsear;
+@property UIImageView *lambsearLeft;
 
 -(void) enablePan;
+-(void)handleNextTap:(UITapGestureRecognizer *) recognizer;
 
 @end

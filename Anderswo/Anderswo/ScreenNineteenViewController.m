@@ -85,8 +85,10 @@
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen19-Sandgroelm" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
     self.groelmView = [[UIImageView alloc]initWithImage:image];
-    CGRect rect = CGRectMake(-13.0f, 357.5f, image.size.width/2, image.size.height/2);
+    CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
     self.groelmView.frame = rect;
+    CGPoint point = CGPointMake(45.25f, 510.75f);
+    [self.groelmView setCenter:point];
     [self.groelmView setUserInteractionEnabled:YES];
     [self.view addSubview:self.groelmView];
     
@@ -125,7 +127,7 @@
                                delay:0.0
                              options: UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat
                           animations:^{
-                              [UIView setAnimationRepeatCount:5];
+                              [UIView setAnimationRepeatCount:7];
                               self.sturmView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, -4.0f, 0.0f);
                           }completion:^(BOOL finished){
                              self.sturmView.transform = CGAffineTransformIdentity;
@@ -133,7 +135,6 @@
 }
 
 - (void) removeGroelm{
-    AudioServicesPlaySystemSound(_growl);
     AudioServicesPlaySystemSound(_growl);
     [UIImageView animateWithDuration:15.0
                                delay:3.0
@@ -153,9 +154,16 @@
 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer{
     
+    if (CGRectContainsPoint(self.bottleRect, [recognizer locationInView:self.view])) {
+        [self.rootViewController handleNextTap:recognizer];
+        return;
+    }
+    
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen19a" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
     [self.textView setImage:image];
+    
+    self.bottleRect = CGRectMake(957.75, 143.75, 100.0f, 100.0f);
     
     
     [self.backgroundView setHidden:NO];

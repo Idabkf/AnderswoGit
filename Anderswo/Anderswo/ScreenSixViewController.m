@@ -32,13 +32,16 @@
     [self initBackgroundMusic];
     
     //TEXT
-    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen06" ofType:@"png"];
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen06-1" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
     self.textView = [[UIImageView alloc]initWithImage:image];
     CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
     self.textView.frame = rect;
     [self.view addSubview:self.textView];
-    [self.textView setHidden:YES];
+    
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Wald Orfe 1" ofType:@"m4a"];
+    NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_orf);
     
     [self setFigures];
     
@@ -104,7 +107,7 @@
 
 - (void) initBackgroundMusic{
     
-    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Wald Ambient" ofType:@"m4a"];
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Wald Ambient_leiser" ofType:@"m4a"];
     NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
     //AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_ambient);
     NSError *error;
@@ -114,10 +117,13 @@
 }
 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer{
+    AudioServicesPlaySystemSound(_orf);
     
     //NSLog(@"ORFVIEW TAPPED");
    
-    [self.textView setHidden:NO];
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen06" ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+    [self.textView setImage:image];
     
     /* old help screen
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen06-Wald-help" ofType:@"png"];

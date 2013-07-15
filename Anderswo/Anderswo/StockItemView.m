@@ -45,6 +45,12 @@
 -(void)handlePan:(UIPanGestureRecognizer *) recognizer{
     
     recognizer.view.center = [recognizer locationInView:self.superview];
+    
+    if (recognizer.state == UIGestureRecognizerStateEnded){
+        if (CGRectIntersectsRect(self.bucketRect, recognizer.view.frame)) {
+            [self removeFromSuperview];
+        }
+    }
 }
 
 -(void)handlePinch:(UIPinchGestureRecognizer *) recognizer{
