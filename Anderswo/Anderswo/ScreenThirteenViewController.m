@@ -140,7 +140,7 @@
     AudioServicesPlaySystemSound(_groelm);
     
     [self.childView removeFromSuperview];
-    [self.textView2 setHidden:YES];
+    
     [UIImageView animateWithDuration:6.0
                                delay:0.0
                              options: UIViewAnimationOptionCurveEaseInOut
@@ -152,6 +152,7 @@
                               NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen13a" ofType:@"png"];
                               UIImage *image = [UIImage imageWithContentsOfFile:pathString];
                               [self.textView setImage:image];
+                              [self.textView2 setHidden:YES];
                               //enable pageViews recognizer
                               [self.rootViewController enablePan];
                               //[self loadLambsEar];

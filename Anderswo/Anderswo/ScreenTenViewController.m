@@ -37,11 +37,11 @@
     pinchRecognizer.delegate = self;
     [self.view addGestureRecognizer:pinchRecognizer];
      */
-    /*
+    
     if (!self.items) {
         self.items = [[NSMutableArray alloc] init];
     }
-    */
+
     //CITY
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen02-Stadt-wischbar_stadt" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
@@ -113,6 +113,34 @@
          [self initBottleWithImage:1];
          [self initBottleWithImage:2];
      }
+     
+     else if ([data isEqualToNumber:[NSNumber numberWithInt:21]]) {
+         //TEXT
+         NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen25" ofType:@"png"];
+         UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+         self.textView = [[UIImageView alloc]initWithImage:image];
+         CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
+         self.textView.frame = rect;
+         [self.view addSubview:self.textView];
+         
+         [self.stockView removeFromSuperview];
+         [self.bucketView removeFromSuperview];
+         
+         [self.bottle1View removeFromSuperview];
+         [self.bottle2View removeFromSuperview];
+         [self.bottle3View removeFromSuperview];
+         [self.eye1View removeFromSuperview];
+         [self.eye2View removeFromSuperview];
+         [self.eye3View removeFromSuperview];
+         [self.mushroom1View removeFromSuperview];
+         [self.mushroom2View removeFromSuperview];
+         [self.mushroom3View removeFromSuperview];
+         
+         [self fadeOutItems];
+         
+     }
+     
+     
  }
  
 
@@ -157,13 +185,13 @@
     AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_bottle);
     
 }
-/*
+
 -(void) setItemsOfOldScreen{
     for (StockItemView *stockitem in self.items) {
         [self.view addSubview:stockitem];
     }
 }
-*/
+
 -(void)initBucket{
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Inventar-Muell" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
@@ -317,6 +345,35 @@
     
 }
 
+-(void) fadeOutItems{
+    /*
+    StockItemView *item = [self.items objectAtIndex:0];
+    [UIImageView animateWithDuration:20.0
+                               delay:3.0
+                             options:nil
+                          animations:^{
+                              item.alpha = 0.0;
+                          }completion:^(BOOL finished){
+                              //[item removeFromSuperview];
+                          }];
+     */
+    for (StockItemView *item in self.items) {
+        [UIImageView animateWithDuration:15.0
+                                   delay:2.0
+                                 options:nil
+                              animations:^{
+                                  item.alpha = 0.0;
+                              }completion:^(BOOL finished){
+                                  //[item removeFromSuperview];
+                                  if (!self.panEnabled) {
+                                      self.panEnabled = YES;
+                                      [self.rootViewController enablePan];
+                                  }
+                              }];
+    }
+    
+}
+
 
 -(void)handlePan:(UIPanGestureRecognizer *) recognizer{
 
@@ -348,7 +405,7 @@
          AudioServicesPlaySystemSound(_bottle);
          }
         
-        //[self.items addObject:self.stockItemView];
+        [self.items addObject:self.stockItemView];
         
     }
     

@@ -74,11 +74,11 @@
         
         if (!screenViewController) {
             screenViewController = [storyboard instantiateViewControllerWithIdentifier:@"8"];
+            screenViewController.rootViewController = self.rootViewController;
             [self.screenViews setValue:screenViewController forKey:@"8"];
         }
         
         screenViewController.dataObject = self.pageData[index];
-        screenViewController.rootViewController = self.rootViewController;
         [self.screenViews setValue:screenViewController forKey:@"14"];
         return screenViewController;
     }
@@ -90,9 +90,22 @@
             return [self.screenViews objectForKey:@"20"];
         }
         ScreenViewController *screenViewController = [self.screenViews objectForKey:@"14"];
+        if (!screenViewController) {
+            screenViewController = [storyboard instantiateViewControllerWithIdentifier:@"8"];
+            screenViewController.rootViewController = self.rootViewController;
+            [self.screenViews setValue:screenViewController forKey:@"8"];
+        }
+        screenViewController.dataObject = self.pageData[index];
+        [self.screenViews setValue:screenViewController forKey:@"20"];
+        return screenViewController;
+    }
+    if (index == 21) {
+        ScreenTenViewController *oldScreen = [self.screenViews objectForKey:@"20"];
+        ScreenTenViewController *screenViewController = [storyboard instantiateViewControllerWithIdentifier:@"8"];
         screenViewController.dataObject = self.pageData[index];
         screenViewController.rootViewController = self.rootViewController;
-        [self.screenViews setValue:screenViewController forKey:@"20"];
+        screenViewController.items = oldScreen.items;
+        [screenViewController setItemsOfOldScreen];
         return screenViewController;
     }
     
