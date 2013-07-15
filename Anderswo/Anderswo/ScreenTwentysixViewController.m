@@ -37,7 +37,7 @@
     self.textView.frame = rect;
     [self.view addSubview:self.textView];
     
-    pathString = [[NSBundle mainBundle] pathForResource:@"Screen04aa-Groelmdrohend" ofType:@"png"];
+    pathString = [[NSBundle mainBundle] pathForResource:@"Screen26-Groelm" ofType:@"png"];
     image = [UIImage imageWithContentsOfFile:pathString];
     self.groelmView = [[UIImageView alloc]initWithImage:image];
     rect = CGRectMake(0,0, image.size.width/2, image.size.height/2);
