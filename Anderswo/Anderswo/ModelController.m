@@ -9,6 +9,7 @@
 #import "ModelController.h"
 
 #import "ScreenViewController.h"
+#import "ScreenTenViewController.h"
 
 /*
  A controller object that manages a simple model -- a collection of month names.
@@ -46,21 +47,15 @@
         
         self.screenViews = [[NSMutableDictionary alloc] init];
         
+        /*
         [self newViewControllerAtIndex:0 storyboard:[UIStoryboard storyboardWithName:@"MainStoryboard_iPad" bundle:[NSBundle mainBundle]]];
+        */
     }
     return self;
 }
 
 - (ScreenViewController *)newViewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {
-   // NSLog(@"INDEX: %i", index);
-    /*
-    // Return the data view controller for the given index.
-    if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
-        return nil;
-    }
-    */
-    // Create a new screen view controller and pass suitable data.
     
     NSString *identifier = @"0";
     
@@ -72,7 +67,6 @@
     //-1 because screen 11 was removed
     if (index == 14) {
         //NSLog(@"SCREEN 17");
-        /*
         if ([self.screenViews objectForKey:@"14"]!=nil) {
             return [self.screenViews objectForKey:@"14"];
         }
@@ -84,33 +78,34 @@
         }
         
         screenViewController.dataObject = self.pageData[index];
+        screenViewController.rootViewController = self.rootViewController;
         [self.screenViews setValue:screenViewController forKey:@"14"];
         return screenViewController;
-         */
-        
-        identifier = @"8";
-        
     }
     
     //-1 because screen 11 was removed
     //-1 because screen 20 was removed
     if (index == 20) {
-        /*
         if ([self.screenViews objectForKey:@"20"]!=nil) {
             return [self.screenViews objectForKey:@"20"];
         }
         ScreenViewController *screenViewController = [self.screenViews objectForKey:@"14"];
         screenViewController.dataObject = self.pageData[index];
+        screenViewController.rootViewController = self.rootViewController;
         [self.screenViews setValue:screenViewController forKey:@"20"];
         return screenViewController;
-         */
-        identifier = @"8";
     }
     
     ScreenViewController *screenViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
     screenViewController.dataObject = self.pageData[index];
-    [self.screenViews setValue:screenViewController forKey:[NSString stringWithFormat:@"%i",index]];
+    screenViewController.rootViewController = self.rootViewController;
+    //[self.screenViews setValue:screenViewController forKey:[NSString stringWithFormat:@"%i",index]];
+    if (index == 8) {
+        [self.screenViews setValue:screenViewController forKey:[NSString stringWithFormat:@"%i",index]];
+    }
+    
     return screenViewController;
+
 }
 
 - (ScreenViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard{
@@ -119,7 +114,7 @@
         return [self.screenViews objectForKey:@"0"];
     }
     
-    if (self.screenViews.count>index) {
+    if ([self.screenViews objectForKey:[NSString stringWithFormat:@"%i",index]] != nil) {
         return [self.screenViews objectForKey:[NSString stringWithFormat:@"%i",index]];
     }
     else return [self newViewControllerAtIndex:index storyboard:storyboard];
@@ -135,7 +130,7 @@
 #pragma mark - Page View Controller Data Source
 
 
-- (UIViewController *)viewControllerBeforeViewController:(UIViewController *)viewController
+- (ScreenViewController *)viewControllerBeforeViewController:(UIViewController *)viewController
 {
     NSUInteger index = [self indexOfViewController:(ScreenViewController *)viewController];
     if ((index == 0) || (index == NSNotFound)) {
@@ -147,7 +142,7 @@
 }
 
 
-- (UIViewController *)viewControllerAfterViewController:(UIViewController *)viewController
+- (ScreenViewController *)viewControllerAfterViewController:(UIViewController *)viewController
 {
     NSUInteger index = [self indexOfViewController:(ScreenViewController *)viewController];
     

@@ -7,7 +7,7 @@
 //
 
 #import "ScreenFourViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenFourViewController ()
 
@@ -64,12 +64,6 @@
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    if (self.panEnabled) {
-        //disable pageViews recognizer
-        //[self.rootViewController disablePan];
-        self.panEnabled = NO;
-    }
     
     AudioServicesPlaySystemSound(_growl);
 
@@ -149,8 +143,8 @@
         [(UIImageView *)self.view addSubview:self.kindView];
         
         //enable pageViews recognizer
-        //[self.rootViewController enablePan];
-        [self loadLambsEar];
+        [self.rootViewController enablePan];
+        //[self loadLambsEar];
         self.panEnabled = YES;
         
         self.imageFlg = 3;

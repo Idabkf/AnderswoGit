@@ -7,7 +7,7 @@
 //
 
 #import "ScreenThreeViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenThreeViewController ()
 
@@ -44,17 +44,6 @@
     [self initSounds];
 
    // NSLog(@"GESTURE RECOGNIZERS: %@", self.view.gestureRecognizers);
-}
-
-
--(void) viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    
-    if (self.panEnabled) {
-        //disable pageViews recognizer
-        //[self.rootViewController disablePan];
-        self.panEnabled = NO;
-    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -178,8 +167,8 @@
     [self.textView setImage:image];
     
     //enable pageViews recognizer
-    //[self.rootViewController enablePan];
-    [self loadLambsEar];
+    [self.rootViewController enablePan];
+    //[self loadLambsEar];
     self.panEnabled = YES;
 }
 

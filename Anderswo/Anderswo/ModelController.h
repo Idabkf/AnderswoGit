@@ -9,17 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @class ScreenViewController;
+@class RootViewController;
 
 @interface ModelController : NSObject <UIPageViewControllerDataSource>
 
 @property int numberOfScreens;
 @property int numberOfFinishedScreens;
 
+@property (strong,nonatomic) RootViewController *rootViewController;
+
 @property NSMutableDictionary *screenViews;
 
 - (ScreenViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (ScreenViewController *)newViewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
-- (UIViewController *)viewControllerAfterViewController:(UIViewController *)viewController;
-- (UIViewController *)viewControllerBeforeViewController:(UIViewController *)viewController;
+- (ScreenViewController *)viewControllerAfterViewController:(UIViewController *)viewController;
+- (ScreenViewController *)viewControllerBeforeViewController:(UIViewController *)viewController;
 
 @end

@@ -20,7 +20,7 @@
 }
 
 @property (strong,nonatomic) RootViewController *rootViewController;
-@property UIImageView *lambsear;
+
 @property BOOL panEnabled;
 
 @property UIImageView *textView;
@@ -34,6 +34,6 @@
 - (BOOL) getReceiveTouch;
 
 */
--(void) loadLambsEar;
+//-(void) loadLambsEar;
 
 @end

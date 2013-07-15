@@ -7,7 +7,7 @@
 //
 
 #import "ScreenOneViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenOneViewController ()
 
@@ -34,15 +34,16 @@
     
    // NSLog(@"SCREEN SIZE : x:%@ y:%@", self.view.frame.size.width, self.view.frame.size.height);
     //enable pageViews recognizer
-    //[self.rootViewController enablePan];
+    [self.rootViewController enablePan];
     self.panEnabled = YES;
-    [self loadLambsEar];
+    //[self loadLambsEar];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    //[self re];
 }
 
 @end

@@ -23,7 +23,7 @@
     
     //[self.destinationViewController dismissViewControllerAnimated:NO completion:nil];
     [self.sourceViewController presentViewController:self.destinationViewController animated:NO completion:nil];
-    
+    [self.sourceViewController removeFromParentViewController];
     
 }
 

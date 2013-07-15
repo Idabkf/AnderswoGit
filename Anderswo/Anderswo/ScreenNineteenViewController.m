@@ -7,7 +7,7 @@
 //
 
 #import "ScreenNineteenViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenNineteenViewController ()
 
@@ -42,7 +42,7 @@
     self.textView.frame = rect;
     [self.view addSubview:self.textView];
     
-    //[self animateStorm];
+    [self animateStorm];
     [self removeGroelm];
 }
 
@@ -52,12 +52,6 @@
     //play music
     [_backgroundMusicPlayer prepareToPlay];
     [_backgroundMusicPlayer play];
-    
-    if (self.panEnabled) {
-        //disable pageViews recognizer
-        //[self.rootViewController disablePan];
-        self.panEnabled = NO;
-    }
 }
 
 - (void) viewDidDisappear:(BOOL)animated{
@@ -166,8 +160,8 @@
     
     [self.backgroundView setHidden:NO];
     //enable pageViews recognizer
-    //[self.rootViewController enablePan];
-    [self loadLambsEar];
+    [self.rootViewController enablePan];
+    //[self loadLambsEar];
     self.panEnabled = YES;
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "ScreenThirteenViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenThirteenViewController ()
 
@@ -130,7 +130,7 @@
     
     
     [self.childView removeFromSuperview];
-    [UIImageView animateWithDuration:7.0
+    [UIImageView animateWithDuration:6.0
                                delay:0.0
                              options: UIViewAnimationOptionCurveEaseInOut
                           animations:^{
@@ -142,8 +142,8 @@
                               UIImage *image = [UIImage imageWithContentsOfFile:pathString];
                               [self.textView setImage:image];
                               //enable pageViews recognizer
-                              //[self.rootViewController enablePan];
-                              [self loadLambsEar];
+                              [self.rootViewController enablePan];
+                              //[self loadLambsEar];
                               self.panEnabled = YES;
                           }];
     

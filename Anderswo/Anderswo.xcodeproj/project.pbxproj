@@ -43,7 +43,6 @@
 		68A7CBF2179193E500248866 /* ScreenTwentysixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD1179193E500248866 /* ScreenTwentysixViewController.m */; };
 		68A7CBF3179193E500248866 /* ScreenTwentythreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD3179193E500248866 /* ScreenTwentythreeViewController.m */; };
 		68A7CBF4179193E500248866 /* ScreenTwentytwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD5179193E500248866 /* ScreenTwentytwoViewController.m */; };
-		68A7CBF5179193E500248866 /* ScreenTwentyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD7179193E500248866 /* ScreenTwentyViewController.m */; };
 		68A7CBF6179193E500248866 /* ScreenTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBD9179193E500248866 /* ScreenTwoViewController.m */; };
 		68A7CBF7179193E500248866 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBDB179193E500248866 /* ScreenViewController.m */; };
 		68A7CBF8179193E500248866 /* StockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CBDD179193E500248866 /* StockItemView.m */; };
@@ -268,6 +267,8 @@
 		68A7CDC01791AC7300248866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A7CDBF1791AC7200248866 /* AudioToolbox.framework */; };
 		68A7CDC31791B80800248866 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CDC21791B80400248866 /* ModelController.m */; };
 		68A7CDC61791B8ED00248866 /* ScreenSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CDC51791B8EA00248866 /* ScreenSegue.m */; };
+		68A7CDC91793476A00248866 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7CDC81793476600248866 /* RootViewController.m */; };
+		68A7CDCC1793F0F100248866 /* Eselsohr.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDCB1793F0F100248866 /* Eselsohr.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -315,7 +316,6 @@
 		68A7CBC1179193E500248866 /* ScreenSixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSixViewController.m; sourceTree = "<group>"; };
 		68A7CBC2179193E500248866 /* ScreenTenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTenViewController.h; sourceTree = "<group>"; };
 		68A7CBC3179193E500248866 /* ScreenTenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTenViewController.m; sourceTree = "<group>"; };
-		68A7CBC4179193E500248866 /* ScreenThirteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenThirteenViewController.h; sourceTree = "<group>"; };
 		68A7CBC5179193E500248866 /* ScreenThirteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenThirteenViewController.m; sourceTree = "<group>"; };
 		68A7CBC6179193E500248866 /* ScreenThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenThreeViewController.h; sourceTree = "<group>"; };
 		68A7CBC7179193E500248866 /* ScreenThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenThreeViewController.m; sourceTree = "<group>"; };
@@ -333,8 +333,6 @@
 		68A7CBD3179193E500248866 /* ScreenTwentythreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentythreeViewController.m; sourceTree = "<group>"; };
 		68A7CBD4179193E500248866 /* ScreenTwentytwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentytwoViewController.h; sourceTree = "<group>"; };
 		68A7CBD5179193E500248866 /* ScreenTwentytwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentytwoViewController.m; sourceTree = "<group>"; };
-		68A7CBD6179193E500248866 /* ScreenTwentyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentyViewController.h; sourceTree = "<group>"; };
-		68A7CBD7179193E500248866 /* ScreenTwentyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentyViewController.m; sourceTree = "<group>"; };
 		68A7CBD8179193E500248866 /* ScreenTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwoViewController.h; sourceTree = "<group>"; };
 		68A7CBD9179193E500248866 /* ScreenTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwoViewController.m; sourceTree = "<group>"; };
 		68A7CBDA179193E500248866 /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
@@ -570,6 +568,10 @@
 		68A7CDC21791B80400248866 /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		68A7CDC41791B8E800248866 /* ScreenSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSegue.h; sourceTree = "<group>"; };
 		68A7CDC51791B8EA00248866 /* ScreenSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSegue.m; sourceTree = "<group>"; };
+		68A7CDC71793476300248866 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		68A7CDC81793476600248866 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		68A7CDCA1793E0BD00248866 /* ScreenThirteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenThirteenViewController.h; sourceTree = "<group>"; };
+		68A7CDCB1793F0F100248866 /* Eselsohr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eselsohr.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -628,6 +630,8 @@
 			children = (
 				68A7CB81179190D900248866 /* AppDelegate.h */,
 				68A7CB82179190D900248866 /* AppDelegate.m */,
+				68A7CDC71793476300248866 /* RootViewController.h */,
+				68A7CDC81793476600248866 /* RootViewController.m */,
 				68A7CDC11791B80200248866 /* ModelController.h */,
 				68A7CDC21791B80400248866 /* ModelController.m */,
 				68A7CDC41791B8E800248866 /* ScreenSegue.h */,
@@ -663,7 +667,7 @@
 				68A7CBAD179193E400248866 /* ScreenElevenViewController.m */,
 				68A7CBC8179193E500248866 /* ScreenTwelveViewController.h */,
 				68A7CBC9179193E500248866 /* ScreenTwelveViewController.m */,
-				68A7CBC4179193E500248866 /* ScreenThirteenViewController.h */,
+				68A7CDCA1793E0BD00248866 /* ScreenThirteenViewController.h */,
 				68A7CBC5179193E500248866 /* ScreenThirteenViewController.m */,
 				68A7CBB0179193E400248866 /* ScreenFourteenViewController.h */,
 				68A7CBB1179193E400248866 /* ScreenFourteenViewController.m */,
@@ -679,8 +683,6 @@
 				68A7CBA9179193E400248866 /* ScreenEighteenViewController.m */,
 				68A7CBB4179193E400248866 /* ScreenNineteenViewController.h */,
 				68A7CBB5179193E400248866 /* ScreenNineteenViewController.m */,
-				68A7CBD6179193E500248866 /* ScreenTwentyViewController.h */,
-				68A7CBD7179193E500248866 /* ScreenTwentyViewController.m */,
 				68A7CBCC179193E500248866 /* ScreenTwentyoneViewController.h */,
 				68A7CBCD179193E500248866 /* ScreenTwentyoneViewController.m */,
 				68A7CBF91791954800248866 /* CorkView.h */,
@@ -879,6 +881,7 @@
 		68A7CCE21791967C00248866 /* 1 */ = {
 			isa = PBXGroup;
 			children = (
+				68A7CDCB1793F0F100248866 /* Eselsohr.png */,
 				68A7CCE31791968D00248866 /* 0.png */,
 				68A7CCE41791968D00248866 /* 1.png */,
 				68A7CCE51791968D00248866 /* 2.png */,
@@ -1261,6 +1264,7 @@
 				68A7CDB317919E2400248866 /* Text-Screen27-Ende.png in Resources */,
 				68A7CDBB1791ABAC00248866 /* README.md in Resources */,
 				68A7CDBC1791ABAC00248866 /* release_notes.md in Resources */,
+				68A7CDCC1793F0F100248866 /* Eselsohr.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1295,7 +1299,6 @@
 				68A7CBF2179193E500248866 /* ScreenTwentysixViewController.m in Sources */,
 				68A7CBF3179193E500248866 /* ScreenTwentythreeViewController.m in Sources */,
 				68A7CBF4179193E500248866 /* ScreenTwentytwoViewController.m in Sources */,
-				68A7CBF5179193E500248866 /* ScreenTwentyViewController.m in Sources */,
 				68A7CBF6179193E500248866 /* ScreenTwoViewController.m in Sources */,
 				68A7CBF7179193E500248866 /* ScreenViewController.m in Sources */,
 				68A7CBF8179193E500248866 /* StockItemView.m in Sources */,
@@ -1306,6 +1309,7 @@
 				68A7CC071791954E00248866 /* MushroomView.m in Sources */,
 				68A7CDC31791B80800248866 /* ModelController.m in Sources */,
 				68A7CDC61791B8ED00248866 /* ScreenSegue.m in Sources */,
+				68A7CDC91793476A00248866 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

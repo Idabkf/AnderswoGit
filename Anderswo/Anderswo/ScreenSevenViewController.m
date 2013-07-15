@@ -8,7 +8,7 @@
 
 #import "ScreenSevenViewController.h"
 #import "MushroomView.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenSevenViewController ()
 
@@ -69,12 +69,7 @@
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    if (self.panEnabled) {
-        //disable pageViews recognizer
-        //[self.rootViewController disablePan];
-        self.panEnabled = NO;
-    }
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,114 +78,38 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
--(void)loadImageViews{
-    
-    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen07-RAETSEL-1-1" ofType:@"png"];
-    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
-    self.screen1 = image;
-    
-    self.screen1View = [[UIImageView alloc] initWithImage:image];
-    [self.screen1View setUserInteractionEnabled:YES];
-    CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
-    self.screen1View.frame = rect;
-    [self setCurrentScreenView:self.screen1View];
-    
-    pathString = [[NSBundle mainBundle] pathForResource:@"Screen07-RAETSEL-1-2" ofType:@"png"];
-    image = [UIImage imageWithContentsOfFile:pathString];
-    self.screen2 = image;
-    self.screen2View = [[UIImageView alloc] initWithImage:image];
-    [self.screen2View setUserInteractionEnabled:YES];
-    self.screen2View.frame = rect;
-}
-
--(void) setCurrentScreenView:(UIImageView *)screenView{
-    self.currentView = screenView;
-    [self.view addSubview:screenView];
-}
-
--(void)setButton{
-    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen07-RAETSEL-1-Button" ofType:@"png"];
-    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
-    self.buttonView = [[UIImageView alloc]initWithImage:image];
-    CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
-    self.buttonView.frame = rect;
-    //second view
-    CGPoint point = CGPointMake(image.size.width/4, 384.0f);
-    //first view
-    if (self.screenFlag) {
-        point = CGPointMake(1000.5f, 384.0f);
-    }
-    [self.buttonView setCenter:point];
-    [self.buttonView setUserInteractionEnabled:YES];
-    [self.currentView addSubview:self.buttonView];
-    //self.tappedFlag = true;
-    //GestureRecognizer Tap
-    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-    tapRecognizer.delegate = self;
-    [self.buttonView addGestureRecognizer:tapRecognizer];
-}
-
--(void) moveButton{
-    
-    if (self.screenFlag) {
-        self.buttonView.transform = CGAffineTransformMakeRotation(M_PI);
-        CGPoint point = CGPointMake(self.buttonView.image.size.width/4, 384.0f);
-        [self.buttonView setCenter:point];
-        [self.buttonView removeFromSuperview];
-        [self.currentView addSubview:self.buttonView];
-    }
-    else {
-        self.buttonView.transform = CGAffineTransformMakeRotation(0);
-        CGPoint point = CGPointMake(1000.5f, 384.0f);
-        [self.buttonView setCenter:point];
-        [self.buttonView removeFromSuperview];
-        [self.currentView addSubview:self.buttonView];
-    }
-}
-*/
 -(NSMutableArray*) setPositions{
     NSMutableArray *positions = [[NSMutableArray alloc] init];
     
     //0
     self.p0 = CGPointMake(614.5f, 244.0f);
-    //[positions addObject:(__bridge id)(&point)];
    
     //1
     self.p1 = CGPointMake(1646.75f, 713.5f);
-    //[positions addObject:(__bridge id)(&point)];
     
     //2
     self.p2 = CGPointMake(461.25f, 283.5f);
-    //[positions addObject:(__bridge id)(&point)];
     
     //3
     self.p3 = CGPointMake(1006.75f, 778.75f);
-    //[positions addObject:(__bridge id)(&point)];
     
     //4
     self.p4 = CGPointMake(697.75f, 597.0f);
-    //[positions addObject:(__bridge id)(&point)];
     
     //5
     self.p5 = CGPointMake(1912.75f, 496.5f);
-    //[positions addObject:(__bridge id)(&point)];
     
     //6
     self.p6 = CGPointMake(1077.5f, 662.75f);
-    //[positions addObject:(__bridge id)(&point)];
     
     //7
     self.p7 = CGPointMake(476.5f, 296.25f);
-    //[positions addObject:(__bridge id)(&point)];
     
     //8
     self.p8 = CGPointMake(1894.5f, 633.25f);
-    //[positions addObject:(__bridge id)(&point)];
     
     //9
     self.p9 = CGPointMake(301.5f, 277.25f);
-    //[positions addObject:(__bridge id)(&point)];
     
     return positions;
 }
@@ -200,43 +119,33 @@
     
     //0
     self.t0 = CGPointMake(1592.5, 431.5);
-    //[targets addObject:(__bridge id)(&point)];
     
     //1
     self.t1 = CGPointMake(74.25f, 203.25f);
-    //[targets addObject:(__bridge id)(&point)];
     
     //2
     self.t2 = CGPointMake(1853.75, 303);
-    //[targets addObject:(__bridge id)(&point)];
     
     //3
     self.t3 = CGPointMake(1061.75, 183.25);
-    //[targets addObject:(__bridge id)(&point)];
-    
+
     //4
     self.t4 = CGPointMake(362.25f, 85.0f);
-    //[targets addObject:(__bridge id)(&point)];
     
     //5
     self.t5 = CGPointMake(1411.75f, 347.5f);
-    //[targets addObject:(__bridge id)(&point)];
     
     //6
     self.t6 = CGPointMake(84.5f, 418.25f);
-    //[targets addObject:(__bridge id)(&point)];
     
     //7
     self.t7 = CGPointMake(902.5f, 543.25f);
-    //[targets addObject:(__bridge id)(&point)];
     
     //8
     self.t8 = CGPointMake(1188.0f, 402.25f);
-    //[targets addObject:(__bridge id)(&point)];
     
     //9
     self.t9 = CGPointMake(549.5f, 614.75f);
-    //[targets addObject:(__bridge id)(&point)];
     
     return targets;
 
@@ -365,8 +274,8 @@
             self.countFinishedMushrooms++;
             if (self.countFinishedMushrooms == 10) {
                 //enable pageViews recognizer
-                //[self.rootViewController enablePan];
-                [self loadLambsEar];
+                [self.rootViewController enablePan];
+                //[self loadLambsEar];
                 self.panEnabled = YES;
                 AudioServicesPlaySystemSound(_finished);
             }

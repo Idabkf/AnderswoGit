@@ -7,7 +7,7 @@
 //
 
 #import "ScreenSixViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenSixViewController ()
 
@@ -51,11 +51,6 @@
     [_backgroundMusicPlayer prepareToPlay];
     [_backgroundMusicPlayer play];
     
-    if (self.panEnabled) {
-        //disable pageViews recognizer
-        //[self.rootViewController disablePan];
-        self.panEnabled = NO;
-    }
 }
 //Sound weiter in Screen 7
 - (void) viewDidDisappear:(BOOL)animated{
@@ -137,8 +132,8 @@
     */
 
     //enable pageViews recognizer
-    //[self.rootViewController enablePan];
-    [self loadLambsEar];
+    [self.rootViewController enablePan];
+    //[self loadLambsEar];
     self.panEnabled = YES;
 }
 

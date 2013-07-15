@@ -20,6 +20,7 @@
 @property CGFloat zoomScale;
 
 @property BOOL itemSet;
+@property NSMutableArray *items;
 
 
 
@@ -47,5 +48,7 @@
 @property UIImageView *bottle2View;
 @property UIImageView *bottle3View;
 
+
+-(void) setItemsOfOldScreen;
 
 @end

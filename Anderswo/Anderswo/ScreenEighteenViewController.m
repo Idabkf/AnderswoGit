@@ -7,7 +7,7 @@
 //
 
 #import "ScreenEighteenViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenEighteenViewController ()
 
@@ -59,12 +59,6 @@
     [super viewDidAppear:animated];
     
     AudioServicesPlaySystemSound(_growl);
-    
-    if (self.panEnabled) {
-        //disable pageViews recognizer
-        //[self.rootViewController disablePan];
-        self.panEnabled = NO;
-    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -167,8 +161,8 @@
         [self.textView setImage:image];
         
         //enable pageViews recognizer
-        //[self.rootViewController enablePan];
-        [self loadLambsEar];
+        [self.rootViewController enablePan];
+        //[self loadLambsEar];
         self.panEnabled = YES;
         
         self.imageFlg = 4;

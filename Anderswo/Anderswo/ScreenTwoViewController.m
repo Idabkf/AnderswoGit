@@ -7,7 +7,7 @@
 //
 
 #import "ScreenTwoViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 
 @interface ScreenTwoViewController ()
@@ -64,7 +64,7 @@
 
     
     //enable pageViews recognizer
-    //[self.rootViewController enablePan];
+    [self.rootViewController enablePan];
     self.panEnabled = YES;
     //[self.view addSubview:self.lambsear];
     
@@ -79,7 +79,7 @@
         self.panEnabled = NO;
     }*/
     
-    [self loadLambsEar];
+    //[self loadLambsEar];
     
     //play music
     [_backgroundMusicPlayer prepareToPlay];

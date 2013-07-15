@@ -7,7 +7,7 @@
 //
 
 #import "ScreenElevenViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenElevenViewController ()
 
@@ -49,8 +49,8 @@
     [self.view addSubview:imageView];
     
     //enable pageViews recognizer
-    //[self.rootViewController enablePan];
-    [self loadLambsEar];
+    [self.rootViewController enablePan];
+    //[self loadLambsEar];
     self.panEnabled = YES;
 }
 

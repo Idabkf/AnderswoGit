@@ -7,7 +7,7 @@
 //
 
 #import "ScreenTenViewController.h"
-//#import "RootViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenTenViewController ()
 
@@ -37,6 +37,10 @@
     pinchRecognizer.delegate = self;
     [self.view addGestureRecognizer:pinchRecognizer];
      */
+    
+    if (!self.items) {
+        self.items = [[NSMutableArray alloc] init];
+    }
     
     //CITY
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen02-Stadt-wischbar_stadt" ofType:@"png"];
@@ -74,6 +78,8 @@
      //play music
      [_backgroundMusicPlayer prepareToPlay];
      [_backgroundMusicPlayer play];
+     
+     self.itemSet = NO;
  
      /*
      if (self.panEnabled) {
@@ -88,7 +94,7 @@
          self.panEnabled = YES;
      }
      */
-     [self loadLambsEar];
+     //[self loadLambsEar];
      
      //EYES
      NSNumber *data = self.dataObject;
@@ -151,7 +157,13 @@
     AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_bottle);
     
 }
-
+/*
+-(void) setItemsOfOldScreen{
+    for (StockItemView *stockitem in self.items) {
+        [self.view addSubview:stockitem];
+    }
+}
+*/
 -(void)initBucket{
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Inventar-Muell" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
@@ -309,6 +321,13 @@
 -(void)handlePan:(UIPanGestureRecognizer *) recognizer{
 
     if (recognizer.state == UIGestureRecognizerStateBegan){
+        
+        if (!self.itemSet) {
+            [self.rootViewController enablePan];
+            self.panEnabled = YES;
+            self.itemSet = YES;
+        }
+        
         self.stockItemView = [[StockItemView alloc] initWithFrame:recognizer.view.frame];
         UIImageView *imageView = (UIImageView *)recognizer.view;
         UIImage *image = imageView.image;
@@ -327,7 +346,8 @@
          else if (recognizer.view == self.bottle1View || recognizer.view == self.bottle2View || recognizer.view == self.bottle3View) {
          AudioServicesPlaySystemSound(_bottle);
          }
-         
+        
+        [self.items addObject:self.stockItemView];
         
     }
     
@@ -337,6 +357,11 @@
         if (CGRectIntersectsRect(self.stockItemView.frame, self.stockView.frame)) {
             [self.stockItemView removeFromSuperview];
         }
+        /*
+        if (CGRectIntersectsRect(self.bucketView.frame, self.stockView.frame)) {
+            [self.stockItemView removeFromSuperview];
+        }
+         */
         
     }
 }
