@@ -188,7 +188,9 @@
 
 -(void) setItemsOfOldScreen{
     for (StockItemView *stockitem in self.items) {
-        [self.view addSubview:stockitem];
+        if (stockitem.visible) {
+            [self.view addSubview:stockitem];
+        }
     }
 }
 
@@ -298,6 +300,10 @@
 
 }
 
+-(void) removeItem:(StockItemView*)item{
+    [self.items removeObject:item];
+}
+
 -(void)initBottleWithImage:(int)imageId{
     CGPoint point = CGPointMake(0, 0);
     if(imageId == 0){
@@ -386,6 +392,7 @@
         }
         
         self.stockItemView = [[StockItemView alloc] initWithFrame:recognizer.view.frame];
+        //self.stockItemView.parentViewController = self;
         UIImageView *imageView = (UIImageView *)recognizer.view;
         UIImage *image = imageView.image;
         [self.stockItemView setImage:image];
@@ -416,8 +423,11 @@
             [self.stockItemView removeFromSuperview];
         }
         
-        if (CGRectIntersectsRect(self.bucketView.frame, self.stockItemView.frame)) {
+        //MÜLL
+        if (CGRectContainsPoint(self.bucketView.frame, [recognizer locationInView:self.view])) {
             [self.stockItemView removeFromSuperview];
+            self.stockItemView.visible = NO;
+            [self.items removeObject:self.stockItemView];
         }
         
     }

@@ -70,14 +70,15 @@
         if ([self.screenViews objectForKey:@"14"]!=nil) {
             return [self.screenViews objectForKey:@"14"];
         }
-        ScreenViewController *screenViewController = [self.screenViews objectForKey:@"8"];
+        ScreenTenViewController *screenViewController = [self.screenViews objectForKey:@"8"];
         
         if (!screenViewController) {
             screenViewController = [storyboard instantiateViewControllerWithIdentifier:@"8"];
             screenViewController.rootViewController = self.rootViewController;
             [self.screenViews setValue:screenViewController forKey:@"8"];
         }
-        
+        screenViewController.itemSet = NO;
+        screenViewController.panEnabled = NO;
         screenViewController.dataObject = self.pageData[index];
         [self.screenViews setValue:screenViewController forKey:@"14"];
         return screenViewController;
@@ -89,13 +90,15 @@
         if ([self.screenViews objectForKey:@"20"]!=nil) {
             return [self.screenViews objectForKey:@"20"];
         }
-        ScreenViewController *screenViewController = [self.screenViews objectForKey:@"14"];
+        ScreenTenViewController *screenViewController = [self.screenViews objectForKey:@"14"];
         if (!screenViewController) {
             screenViewController = [storyboard instantiateViewControllerWithIdentifier:@"8"];
             screenViewController.rootViewController = self.rootViewController;
             [self.screenViews setValue:screenViewController forKey:@"8"];
         }
         screenViewController.dataObject = self.pageData[index];
+        screenViewController.itemSet = NO;
+        screenViewController.panEnabled = NO;
         [self.screenViews setValue:screenViewController forKey:@"20"];
         return screenViewController;
     }
@@ -104,7 +107,23 @@
         ScreenTenViewController *screenViewController = [storyboard instantiateViewControllerWithIdentifier:@"8"];
         screenViewController.dataObject = self.pageData[index];
         screenViewController.rootViewController = self.rootViewController;
-        screenViewController.items = oldScreen.items;
+        screenViewController.items = [[NSMutableArray alloc] init];
+        for (StockItemView *old in oldScreen.items) {
+            if (old.visible) {
+                StockItemView *new = [[StockItemView alloc] initWithFrame:old.frame];
+                [new setImage:old.image];
+                new.rotated = old.rotated;
+                new.max = old.max;
+                new.min = old.min;
+                new.angle = old.angle;
+                new.scale = old.scale;
+                new.bucketRect = CGRectMake(old.bucketRect.origin.x, old.bucketRect.origin.y, old.bucketRect.size.width, old.bucketRect.size.height);
+                [screenViewController.items addObject:new];
+            }
+           
+        }
+        //[screenViewController.items ];
+        screenViewController.itemSet = NO;
         [screenViewController setItemsOfOldScreen];
         return screenViewController;
     }

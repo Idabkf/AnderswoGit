@@ -55,16 +55,7 @@
     [self setInvisibleCorks];
     
     
-    //Swipe to adjust center of view
-    UISwipeGestureRecognizer *swipeLRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
-    swipeLRecognizer.delegate = self;
-    swipeLRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:swipeLRecognizer];
-    
-    UISwipeGestureRecognizer *swipeRRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
-    swipeRRecognizer.delegate = self;
-    swipeRRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRRecognizer];
+   
     
     //GestureRecognizer Pan
     self.panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
@@ -194,7 +185,7 @@
         [self.corksInvisible setObject:corkView forKey:filename];
         [corkView setAlpha:0.05f];
         
-        //GestureRecognizer Longpress
+        //GestureRecognizer tap
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
         tapRecognizer.delegate = self;
         [corkView addGestureRecognizer:tapRecognizer];
@@ -260,22 +251,53 @@
         [self.sandView removeFromSuperview];
         AudioServicesPlaySystemSound(_finished);
         [self.view removeGestureRecognizer:self.panRecognizer];
+        
+        //Swipe to adjust center of view
+        UISwipeGestureRecognizer *swipeLRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+        swipeLRecognizer.delegate = self;
+        swipeLRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+        [self.view addGestureRecognizer:swipeLRecognizer];
+        
+        UISwipeGestureRecognizer *swipeRRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+        swipeRRecognizer.delegate = self;
+        swipeRRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+        [self.view addGestureRecognizer:swipeRRecognizer];
     }
 }
 
 - (void)handleSwipe:(UISwipeGestureRecognizer *)recognizer{
+    
     //show left side
     if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
-        if (self.backgroundView.frame.origin.x>-1024.0f) {
-            CGRect rect = CGRectMake(self.backgroundView.frame.origin.x-8.0f, self.backgroundView.frame.origin.y, 2048.0f, 768.0f);
-            self.backgroundView.frame = rect;
+        if (self.backgroundView.frame.origin.x<0) {
+            
+            float move = 512.0f;
+            if (self.backgroundView.frame.origin.x+512.0f>0) {
+                move = self.backgroundView.frame.origin.x *(-1);
+            }
+            
+            CGRect rect = CGRectMake(self.backgroundView.frame.origin.x+move, self.backgroundView.frame.origin.y, 2048.0f, 768.0f);
+            [UIImageView animateWithDuration:1.0
+                                  animations:^{
+                                      self.backgroundView.frame = rect;
+                                  }];
         }
     }
     //show right side
     if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
         if (self.backgroundView.frame.origin.x>-1024.0f) {
-            CGRect rect = CGRectMake(self.backgroundView.frame.origin.x-8.0f, self.backgroundView.frame.origin.y, 2048.0f, 768.0f);
-            self.backgroundView.frame = rect;
+            
+            float move = 512.0f;
+            if (self.backgroundView.frame.origin.x-512.0f<-1024.0f) {
+                move = -1024.0f-self.backgroundView.frame.origin.x;
+                move = move * (-1);
+            }
+            
+            CGRect rect = CGRectMake(self.backgroundView.frame.origin.x-move, self.backgroundView.frame.origin.y, 2048.0f, 768.0f);
+            [UIImageView animateWithDuration:1.0
+                                  animations:^{
+                                      self.backgroundView.frame = rect;
+                                  }];
         }
     }
     

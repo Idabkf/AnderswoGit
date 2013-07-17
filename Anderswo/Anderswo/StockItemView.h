@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface StockItemView : UIImageView
+
 
 //@property UIImageView *superView;
 @property CGFloat angle;
@@ -23,5 +25,7 @@
 @property BOOL min;
 
 @property CGRect bucketRect;
+
+@property BOOL visible;
 
 @end

@@ -19,6 +19,7 @@
         self.rotated = NO;
         self.max = NO;
         self.min = NO;
+        self.visible = YES;
         
         UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
         panRecognizer.delegate = self;
@@ -51,6 +52,12 @@
     if (recognizer.state == UIGestureRecognizerStateEnded){
         if (CGRectIntersectsRect(self.bucketRect, recognizer.view.frame)) {
             [self removeFromSuperview];
+        }
+        if (CGRectContainsPoint(self.bucketRect, recognizer.view.center)) {
+            [self removeFromSuperview];
+            //[ScreenTenViewController removeItem:self];
+            //[self.parentViewController removeItem:self];
+            self.visible = NO;
         }
     }
 }

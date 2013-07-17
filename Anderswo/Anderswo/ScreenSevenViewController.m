@@ -312,8 +312,8 @@
     if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
         if (self.backgroundView.frame.origin.x<0) {
            
-            float move = 256.0f;
-            if (self.backgroundView.frame.origin.x+256.0f>0) {
+            float move = 512.0f;
+            if (self.backgroundView.frame.origin.x+512.0f>0) {
                 move = self.backgroundView.frame.origin.x *(-1);
             }
             
@@ -328,8 +328,8 @@
     if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
         if (self.backgroundView.frame.origin.x>-1024.0f) {
             
-            float move = 256.0f;
-            if (self.backgroundView.frame.origin.x-256.0f<-1024.0f) {
+            float move = 512.0f;
+            if (self.backgroundView.frame.origin.x-512.0f<-1024.0f) {
                 move = -1024.0f-self.backgroundView.frame.origin.x;
                 move = move * (-1);
             }

@@ -50,5 +50,6 @@
 
 
 -(void) setItemsOfOldScreen;
+-(void) removeItem:(StockItemView*)item;
 
 @end
