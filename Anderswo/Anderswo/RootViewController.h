@@ -24,6 +24,7 @@
 @property UIImageView *lambsearLeft;
 
 @property CGFloat maxVolume;
+@property CGFloat mediumVolume;
 
 -(void) enablePan;
 -(void)handleNextTap:(UITapGestureRecognizer *) recognizer;

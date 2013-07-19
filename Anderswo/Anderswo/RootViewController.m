@@ -39,6 +39,7 @@
     */
     
     self.maxVolume = 0.6;
+    self.mediumVolume = 0.4;
     
     //EMERGENCY TAP
     UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleEmergencyTap:)];
@@ -46,7 +47,7 @@
     [recognizer setNumberOfTouchesRequired:4];
     [self.view addGestureRecognizer:recognizer];
     
-    self.currentScreen = [self.modelController newViewControllerAtIndex:5 storyboard:self.storyboard];
+    self.currentScreen = [self.modelController newViewControllerAtIndex:0 storyboard:self.storyboard];
     [self addChildViewController:self.currentScreen];
     [self.view addSubview:self.currentScreen.view];
     //[self presentViewController:self.currentScreen animated:NO completion:nil];
@@ -146,6 +147,7 @@
 
 -(void)handleNextTap:(UITapGestureRecognizer *) recognizer{
     [self.lambsear removeFromSuperview];
+    
     int nextData = [self.currentScreen.dataObject integerValue] +1;
     [self handleSoundOfScreen:nextData];
 
@@ -185,6 +187,10 @@
 -(void)handleBackTap:(UITapGestureRecognizer *) recognizer{
     [self.lambsearLeft removeFromSuperview];
     AudioServicesPlaySystemSound(_flip);
+    
+    int backData = [self.currentScreen.dataObject integerValue]-1;
+    [self handleSoundOfScreenBackwards:backData];
+    
     ScreenViewController *backScreen = [_modelController viewControllerBeforeViewController:self.currentScreen];
     
     [self addChildViewController:backScreen];
@@ -214,6 +220,8 @@
     }
 }
 
+
+
 -(void) handleSoundOfScreen:(int)screenData{
     switch (screenData) {
         case 1:{
@@ -231,6 +239,7 @@
         }
             
         case 2:{
+             _backgroundMusicPlayer.volume = self.mediumVolume;
             [self fadeOutVolume];
             break;
         }
@@ -252,6 +261,10 @@
             [_backgroundMusicPlayer prepareToPlay];
             _backgroundMusicPlayer.volume = self.maxVolume;
             [_backgroundMusicPlayer play];
+            break;
+        } 
+        case 5:{
+            _backgroundMusicPlayer.volume = self.mediumVolume;
             break;
         }
         case 6:{
@@ -296,6 +309,7 @@
             [_backgroundMusicPlayer play];
             break;
         }
+        
         case 12:{
             [self fadeOutVolume];
             break;
@@ -343,6 +357,10 @@
             [_backgroundMusicPlayer play];
             break;
         }
+        case 17:{
+            _backgroundMusicPlayer.volume = self.mediumVolume;
+            break;
+        }
         case 18:{
             [self fadeOutVolume];
             break;
@@ -374,6 +392,87 @@
             [self fadeOutVolume];
             break;
         }
+        case 23:{
+            [_backgroundMusicPlayer stop];
+            break;
+        }
+        default:
+            break;
+
+    }
+}
+
+-(void) handleSoundOfScreenBackwards:(int)screenData{
+    switch (screenData) {
+        case 0:{
+            [_backgroundMusicPlayer stop];
+            break;
+        }
+            
+        case 1:{
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            break;
+        }
+        case 3:{
+            [_backgroundMusicPlayer stop];
+            break;
+        }
+        case 5:{
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            break;
+        }
+        case 7:{
+            [_backgroundMusicPlayer stop];
+            break;
+        }
+        case 8:{
+            [_backgroundMusicPlayer play];
+            break;
+        }
+        case 9:{
+            [_backgroundMusicPlayer stop];
+            break;
+        }
+        case 11:{
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            break;
+        }
+        case 13:{
+            [_backgroundMusicPlayer stop];
+            break;
+        }
+        case 14:{
+            [_backgroundMusicPlayer play];
+            break;
+        }
+        case 15:{
+            [_backgroundMusicPlayer stop];
+            [self handleSoundOfScreen:15];
+            break;
+        }
+        case 17:{
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            break;
+        }
+        case 19:{
+            [_backgroundMusicPlayer stop];
+            break;
+        }
+        case 20:{
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            break;
+        }
+        case 21:{
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            [self fadeInVolume];
+            break;
+        }
+        case 22:{
+            [_backgroundMusicPlayer play];
+            _backgroundMusicPlayer.volume = self.mediumVolume;
+            [self fadeOutVolume];
+            break;
+        }
         default:
             break;
     }
@@ -383,10 +482,10 @@
     if (_backgroundMusicPlayer.volume>0.0) {
         _backgroundMusicPlayer.volume -= 0.01;
         [self performSelector:@selector(fadeOutVolume) withObject:nil afterDelay:0.3];
-    }
+    }/*
     else{
         [_backgroundMusicPlayer stop];
-    }
+    }*/
 }
 
 -(void) fadeInVolume{
