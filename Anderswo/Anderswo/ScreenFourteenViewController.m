@@ -55,6 +55,13 @@
     [self.view addSubview:self.textView];
     [self.textView setHidden:YES];
     
+    //TEXT2
+    pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen14b" ofType:@"png"];
+    image = [UIImage imageWithContentsOfFile:pathString];
+    self.textView2 = [[UIImageView alloc]initWithImage:image];
+    rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
+    self.textView2.frame = rect;
+    
     //rect = CGRectMake(65, 0, 1983.0f, 768.0f);
     self.labyrinthView = [[LabyrinthView alloc] initWithFrame:self.backgroundView.frame];
     //[self.backgroundView addSubview:self.labyrinthView];
@@ -189,6 +196,7 @@
 }
 
 -(void) setLamprey{
+    /*
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen14-Neunauge" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
     self.lampreyView = [[UIImageView alloc]initWithImage:image];
@@ -198,6 +206,21 @@
     //[self.lampreyView setUserInteractionEnabled:YES];
     [self.backgroundView addSubview:self.lampreyView];
     self.lampreyVisible = YES;
+     */
+    
+    //LAMPREY 1
+    self.lampreyViewNew = [[LampreyView alloc] initWithFrame:self.backgroundView.frame];
+    [self.backgroundView addSubview:self.lampreyViewNew];
+    self.lampreyVisible = YES;
+    
+    //LAMPREY 2
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen14-Neunauge+Augen" ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+    self.lampreyView = [[UIImageView alloc]initWithImage:image];
+    CGRect rect = CGRectMake(0,0, image.size.width/2, image.size.height/2);
+    self.lampreyView.frame = rect;
+    CGPoint point = CGPointMake(958.0f, 460.5f);
+    [self.lampreyView setCenter:point];
 }
 
 -(void) setOrf{
@@ -212,7 +235,7 @@
 }
 
 
--(void)handlePan:(UIPanGestureRecognizer *) recognizer{
+-(void)handlePanOld:(UIPanGestureRecognizer *) recognizer{
     
     UIColor *color = [self.labyrinthView colorOfPoint:[recognizer locationInView:self.backgroundView]];
     UIColor *clearColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
@@ -267,8 +290,8 @@
                 //TEXT
                 pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen14b" ofType:@"png"];
                 image = [UIImage imageWithContentsOfFile:pathString];
-                [self.textView setImage:image];
-                [self.textView setHidden:NO];
+                [self.textView2 setImage:image];
+                [self.textView2 setHidden:NO];
                 //rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
                 //self.textView.frame = rect;
                 
@@ -342,5 +365,158 @@
     
 }
 
+-(void)handlePan:(UIPanGestureRecognizer *) recognizer{
+    UIColor *color = [self.labyrinthView colorOfPoint:[recognizer locationInView:self.backgroundView]];
+    UIColor *colorLamprey = [self.lampreyViewNew colorOfPoint:[recognizer locationInView:self.backgroundView]];
+    UIColor *clearColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+    
+    //move center of view
+    CGPoint locationInHoleView = [recognizer locationInView:self.view];
+    CGPoint locationInBackView = [recognizer locationInView:self.backgroundView];
+    
+    //show left side
+    if (CGRectContainsPoint(self.rectLeft, locationInHoleView)) {
+        
+        if (self.backgroundView.frame.origin.x<0) {
+            /*
+            recognizer.enabled = NO;
+            recognizer.enabled = YES;
+            
+            float move = 32.0f;
+            if (self.backgroundView.frame.origin.x+ 32.0f >0) {
+                move = self.backgroundView.frame.origin.x *(-1);
+            }
+            
+            CGRect rect = CGRectMake(self.backgroundView.frame.origin.x+move, self.backgroundView.frame.origin.y, 2048.0f, 768.0f);
+            CGPoint point = CGPointMake(self.ubootView.center.x+move, self.ubootView.center.y);
+            [UIImageView animateWithDuration:1.0
+                                  animations:^{
+                                      self.backgroundView.frame = rect;
+                                      [self.ubootView setCenter:point];
+                                  }];
+            [self.ubootView setCenter:point];
+             */
+            CGRect rect = CGRectMake(self.backgroundView.frame.origin.x+8.0f, self.backgroundView.frame.origin.y, 2048.0f, 768.0f);
+            self.backgroundView.frame = rect;
+             
+        }
+         
+        
+    }
+    
+    //show right side
+    if (CGRectContainsPoint(self.rectRight, locationInHoleView)) {
+        
+        if (self.backgroundView.frame.origin.x>-1024.0f) {
+            /*
+            recognizer.enabled = NO;
+            recognizer.enabled = YES;
+            
+            float move = 32.0f;
+            if (self.backgroundView.frame.origin.x- 32.0f <-1024.0f) {
+                move = -1024.0f-self.backgroundView.frame.origin.x;
+                move = move * (-1);
+               
+            }
+            
+            CGRect rect = CGRectMake(self.backgroundView.frame.origin.x-move, self.backgroundView.frame.origin.y, 2048.0f, 768.0f);
+            CGPoint point = CGPointMake(self.ubootView.center.x-move, self.ubootView.center.y);
+            [UIImageView animateWithDuration:1.0
+                                  animations:^{
+                                      self.backgroundView.frame = rect;
+                                      [self.ubootView setCenter:point];
+                                  }];
+            [self.ubootView setCenter:point];
+            */
+            CGRect rect = CGRectMake(self.backgroundView.frame.origin.x-8.0f, self.backgroundView.frame.origin.y, 2048.0f, 768.0f);
+            self.backgroundView.frame = rect;
+            
+         
+        }
+         
+    }
+    
+    //Collision with lamprey
+    if (![clearColor isEqual:colorLamprey]){
+        
+        AudioServicesPlaySystemSound(_lamprey);
+        recognizer.enabled = NO;
+        
+        
+        if (!self.allEyesCollected) {
+            [self.textView setHidden:NO];
+            recognizer.enabled = YES;
+        }
+        else {
+            self.lampreyVisible = NO;
+            [self.lampreyViewNew removeFromSuperview];
+            [self.view addSubview:self.lampreyView];
+            [self.lampreyView setHidden:NO];
+            [self.view addSubview:self.textView2];
+            [self.textView2 setHidden:NO];
+            
+            
+             [UIImageView animateWithDuration:20.0
+                                        delay:0.0
+                                      options:nil
+                                   animations:^{
+                                       CGPoint point = CGPointMake(-3165, 460.5f);
+                                       [self.lampreyView setCenter:point];
+                                   }completion:^(BOOL finished){
+                                       //[self.lampreyView setHidden:YES];
+                                       //[self.textView2 setHidden:YES];
+                                       recognizer.enabled = YES;
+                                   }];
+        }
+    }
+    //Collision with orf
+    else if (CGRectIntersectsRect(self.orfView.frame, recognizer.view.frame)) {
+        [self.textView setHidden:YES];
+        //NSLog(@"COLLISION WITH ORF");
+        AudioServicesPlaySystemSound(_finished);
+        //no more moving
+        [recognizer.view removeGestureRecognizer:recognizer];
+        //enable pageViews recognizer
+        [self.rootViewController enablePan];
+        //[self loadLambsEar];
+        self.panEnabled = YES;
+    }
+    else {
+        [self.textView setHidden:YES];
+        [self.textView2 setHidden:YES];
+        if ([clearColor isEqual:color]) {
+            //move uboot
+            recognizer.view.center = [recognizer locationInView:self.backgroundView];
+        }
+        else {
+            recognizer.enabled = NO;
+            recognizer.enabled = YES;
+        }
+        
+        //check collision with eye
+        for (int i = 0; i<self.eyes.count; i++) {
+            EyeView *eyeView = [self.eyes objectAtIndex:i];
+            if (CGRectIntersectsRect(recognizer.view.frame, eyeView.frame )) {
+                AudioServicesPlaySystemSound(_eye);
+                // NSLog(@"EYE FOUND - STILL %i EYES LEFT", self.eyes.count);
+                [UIImageView animateWithDuration:3.0
+                                           delay:0.0
+                                         options:nil
+                                      animations:^{
+                                          eyeView.alpha = 0.0f;
+                                      }completion:^(BOOL finished){
+                                          [eyeView removeFromSuperview];
+                                          [self.eyes removeObject:eyeView];
+                                          if (self.eyes.count == 0) {
+                                              self.allEyesCollected = YES;
+                                              AudioServicesPlaySystemSound(_lamprey);
+                                          }
+                                      }];
+            }
+        }
+
+    }
+    
+}
 
 @end

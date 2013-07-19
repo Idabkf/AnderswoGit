@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6860E91B17996CB3000521EB /* Screen14-Labyrinth Kopie.png in Resources */ = {isa = PBXBuildFile; fileRef = 6860E91A17996CB3000521EB /* Screen14-Labyrinth Kopie.png */; };
+		6860E920179971C6000521EB /* LampreyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860E91F179971C4000521EB /* LampreyView.m */; };
+		6860E922179972D0000521EB /* Screen14-Neunauge-vIda.png in Resources */ = {isa = PBXBuildFile; fileRef = 6860E921179972D0000521EB /* Screen14-Neunauge-vIda.png */; };
+		6860E92417998C77000521EB /* Screen14-Labyrinth-vIda.png in Resources */ = {isa = PBXBuildFile; fileRef = 6860E92317998C77000521EB /* Screen14-Labyrinth-vIda.png */; };
 		68A7CB73179190D800248866 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A7CB72179190D800248866 /* UIKit.framework */; };
 		68A7CB75179190D800248866 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A7CB74179190D800248866 /* Foundation.framework */; };
 		68A7CB77179190D800248866 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A7CB76179190D800248866 /* CoreGraphics.framework */; };
@@ -282,6 +286,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6860E91A17996CB3000521EB /* Screen14-Labyrinth Kopie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Labyrinth Kopie.png"; sourceTree = "<group>"; };
+		6860E91E179971C4000521EB /* LampreyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampreyView.h; sourceTree = "<group>"; };
+		6860E91F179971C4000521EB /* LampreyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampreyView.m; sourceTree = "<group>"; };
+		6860E921179972D0000521EB /* Screen14-Neunauge-vIda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Neunauge-vIda.png"; sourceTree = "<group>"; };
+		6860E92317998C77000521EB /* Screen14-Labyrinth-vIda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Labyrinth-vIda.png"; sourceTree = "<group>"; };
 		68A7CB6F179190D800248866 /* Anderswo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anderswo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7CB72179190D800248866 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		68A7CB74179190D800248866 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -695,6 +704,8 @@
 				68A7CBFE1791954B00248866 /* EyeView.m */,
 				68A7CBFF1791954B00248866 /* LabyrinthView.h */,
 				68A7CC001791954C00248866 /* LabyrinthView.m */,
+				6860E91E179971C4000521EB /* LampreyView.h */,
+				6860E91F179971C4000521EB /* LampreyView.m */,
 				68A7CBAE179193E400248866 /* ScreenFifteenViewController.h */,
 				68A7CBAF179193E400248866 /* ScreenFifteenViewController.m */,
 				68A7CBBE179193E400248866 /* ScreenSixteenViewController.h */,
@@ -800,8 +811,11 @@
 				68A7CC34179195D300248866 /* Screen13-Kind-vIda.png */,
 				68A7CC35179195D300248866 /* Screen13-UBoot.png */,
 				68A7CC36179195D300248866 /* Screen13-vorderesWasser.png */,
+				6860E921179972D0000521EB /* Screen14-Neunauge-vIda.png */,
 				68A7CC37179195D300248866 /* Screen14-Labyrinth-BW.png */,
+				6860E91A17996CB3000521EB /* Screen14-Labyrinth Kopie.png */,
 				68A7CC38179195D300248866 /* Screen14-Labyrinth.png */,
+				6860E92317998C77000521EB /* Screen14-Labyrinth-vIda.png */,
 				68A7CC39179195D300248866 /* Screen14-Labyrinth+Wasser.png */,
 				68A7CC3A179195D300248866 /* Screen14-Neunauge.png */,
 				68A7CDDB17943C0F00248866 /* Screen14-Neunauge+Augen.png */,
@@ -1305,6 +1319,9 @@
 				68A7CDDF17949E7B00248866 /* Screen14-Labyrinth+Wasser-NEU.png in Resources */,
 				68A7CDE217949F0900248866 /* Screen26-Groelm.png in Resources */,
 				68A7CDE317949F0900248866 /* Screen26-Groelmverblasst.png in Resources */,
+				6860E91B17996CB3000521EB /* Screen14-Labyrinth Kopie.png in Resources */,
+				6860E922179972D0000521EB /* Screen14-Neunauge-vIda.png in Resources */,
+				6860E92417998C77000521EB /* Screen14-Labyrinth-vIda.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,6 +1367,7 @@
 				68A7CDC31791B80800248866 /* ModelController.m in Sources */,
 				68A7CDC61791B8ED00248866 /* ScreenSegue.m in Sources */,
 				68A7CDC91793476A00248866 /* RootViewController.m in Sources */,
+				6860E920179971C6000521EB /* LampreyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

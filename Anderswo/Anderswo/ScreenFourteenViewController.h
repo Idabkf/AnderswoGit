@@ -9,12 +9,14 @@
 #import "ScreenViewController.h"
 #import "EyeView.h"
 #import "LabyrinthView.h"
+#import "LampreyView.h"
 
 @interface ScreenFourteenViewController : ScreenViewController{
     SystemSoundID _eye;
     SystemSoundID _finished;
     SystemSoundID _lamprey;
 }
+@property UIImageView *textView2;
 
 @property UIImageView *backgroundView;
 @property CGRect rectLeft;
@@ -22,6 +24,7 @@
 
 @property UIImageView *ubootView;
 @property LabyrinthView *labyrinthView;
+@property LampreyView *lampreyViewNew;
 @property UIImageView *lampreyView;
 @property UIImageView *orfView;
 

@@ -18,7 +18,7 @@
         // Initialization code
         [self setBackgroundColor:[UIColor clearColor]];
         
-        self.labyrinthImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Screen14-Labyrinth-BW" ofType:@"png"]];
+        self.labyrinthImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Screen14-Labyrinth-vIda" ofType:@"png"]];
         [self setNeedsDisplay];
         [self setUserInteractionEnabled:YES];
     }
