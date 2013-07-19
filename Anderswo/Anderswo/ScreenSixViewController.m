@@ -29,7 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     //NSLog(@"FRAME X: %f Y: %f", self.view.frame.size.width, self.view.frame.size.height);
-    [self initBackgroundMusic];
+    //[self initBackgroundMusic];
     
     //TEXT
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen06-1" ofType:@"png"];
@@ -51,13 +51,13 @@
     [super viewDidAppear:animated];
     
     //play music
-    [_backgroundMusicPlayer prepareToPlay];
-    [_backgroundMusicPlayer play];
+    //[_backgroundMusicPlayer prepareToPlay];
+    //[_backgroundMusicPlayer play];
     
 }
 //Sound weiter in Screen 7
 - (void) viewDidDisappear:(BOOL)animated{
-    [_backgroundMusicPlayer stop];
+    //[_backgroundMusicPlayer stop];
 }
 
 - (void)didReceiveMemoryWarning
@@ -104,7 +104,7 @@
     [self.orfView addGestureRecognizer:tapRecognizer];
     [(UIImageView *)self.view addSubview:self.orfView];
 }
-
+/*
 - (void) initBackgroundMusic{
     
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Wald Ambient_leiser" ofType:@"m4a"];
@@ -115,7 +115,8 @@
     [_backgroundMusicPlayer setDelegate:self];
     [_backgroundMusicPlayer setNumberOfLoops:-1];
 }
-
+*/
+ 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer{
     AudioServicesPlaySystemSound(_orf);
     

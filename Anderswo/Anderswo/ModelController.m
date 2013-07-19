@@ -77,6 +77,9 @@
             screenViewController.rootViewController = self.rootViewController;
             [self.screenViews setValue:screenViewController forKey:@"8"];
         }
+        [screenViewController initEyeWithImage:0];
+        [screenViewController initEyeWithImage:1];
+        [screenViewController initEyeWithImage:2];
         screenViewController.itemSet = NO;
         screenViewController.panEnabled = NO;
         screenViewController.dataObject = self.pageData[index];
@@ -96,6 +99,12 @@
             screenViewController.rootViewController = self.rootViewController;
             [self.screenViews setValue:screenViewController forKey:@"8"];
         }
+        [screenViewController initEyeWithImage:0];
+        [screenViewController initEyeWithImage:1];
+        [screenViewController initEyeWithImage:2];
+        [screenViewController initBottleWithImage:0];
+        [screenViewController initBottleWithImage:1];
+        [screenViewController initBottleWithImage:2];
         screenViewController.dataObject = self.pageData[index];
         screenViewController.itemSet = NO;
         screenViewController.panEnabled = NO;
@@ -120,11 +129,30 @@
                 new.bucketRect = CGRectMake(old.bucketRect.origin.x, old.bucketRect.origin.y, old.bucketRect.size.width, old.bucketRect.size.height);
                 [screenViewController.items addObject:new];
             }
-           
         }
         //[screenViewController.items ];
         screenViewController.itemSet = NO;
         [screenViewController setItemsOfOldScreen];
+        //TEXT
+        NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen25" ofType:@"png"];
+        UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+        screenViewController.textView = [[UIImageView alloc]initWithImage:image];
+        CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
+        screenViewController.textView.frame = rect;
+        [screenViewController.view addSubview:screenViewController.textView];
+        
+        [screenViewController.stockView removeFromSuperview];
+        [screenViewController.bucketView removeFromSuperview];
+        
+        [screenViewController.bottle1View removeFromSuperview];
+        [screenViewController.bottle2View removeFromSuperview];
+        [screenViewController.bottle3View removeFromSuperview];
+        [screenViewController.eye1View removeFromSuperview];
+        [screenViewController.eye2View removeFromSuperview];
+        [screenViewController.eye3View removeFromSuperview];
+        [screenViewController.mushroom1View removeFromSuperview];
+        [screenViewController.mushroom2View removeFromSuperview];
+        [screenViewController.mushroom3View removeFromSuperview];
         return screenViewController;
     }
     

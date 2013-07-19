@@ -29,6 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self initSounds];
+    self.startsound = YES;
     
     //TEXT
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen12" ofType:@"png"];
@@ -63,7 +64,7 @@
     [self.view addGestureRecognizer:recognizer];
     
     
-    AudioServicesPlaySystemSound(_growl);
+    //AudioServicesPlaySystemSound(_growl);
 }
 
 -(void) viewDidAppear:(BOOL)animated{

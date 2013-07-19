@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ScreenViewController.h"
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController{
+    SystemSoundID _flip;
+    SystemSoundID _close;
+    SystemSoundID _start;
+    AVAudioPlayer *_backgroundMusicPlayer;
+}
 
 @property ScreenViewController *currentScreen;
 
@@ -17,6 +22,8 @@
 
 @property UIImageView *lambsear;
 @property UIImageView *lambsearLeft;
+
+@property CGFloat maxVolume;
 
 -(void) enablePan;
 -(void)handleNextTap:(UITapGestureRecognizer *) recognizer;

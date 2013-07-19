@@ -16,12 +16,13 @@
 
 @interface ScreenViewController : UIViewController<AVAudioPlayerDelegate>{
     //SystemSoundID _ambient;
-    AVAudioPlayer *_backgroundMusicPlayer;
+    //AVAudioPlayer *_backgroundMusicPlayer;
 }
 
 @property (strong,nonatomic) RootViewController *rootViewController;
 
 @property BOOL panEnabled;
+@property BOOL startsound;
 
 @property UIImageView *textView;
 

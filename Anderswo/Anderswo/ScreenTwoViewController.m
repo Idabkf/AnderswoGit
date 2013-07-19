@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    [self initBackgroundMusic];
+    //[self initBackgroundMusic];
     
 	NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen02-Stadt-wischbar_stadt" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
@@ -82,12 +82,12 @@
     //[self loadLambsEar];
     
     //play music
-    [_backgroundMusicPlayer prepareToPlay];
-    [_backgroundMusicPlayer play];
+    //[_backgroundMusicPlayer prepareToPlay];
+    //[_backgroundMusicPlayer play];
 }
 
 - (void) viewDidDisappear:(BOOL)animated{
-    [_backgroundMusicPlayer stop];
+    //[_backgroundMusicPlayer stop];
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,6 +96,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
 - (void) initBackgroundMusic{
     //Stadt Ambient.m4a
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"StadtAmbient-neu" ofType:@"m4a"];
@@ -106,6 +107,7 @@
     [_backgroundMusicPlayer setDelegate:self];
     [_backgroundMusicPlayer setNumberOfLoops:-1];
 }
+*/
 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer{
     //NSLog(@"TAPPED");

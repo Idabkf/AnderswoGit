@@ -28,13 +28,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
+    self.startsound = YES;
+    /*
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Belohnung" ofType:@"m4a"];
     NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
     AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_tada);
     AudioServicesPlaySystemSound(_tada);
+     */
     
     //TEXT
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen23" ofType:@"png"];

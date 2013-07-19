@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [self initBackgroundMusic];
+    //[self initBackgroundMusic];
     
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"U-Boot" ofType:@"m4a"];
     NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
@@ -48,25 +48,25 @@
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     //play music
-    [_backgroundMusicPlayer prepareToPlay];
-    [_backgroundMusicPlayer play];
+    //[_backgroundMusicPlayer prepareToPlay];
+    //[_backgroundMusicPlayer play];
     if (self.panEnabled) {
         //disable pageViews recognizer
         //[self.rootViewController disablePan];
         self.panEnabled = NO;
     }
 }
-
+/*
 - (void) viewDidDisappear:(BOOL)animated{
     [_backgroundMusicPlayer stop];
 }
-
+*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 - (void) initBackgroundMusic{
     
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Wasser Ambient" ofType:@"m4a"];
@@ -77,7 +77,7 @@
     [_backgroundMusicPlayer setDelegate:self];
     [_backgroundMusicPlayer setNumberOfLoops:-1];
 }
-
+*/
 - (void)setFigures{
     //GROELM UBOOT
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen13-UBoot" ofType:@"png"];

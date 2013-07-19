@@ -72,6 +72,7 @@
 
 - (void) handleTap:(UITapGestureRecognizer *)recognizer{
     //AudioServicesPlaySystemSound(_growl);
+    [self.view removeGestureRecognizer:recognizer];
     [UIImageView animateWithDuration:10.0
                                delay:0.0
                              options:nil

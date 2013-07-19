@@ -30,6 +30,7 @@
 	// Do any additional setup after loading the view.
     
     [self initSounds];
+    self.startsound = YES;
     
     //TEXT
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen18" ofType:@"png"];
@@ -58,7 +59,7 @@
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    AudioServicesPlaySystemSound(_growl);
+    //AudioServicesPlaySystemSound(_growl);
 }
 
 - (void)didReceiveMemoryWarning

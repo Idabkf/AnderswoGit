@@ -52,4 +52,9 @@
 -(void) setItemsOfOldScreen;
 -(void) removeItem:(StockItemView*)item;
 
+-(void)initMushroomWithImage:(int)imageId;
+-(void)initEyeWithImage:(int)imageId;
+-(void)initBottleWithImage:(int)imageId;
+
+
 @end

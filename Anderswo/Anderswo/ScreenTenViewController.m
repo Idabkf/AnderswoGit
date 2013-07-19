@@ -29,7 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self initBackgroundMusic];
+    //[self initBackgroundMusic];
+    [self initSounds];
     
     /*
     self.frameRect = self.view.frame;
@@ -76,8 +77,8 @@
      [super viewDidAppear:animated];
      
      //play music
-     [_backgroundMusicPlayer prepareToPlay];
-     [_backgroundMusicPlayer play];
+     //[_backgroundMusicPlayer prepareToPlay];
+     //[_backgroundMusicPlayer play];
      
      self.itemSet = NO;
  
@@ -95,59 +96,16 @@
      }
      */
      //[self loadLambsEar];
-     
-     //EYES
-     NSNumber *data = self.dataObject;
-     if ([data isEqualToNumber:[NSNumber numberWithInt:14]]) {
-         [self initEyeWithImage:0];
-         [self initEyeWithImage:1];
-         [self initEyeWithImage:2];
-     }
-     
-     //BOTTLES
-     else if ([data isEqualToNumber:[NSNumber numberWithInt:20]]) {
-         [self initEyeWithImage:0];
-         [self initEyeWithImage:1];
-         [self initEyeWithImage:2];
-         [self initBottleWithImage:0];
-         [self initBottleWithImage:1];
-         [self initBottleWithImage:2];
-     }
-     
-     else if ([data isEqualToNumber:[NSNumber numberWithInt:21]]) {
-         //TEXT
-         NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen25" ofType:@"png"];
-         UIImage *image = [UIImage imageWithContentsOfFile:pathString];
-         self.textView = [[UIImageView alloc]initWithImage:image];
-         CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
-         self.textView.frame = rect;
-         [self.view addSubview:self.textView];
-         
-         [self.stockView removeFromSuperview];
-         [self.bucketView removeFromSuperview];
-         
-         [self.bottle1View removeFromSuperview];
-         [self.bottle2View removeFromSuperview];
-         [self.bottle3View removeFromSuperview];
-         [self.eye1View removeFromSuperview];
-         [self.eye2View removeFromSuperview];
-         [self.eye3View removeFromSuperview];
-         [self.mushroom1View removeFromSuperview];
-         [self.mushroom2View removeFromSuperview];
-         [self.mushroom3View removeFromSuperview];
-         
+     if ([self.dataObject isEqualToNumber:[NSNumber numberWithInt:21]]) {
          [self fadeOutItems];
-         
      }
-     
-     
  }
  
-
+/*
 - (void) viewDidDisappear:(BOOL)animated{
     [_backgroundMusicPlayer stop];
 }
-
+*/
 
 - (void)didReceiveMemoryWarning
 {
@@ -155,7 +113,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+/*
 - (void) initBackgroundMusic{
     
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"StadtAmbient-neu" ofType:@"m4a"];
@@ -165,11 +123,8 @@
     _backgroundMusicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
     [_backgroundMusicPlayer setDelegate:self];
     [_backgroundMusicPlayer setNumberOfLoops:-1];
-    
-    soundPath = [[NSBundle mainBundle] pathForResource:@"Pilz" ofType:@"m4a"];
-    soundUrl = [NSURL fileURLWithPath:soundPath];
-    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_mushroom);
 }
+ */
 
 -(void) initSounds{
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Pilz" ofType:@"m4a"];
@@ -300,10 +255,6 @@
 
 }
 
--(void) removeItem:(StockItemView*)item{
-    [self.items removeObject:item];
-}
-
 -(void)initBottleWithImage:(int)imageId{
     CGPoint point = CGPointMake(0, 0);
     if(imageId == 0){
@@ -351,21 +302,17 @@
     
 }
 
+
+-(void) removeItem:(StockItemView*)item{
+    [self.items removeObject:item];
+}
+
+
 -(void) fadeOutItems{
-    /*
-    StockItemView *item = [self.items objectAtIndex:0];
-    [UIImageView animateWithDuration:20.0
-                               delay:3.0
-                             options:nil
-                          animations:^{
-                              item.alpha = 0.0;
-                          }completion:^(BOOL finished){
-                              //[item removeFromSuperview];
-                          }];
-     */
+   
     for (StockItemView *item in self.items) {
-        [UIImageView animateWithDuration:15.0
-                                   delay:2.0
+        [UIImageView animateWithDuration:10.0
+                                   delay:0.0
                                  options:nil
                               animations:^{
                                   item.alpha = 0.0;
@@ -421,6 +368,8 @@
     if (recognizer.state == UIGestureRecognizerStateEnded) {
         if (CGRectIntersectsRect(self.stockItemView.frame, self.stockView.frame)) {
             [self.stockItemView removeFromSuperview];
+            self.stockItemView.visible = NO;
+            [self.items removeObject:self.stockItemView];
         }
         
         //MÜLL

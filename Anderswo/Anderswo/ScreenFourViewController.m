@@ -31,6 +31,8 @@
     
     [self initSounds];
     
+    self.startsound = YES;
+    
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Text-Screen04b-1" ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:pathString];
     self.textView = [[UIImageView alloc]initWithImage:image];
@@ -60,7 +62,7 @@
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     recognizer.delegate = self;
     [self.view addGestureRecognizer:recognizer];
-    AudioServicesPlaySystemSound(_growl);
+    //AudioServicesPlaySystemSound(_growl);
 }
 
 -(void) viewDidAppear:(BOOL)animated{

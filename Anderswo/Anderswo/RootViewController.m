@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "ModelController.h"
 #import "AppDelegate.h"
+#import "ScreenTwentysixViewController.h"
 
 @interface RootViewController ()
 @property (readonly, strong, nonatomic) ModelController *modelController;
@@ -37,6 +38,8 @@
     [self.view setBounds:bounds];
     */
     
+    self.maxVolume = 0.6;
+    
     //EMERGENCY TAP
     UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleEmergencyTap:)];
     recognizer.delegate = self;
@@ -50,6 +53,7 @@
     
     [self loadLambsEar];
     [self loadLeftLambsEar];
+    [self initSounds];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +70,22 @@
         _modelController.rootViewController = self;
     }
     return _modelController;
+}
+
+-(void) initSounds{
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Seite umblaettern" ofType:@"m4a"];
+    NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_flip);
+    
+    soundPath = [[NSBundle mainBundle] pathForResource:@"Buch zuklappen" ofType:@"m4a"];
+    soundUrl = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_close);
+    
+    /*
+    soundPath = [[NSBundle mainBundle] pathForResource:@"Grölm knurrt" ofType:@"m4a"];
+    soundUrl = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_start);
+    */
 }
 
 -(void) loadLambsEar{
@@ -126,6 +146,14 @@
 
 -(void)handleNextTap:(UITapGestureRecognizer *) recognizer{
     [self.lambsear removeFromSuperview];
+    int nextData = [self.currentScreen.dataObject integerValue] +1;
+    [self handleSoundOfScreen:nextData];
+
+    if ([self.currentScreen isKindOfClass:[ScreenTwentysixViewController class]]) {
+        AudioServicesPlaySystemSound(_close);
+    }
+    else AudioServicesPlaySystemSound(_flip);
+    
     
     ScreenViewController *nextScreen = [_modelController viewControllerAfterViewController:self.currentScreen];
     
@@ -133,14 +161,16 @@
     //[nextScreen.view setHidden:YES];
     [self.view addSubview:nextScreen.view];
     
-    
-    
     [self transitionFromViewController:self.currentScreen
                       toViewController:nextScreen
                               duration:3.0
                                options:UIViewAnimationOptionTransitionCurlDown
                             animations:^{}
-                            completion:nil];
+                            completion:^(BOOL finished){
+                                if (nextScreen.startsound) {
+                                    AudioServicesPlaySystemSound(_start);
+                                }
+                            }];
     
     [self.currentScreen removeFromParentViewController];
     [self.currentScreen.view removeFromSuperview];
@@ -154,7 +184,7 @@
 
 -(void)handleBackTap:(UITapGestureRecognizer *) recognizer{
     [self.lambsearLeft removeFromSuperview];
-    
+    AudioServicesPlaySystemSound(_flip);
     ScreenViewController *backScreen = [_modelController viewControllerBeforeViewController:self.currentScreen];
     
     [self addChildViewController:backScreen];
@@ -168,7 +198,11 @@
                               duration:3.0
                                options:UIViewAnimationOptionTransitionCurlUp
                             animations:^{}
-                            completion:nil];
+                            completion:^(BOOL finished){
+                                if (backScreen.startsound) {
+                                    AudioServicesPlaySystemSound(_start);
+                                }
+                            }];
     
     [self.currentScreen removeFromParentViewController];
     [self.currentScreen.view removeFromSuperview];
@@ -177,6 +211,188 @@
     [self setLeftLambsear];
     if (self.currentScreen.panEnabled) {
         [self setLambsear];
+    }
+}
+
+-(void) handleSoundOfScreen:(int)screenData{
+    switch (screenData) {
+        case 1:{
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"StadtAmbient-neu" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            //AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_ambient);
+            NSError *error;
+            _backgroundMusicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
+            [_backgroundMusicPlayer setDelegate:self];
+            [_backgroundMusicPlayer setNumberOfLoops:-1];
+            [_backgroundMusicPlayer prepareToPlay];
+            _backgroundMusicPlayer.volume = 0.6;
+            [_backgroundMusicPlayer play];
+            break;
+        }
+            
+        case 2:{
+            [self fadeOutVolume];
+            break;
+        }
+        case 3:{
+            [_backgroundMusicPlayer stop];
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Grölm knurrt" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_start);
+            break;
+        }
+        case 4:{
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Wald Ambient_leiser" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            //AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_ambient);
+            NSError *error;
+            _backgroundMusicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
+            [_backgroundMusicPlayer setDelegate:self];
+            [_backgroundMusicPlayer setNumberOfLoops:-1];
+            [_backgroundMusicPlayer prepareToPlay];
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            [_backgroundMusicPlayer play];
+            break;
+        }
+        case 6:{
+            [self fadeOutVolume];
+            break;
+        }
+        case 7:{
+            [_backgroundMusicPlayer stop];
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Belohnung" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_start);
+            break;
+        }
+        case 8:{
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"StadtAmbient-neu" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            NSError *error;
+            _backgroundMusicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
+            [_backgroundMusicPlayer setDelegate:self];
+            [_backgroundMusicPlayer setNumberOfLoops:-1];
+            [_backgroundMusicPlayer prepareToPlay];
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            [_backgroundMusicPlayer play];
+            break;
+        }
+        case 9:{
+            [_backgroundMusicPlayer stop];
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Grölm knurrt" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_start);
+            break;
+        }
+        case 10:{
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Wasser Ambient" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            NSError *error;
+            _backgroundMusicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
+            [_backgroundMusicPlayer setDelegate:self];
+            [_backgroundMusicPlayer setNumberOfLoops:-1];
+            [_backgroundMusicPlayer prepareToPlay];
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            [_backgroundMusicPlayer play];
+            break;
+        }
+        case 12:{
+            [self fadeOutVolume];
+            break;
+        }
+        case 13:{
+            [_backgroundMusicPlayer stop];
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Belohnung" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_start);
+            break;
+        }
+        case 14:{
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"StadtAmbient-neu" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            NSError *error;
+            _backgroundMusicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
+            [_backgroundMusicPlayer setDelegate:self];
+            [_backgroundMusicPlayer setNumberOfLoops:-1];
+            [_backgroundMusicPlayer prepareToPlay];
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            [_backgroundMusicPlayer play];
+            break;
+        }
+        case 15:{
+            [_backgroundMusicPlayer stop];
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Grölm knurrt" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_start);
+            break;
+        }
+        case 16:{
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Grölm knurrt" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_start);
+            
+            
+            soundPath = [[NSBundle mainBundle] pathForResource:@"Sandsturm" ofType:@"m4a"];
+            soundUrl = [NSURL fileURLWithPath:soundPath];
+            NSError *error;
+            _backgroundMusicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
+            [_backgroundMusicPlayer setDelegate:self];
+            [_backgroundMusicPlayer setNumberOfLoops:-1];
+            [_backgroundMusicPlayer prepareToPlay];
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            [_backgroundMusicPlayer play];
+            break;
+        }
+        case 18:{
+            [self fadeOutVolume];
+            break;
+        }
+        case 19:{
+            [_backgroundMusicPlayer stop];
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Belohnung" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_start);
+            break;
+        }
+        case 20:{
+            NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"StadtAmbient-neu" ofType:@"m4a"];
+            NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+            NSError *error;
+            _backgroundMusicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
+            [_backgroundMusicPlayer setDelegate:self];
+            [_backgroundMusicPlayer setNumberOfLoops:-1];
+            [_backgroundMusicPlayer prepareToPlay];
+            _backgroundMusicPlayer.volume = self.maxVolume;
+            [_backgroundMusicPlayer play];
+            break;
+        }
+        case 21:{
+            [self fadeInVolume];
+            break;
+        }
+        case 22:{
+            [self fadeOutVolume];
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+-(void) fadeOutVolume{
+    if (_backgroundMusicPlayer.volume>0.0) {
+        _backgroundMusicPlayer.volume -= 0.01;
+        [self performSelector:@selector(fadeOutVolume) withObject:nil afterDelay:0.3];
+    }
+    else{
+        [_backgroundMusicPlayer stop];
+    }
+}
+
+-(void) fadeInVolume{
+    if (_backgroundMusicPlayer.volume<1.1) {
+        _backgroundMusicPlayer.volume += 0.01;
+        [self performSelector:@selector(fadeInVolume) withObject:nil afterDelay:0.1];
     }
 }
 

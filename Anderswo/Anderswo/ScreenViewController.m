@@ -33,6 +33,7 @@
     [self.view setBounds:bounds];
     //self.wantsFullScreenLayout = YES;
     self.panEnabled = NO;
+    self.startsound = NO;
     //NSLog(@"BOUNDS X: %f Y: %f", self.view.bounds.size.width, self.view.bounds.size.height);
     
 }

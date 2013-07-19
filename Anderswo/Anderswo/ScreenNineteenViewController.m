@@ -29,8 +29,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self initBackgroundMusic];
-    [self initSounds];
+    //[self initBackgroundMusic];
+    //[self initSounds];
+    self.startsound = YES;
     
     [self loadImages];
     
@@ -50,20 +51,22 @@
     [super viewDidAppear:animated];
     
     //play music
-    [_backgroundMusicPlayer prepareToPlay];
-    [_backgroundMusicPlayer play];
+    //[_backgroundMusicPlayer prepareToPlay];
+    //[_backgroundMusicPlayer play];
 }
 
+/*
 - (void) viewDidDisappear:(BOOL)animated{
     [_backgroundMusicPlayer stop];
 }
-
+*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/*
 - (void) initBackgroundMusic{
     
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Sandsturm" ofType:@"m4a"];
@@ -74,12 +77,14 @@
     [_backgroundMusicPlayer setDelegate:self];
     [_backgroundMusicPlayer setNumberOfLoops:-1];
 }
-
+ */
+/*
 -(void) initSounds{
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Grölm knurrt" ofType:@"m4a"];
     NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
     AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundUrl), &_growl);
 }
+*/
 
 -(void) loadImages{
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen19-Sandgroelm" ofType:@"png"];
@@ -131,23 +136,23 @@
                               self.sturmView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, -4.0f, 0.0f);
                           }completion:^(BOOL finished){
                              self.sturmView.transform = CGAffineTransformIdentity;
+                              //GestureRecognizer Tap
+                              UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+                              recognizer.delegate = self;
+                              [self.view addGestureRecognizer:recognizer];
                           }];
 }
 
 - (void) removeGroelm{
-    AudioServicesPlaySystemSound(_growl);
+    //AudioServicesPlaySystemSound(_growl);
     [UIImageView animateWithDuration:15.0
-                               delay:3.0
+                               delay:2.0
                              options:nil
                           animations:^{
                               self.groelmView.alpha = 0.0f;
                               self.groelmView.transform = CGAffineTransformMakeScale(0.4f, 0.4f);
                           }completion:^(BOOL finished){
                               [self.groelmView removeFromSuperview];
-                              //GestureRecognizer Tap
-                              UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-                              recognizer.delegate = self;
-                              [self.view addGestureRecognizer:recognizer];
                           }];
     
 }
