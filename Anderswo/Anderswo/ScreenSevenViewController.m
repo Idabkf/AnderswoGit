@@ -270,6 +270,8 @@
         //if (CGRectContainsPoint(mushroomView.targetRect, recognizer.view.center)) {
         if (CGRectIntersectsRect(mushroomView.targetRect, mushroomView.frame)) {
             mushroomView.center = mushroomView.targetPoint;
+            [mushroomView removeFromSuperview];
+            [self.backgroundView insertSubview:mushroomView atIndex:0];
             [mushroomView removeGestureRecognizer:recognizer];
             self.countFinishedMushrooms++;
             if (self.countFinishedMushrooms == 10) {

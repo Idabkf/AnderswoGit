@@ -46,7 +46,7 @@
     [recognizer setNumberOfTouchesRequired:4];
     [self.view addGestureRecognizer:recognizer];
     
-    self.currentScreen = [self.modelController newViewControllerAtIndex:11 storyboard:self.storyboard];
+    self.currentScreen = [self.modelController newViewControllerAtIndex:5 storyboard:self.storyboard];
     [self addChildViewController:self.currentScreen];
     [self.view addSubview:self.currentScreen.view];
     //[self presentViewController:self.currentScreen animated:NO completion:nil];
