@@ -262,7 +262,6 @@
 		68A7CDB017919E2400248866 /* Text-Screen23.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDA417919E2400248866 /* Text-Screen23.png */; };
 		68A7CDB117919E2400248866 /* Text-Screen25.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDA517919E2400248866 /* Text-Screen25.png */; };
 		68A7CDB217919E2400248866 /* Text-Screen26.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDA617919E2400248866 /* Text-Screen26.png */; };
-		68A7CDB317919E2400248866 /* Text-Screen27-Ende.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDA717919E2400248866 /* Text-Screen27-Ende.png */; };
 		68A7CDBA1791ABAC00248866 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A7CDB61791ABAC00248866 /* libTestFlight.a */; };
 		68A7CDBB1791ABAC00248866 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDB71791ABAC00248866 /* README.md */; };
 		68A7CDBC1791ABAC00248866 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDB81791ABAC00248866 /* release_notes.md */; };
@@ -283,6 +282,7 @@
 		68A7CDDF17949E7B00248866 /* Screen14-Labyrinth+Wasser-NEU.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDDE17949E7B00248866 /* Screen14-Labyrinth+Wasser-NEU.png */; };
 		68A7CDE217949F0900248866 /* Screen26-Groelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDE017949F0600248866 /* Screen26-Groelm.png */; };
 		68A7CDE317949F0900248866 /* Screen26-Groelmverblasst.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A7CDE117949F0700248866 /* Screen26-Groelmverblasst.png */; };
+		68D8F835179C36E000F5274E /* Text-Screen27.png in Resources */ = {isa = PBXBuildFile; fileRef = 68D8F834179C36E000F5274E /* Text-Screen27.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -575,7 +575,6 @@
 		68A7CDA417919E2400248866 /* Text-Screen23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen23.png"; sourceTree = "<group>"; };
 		68A7CDA517919E2400248866 /* Text-Screen25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen25.png"; sourceTree = "<group>"; };
 		68A7CDA617919E2400248866 /* Text-Screen26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen26.png"; sourceTree = "<group>"; };
-		68A7CDA717919E2400248866 /* Text-Screen27-Ende.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen27-Ende.png"; sourceTree = "<group>"; };
 		68A7CDB61791ABAC00248866 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		68A7CDB71791ABAC00248866 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		68A7CDB81791ABAC00248866 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
@@ -601,6 +600,7 @@
 		68A7CDDE17949E7B00248866 /* Screen14-Labyrinth+Wasser-NEU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen14-Labyrinth+Wasser-NEU.png"; sourceTree = "<group>"; };
 		68A7CDE017949F0600248866 /* Screen26-Groelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen26-Groelm.png"; sourceTree = "<group>"; };
 		68A7CDE117949F0700248866 /* Screen26-Groelmverblasst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen26-Groelmverblasst.png"; sourceTree = "<group>"; };
+		68D8F834179C36E000F5274E /* Text-Screen27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-Screen27.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1008,7 +1008,7 @@
 				68A7CDA417919E2400248866 /* Text-Screen23.png */,
 				68A7CDA517919E2400248866 /* Text-Screen25.png */,
 				68A7CDA617919E2400248866 /* Text-Screen26.png */,
-				68A7CDA717919E2400248866 /* Text-Screen27-Ende.png */,
+				68D8F834179C36E000F5274E /* Text-Screen27.png */,
 			);
 			name = Text;
 			sourceTree = "<group>";
@@ -1304,7 +1304,6 @@
 				68A7CDB017919E2400248866 /* Text-Screen23.png in Resources */,
 				68A7CDB117919E2400248866 /* Text-Screen25.png in Resources */,
 				68A7CDB217919E2400248866 /* Text-Screen26.png in Resources */,
-				68A7CDB317919E2400248866 /* Text-Screen27-Ende.png in Resources */,
 				68A7CDBB1791ABAC00248866 /* README.md in Resources */,
 				68A7CDBC1791ABAC00248866 /* release_notes.md in Resources */,
 				68A7CDCC1793F0F100248866 /* Eselsohr.png in Resources */,
@@ -1322,6 +1321,7 @@
 				6860E91B17996CB3000521EB /* Screen14-Labyrinth Kopie.png in Resources */,
 				6860E922179972D0000521EB /* Screen14-Neunauge-vIda.png in Resources */,
 				6860E92417998C77000521EB /* Screen14-Labyrinth-vIda.png in Resources */,
+				68D8F835179C36E000F5274E /* Text-Screen27.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
